@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In! — The Friendly</title>
+  <meta name="description" content="Thanks for subscribing to The Friendly — your weekly guide to PE.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thefriendly.co.za/thank-you">
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#FFFBF0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #FFFBF0;
+      color: #1a1a1a;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gradient-bar {
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6, #EE4266);
+    }
+
+    main {
+      max-width: 560px;
+      width: 100%;
+      padding: 60px 24px 48px;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      margin-bottom: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-the {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: rgba(26, 26, 26, 0.3);
+      margin-bottom: 4px;
+    }
+
+    .logo-friendly {
+      display: inline;
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      letter-spacing: 2px;
+    }
+
+    .logo-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #FF6B35;
+      border-radius: 50%;
+      margin-left: 4px;
+      vertical-align: super;
+    }
+
+    .confirmation-box {
+      margin-top: 40px;
+      padding: 32px;
+      background: #1a1a1a;
+      color: #FFFBF0;
+      border-radius: 12px;
+      max-width: 440px;
+      width: 100%;
+    }
+
+    .confirmation-box h2 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .confirmation-box .dot {
+      color: #FF6B35;
+    }
+
+    .confirmation-box p {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(255, 251, 240, 0.7);
+    }
+
+    .mini-divider {
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6);
+      margin: 20px 0;
+    }
+
+    .checklist {
+      text-align: left;
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .checklist li {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba(255, 251, 240, 0.6);
+      padding: 6px 0;
+    }
+
+    .checklist li span {
+      color: #2EC4B6;
+      margin-right: 8px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 32px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FF6B35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .back-link:hover {
+      border-color: #FF6B35;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 24px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: rgba(26, 26, 26, 0.35);
+    }
+
+    @media (max-width: 500px) {
+      main {
+        padding: 40px 20px 32px;
+      }
+
+      .logo-friendly {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-bar" aria-hidden="true"></div>
+
+  <main>
+    <a href="/" class="logo">
+      <span class="logo-the">The</span>
+      <span class="logo-friendly">Friendly</span><span class="logo-dot" aria-hidden="true"></span>
+    </a>
+
+    <div class="confirmation-box">
+      <h2>You're in<span class="dot"> &#x25CF;</span></h2>
+      <p>Welcome to the crew. Your first issue lands Thursday at 8am.</p>
+      <div class="mini-divider"></div>
+      <ul class="checklist">
+        <li><span>&#x2713;</span>Check your inbox for a confirmation email</li>
+        <li><span>&#x2713;</span>Add hello@thefriendly.co.za to your contacts</li>
+        <li><span>&#x2713;</span>Tell a friend who loves PE</li>
+      </ul>
+    </div>
+
+    <a href="/" class="back-link">&larr; Back to thefriendly.co.za</a>
+  </main>
+
+  <footer>
+    &copy; 2026 The Friendly. Made in PE.
+  </footer>
+</body>
+</html>

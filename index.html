@@ -184,57 +184,10 @@
       max-width: 440px;
     }
 
-    .signup-form {
-      display: flex;
-      gap: 10px;
+    .ml-embedded {
       width: 100%;
       max-width: 440px;
       margin-bottom: 16px;
-    }
-
-    .signup-form input[type="email"] {
-      flex: 1;
-      padding: 14px 18px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      border: 2px solid rgba(26, 26, 26, 0.12);
-      border-radius: 8px;
-      background: #fff;
-      color: #1a1a1a;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .signup-form input[type="email"]::placeholder {
-      color: rgba(26, 26, 26, 0.35);
-    }
-
-    .signup-form input[type="email"]:focus {
-      border-color: #FF6B35;
-    }
-
-    .signup-form button {
-      padding: 14px 28px;
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      background: #FF6B35;
-      color: #FFFBF0;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-      white-space: nowrap;
-    }
-
-    .signup-form button:hover {
-      background: #e55a28;
-    }
-
-    .signup-form button:active {
-      transform: scale(0.97);
     }
 
     .privacy-note {
@@ -242,23 +195,6 @@
       font-weight: 300;
       font-size: 13px;
       color: rgba(26, 26, 26, 0.4);
-    }
-
-    .success-message {
-      display: none;
-      padding: 20px;
-      background: #1a1a1a;
-      color: #FFFBF0;
-      border-radius: 10px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      max-width: 440px;
-      width: 100%;
-    }
-
-    .success-message span {
-      color: #FF6B35;
     }
 
     .preview-section {
@@ -434,18 +370,6 @@
         font-size: 18px;
       }
 
-      .signup-form {
-        flex-direction: column;
-      }
-
-      .signup-form input[type="email"] {
-        padding: 16px 18px;
-      }
-
-      .signup-form button {
-        padding: 16px 28px;
-        min-height: 48px;
-      }
     }
   </style>
 </head>
@@ -466,18 +390,9 @@
 
     <p class="pitch-sub">Events, food, good times — no politics, no crime, no doom. Just the stuff that makes this city the best-kept secret on the coast.</p>
 
-    <form class="signup-form" id="signupForm" aria-label="Newsletter signup">
-      <label for="emailInput" class="sr-only">Email address</label>
-      <input type="email" id="emailInput" name="email" placeholder="Your email address" required autocomplete="email">
-      <button type="submit">I'm In</button>
-    </form>
+    <div class="ml-embedded" data-form="jH0n6N"></div>
 
     <p class="privacy-note">Free. Every Thursday at 8am. Unsubscribe anytime.</p>
-
-    <div class="success-message" id="successMessage">
-      You're in! <span>&#x25CF;</span><br>
-      <span style="font-weight: 300; font-size: 15px; color: rgba(255,251,240,0.7);">Check your inbox Thursday at 8am.</span>
-    </div>
 
     <section class="preview-section" aria-label="Newsletter preview">
       <h2 class="preview-label">Here's a taste</h2>
@@ -519,22 +434,14 @@
     &copy; 2026 The Friendly. Made in PE.
   </footer>
 
+  <!-- MailerLite Universal -->
   <script>
-    document.getElementById('signupForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const email = this.querySelector('input[name="email"]').value;
-
-      // Store email in localStorage as a simple collection method.
-      // Replace this block with your Beehiiv form action or API call.
-      const subscribers = JSON.parse(localStorage.getItem('friendly_subscribers') || '[]');
-      subscribers.push({ email: email, date: new Date().toISOString() });
-      localStorage.setItem('friendly_subscribers', JSON.stringify(subscribers));
-
-      // Show success state
-      this.style.display = 'none';
-      document.querySelector('.privacy-note').style.display = 'none';
-      document.getElementById('successMessage').style.display = 'block';
-    });
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2177050');
   </script>
+  <!-- End MailerLite Universal -->
 </body>
 </html>
