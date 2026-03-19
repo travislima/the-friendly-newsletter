@@ -284,21 +284,27 @@
       text-align: center;
     }
 
+    .past-issues-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
     .past-issue-link {
-      display: inline-block;
       font-family: 'Outfit', sans-serif;
       font-weight: 400;
       font-size: 14px;
-      color: rgba(26, 26, 26, 0.5);
+      color: rgba(26, 26, 26, 0.45);
       text-decoration: none;
-      border-bottom: 1px solid rgba(26, 26, 26, 0.15);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
+      transition: color 0.2s;
     }
 
     .past-issue-link:hover {
       color: #FF6B35;
-      border-color: #FF6B35;
     }
 
     footer {
@@ -363,7 +369,10 @@
     <section class="past-issues" aria-label="Past issues">
       <div class="tip-divider" aria-hidden="true"></div>
       <h2 class="tip-heading">Past Issues</h2>
-      <a href="/issue-001.html" class="past-issue-link">Issue #001 — 13 March 2026</a>
+      <ul class="past-issues-list">
+        <li><a href="/issue-002.html" class="past-issue-link">#002 — 20 Mar</a></li>
+        <li><a href="/issue-001.html" class="past-issue-link">#001 — 13 Mar</a></li>
+      </ul>
     </section>
 
     <a href="https://instagram.com/thefriendlype" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
