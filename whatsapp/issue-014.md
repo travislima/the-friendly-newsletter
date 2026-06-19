@@ -6,10 +6,10 @@ We skipped a week. We're sorry. We're back. And we brought a whole Father's Day 
 ⭐ EDITOR'S PICK
 ━━━━━━━━━━━━━
 
-🥶 *Winter Solstice Sunrise Trail Run & Polar Plunge*
-Sun 21 June · Meet 6:45AM, run 7AM, plunge 8:10AM · Sardinia Bay
-8km trail run at sunrise (shorter walk option), then plunge into the ocean on the shortest day of the year. BYO snacks for the social after. Bring a warm clothing donation for charity.
-https://www.facebook.com/events/1303620731285697
+🎢 *Little Gravity Kids Park*
+Moffet on Main · Ages 2-10 · From R100/hour
+New indoor kids park with slides, climbing walls, and ball pits. Drop the kids, drink your coffee in peace. Non-slip socks R40. Perfect for a rainy Father's Day plan B.
+https://www.facebook.com/littlegravitymoffetonmain
 
 ━━━━━━━━━━━━━
 FRIDAY 19 JUNE (TONIGHT!)
@@ -46,6 +46,12 @@ Cold beers, big screens, green and gold.
 SUNDAY 21 JUNE · FATHER'S DAY
 ━━━━━━━━━━━━━
 
+🥶 *Winter Solstice Sunrise Trail Run & Polar Plunge*
+Meet 6:45AM, run 7AM, plunge 8:10AM · Sardinia Bay
+8km trail run at sunrise, then plunge into the ocean on the shortest day of the year. Bring warm clothing donations for charity.
+https://www.facebook.com/events/1303620731285697
+
+
 🎻 *ECPO Youth Concerto Festival*
 2:30PM · Feather Market Centre · Tickets on Quicket
 Young soloists performing Mozart, Rimsky-Korsakov, Saint-Saëns. A cultured Father's Day afternoon that isn't a braai for once.
@@ -57,15 +63,6 @@ https://www.facebook.com/events/2297742167299091
 
 🛍 Crossways Father's Day Market · Sun 9AM-2PM · Farm Village, Thornhill · Free
 https://www.facebook.com/events/1367570485543377
-
-━━━━━━━━━━━━━
-🎢 WORTH CHECKING OUT
-━━━━━━━━━━━━━
-
-*Little Gravity Kids Park*
-Moffet on Main · Ages 2-10 · From R100/hour
-New indoor kids park. Slides, climbing walls, ball pits. Drop the kids, drink your coffee.
-https://www.facebook.com/littlegravitymoffetonmain
 
 ━━━━━━━━━━━━━
 
