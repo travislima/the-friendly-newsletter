@@ -6,58 +6,59 @@ pasted in manually). This repo is also the public website (GitHub Pages,
 thefriendly.co.za) — the issue HTML files double as the web archive.
 
 **Past issues are a documented archive. Never edit a published `issue-NNN.html`.**
-All improvements go into the next issue.
+All improvements go into `template.html`, which every new issue starts from.
 
 ## Building a new issue
 
-Start from the most recent `issue-NNN.html` and follow its structure:
-preheader → header → color stripe → intro → Editor's Pick card → This Weekend
-(day labels + event cards) → Also Happening quick list → Worth Checking Out →
-outro → footer.
-
-**New in every issue from #016 onward** (these close the growth loop — do not drop them):
-
-1. **View-in-browser line** — add to the intro block, directly under the WhatsApp line,
-   same styling as that line:
-
-   ```html
-   <p style="margin: 6px 0 0; font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 1.5; color: #999999;">Reading on the web? <a href="{$url}" style="color: #FF6B35; text-decoration: none; font-weight: 500;">View this issue in your browser</a>.</p>
-   ```
-
-2. **Forwarded-subscriber line** — add to the outro block, after the "Forward it to a
-   friend" paragraph:
-
-   ```html
-   <p style="margin: 0 0 6px; font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; color: #777777; line-height: 1.65;">Was this forwarded to you? <a href="https://thefriendly.co.za" style="color: #FF6B35; text-decoration: none; font-weight: 600;">Subscribe free at thefriendly.co.za</a></p>
-   ```
-
-3. **Sponsor line** — add to the dark footer block, above the "You're getting this
-   because" paragraph:
-
-   ```html
-   <p style="margin: 20px 0 0; font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; color: rgba(255,251,240,0.5); line-height: 1.6;">Want your business in front of PE's most plugged-in crowd? <a href="mailto:hello@thefriendly.co.za" style="color: rgba(255,251,240,0.7); text-decoration: underline;">Reply or email us</a>.</p>
-   ```
+1. `cp template.html issue-NNN.html`
+2. Fill every `[BRACKETED]` slot. Repeatable blocks (day label, event card,
+   quick-list row) are marked `BEGIN REPEATABLE` / `END REPEATABLE` — duplicate them
+   as needed, keeping the markup byte-identical apart from content.
+3. The last event card under each day label drops its
+   `border-bottom: 1px dashed #e5e5e0`.
+4. Delete the instruction banner comment at the top of the file, and update the
+   `<!-- Subject: ... -->` comment with the real subject line.
+5. Sections with no content this week (e.g. Worth Checking Out) can be removed
+   whole — from their section-divider row through their last card.
+6. Do NOT touch the `EMAIL-ONLY` / `WEB-ONLY` / `WEB-META` markers — the publish
+   script depends on them.
 
 `{$url}` (view in browser) and `{$unsubscribe}` are MailerLite merge tags — keep them
-verbatim in the sent HTML.
+verbatim in the sent HTML. MailerLite converts them at send time.
+
+### Template rules that are easy to break — don't
+
+- **Orange CTA buttons use dark text** (`#1a1a1a` on `#FF6B35`) — accessibility.
+  The Editor's Pick button is dark with cream text.
+- Vibe lines, eyebrows, and inline links on cream use `#C24A20` (accessible
+  orange), never `#FF6B35` for text.
+- Meta text is `#6B6B6B`. No rgba() text colors anywhere — dark-mode clients
+  invert alpha colors into invisibility.
+- Emoji are wrapped in `<span aria-hidden="true">` — keep that on new emoji.
+- Section titles are `<h2>`, event names `<h3>` — don't demote them to `<p>`.
+
+## Sending + publishing workflow
+
+1. Build `issue-NNN.html` (above). Run the pre-send checklist (below).
+2. **Paste the HTML into MailerLite and send/schedule.** Record the subject line
+   in the `<!-- Subject: ... -->` comment.
+3. **Then** run `python3 scripts/publish.py issue-NNN.html`. This converts the
+   file to the web version in place (strips MailerLite merge-tag links, adds a
+   subscribe line, injects OG/meta tags), points `latest/` at it, and adds it to
+   the Past Issues list in `index.html`. Order matters: publish AFTER pasting,
+   because the web version no longer contains `{$unsubscribe}`.
+4. Review `git diff`, commit, push.
 
 ## WhatsApp and Slack versions
 
-Written to `whatsapp/issue-NNN.md` and `slack/issue-NNN.md`. **Every version from #016
-onward ends with this footer** (the WhatsApp version is the most-forwarded artifact we
-produce — it must carry a subscribe path):
+Written to `whatsapp/issue-NNN.md` and `slack/issue-NNN.md`. **Every version ends
+with this footer** (the WhatsApp version is the most-forwarded artifact we produce —
+it must carry a subscribe path):
 
 ```
 —
 Get this every Thursday by email: thefriendly.co.za
 ```
-
-## Publishing a new issue (web archive)
-
-1. Commit `issue-NNN.html`.
-2. Update `latest/index.html` — the redirect URL appears in **two places**
-   (meta refresh + canonical) plus the fallback link in the body.
-3. Add the new issue to the top of the Past Issues list in `index.html`.
 
 ## Editorial rules (short version)
 
@@ -76,13 +77,17 @@ Get this every Thursday by email: thefriendly.co.za
 
 ## Pre-send checklist
 
+- [ ] No unfilled `[SLOTS]` (`grep -o '\[[A-Z][A-Z ]*\]' issue-NNN.html`).
 - [ ] Issue number and date in header, `<title>`, and preheader all match — and the
       date really is a Thursday (`date -d YYYY-MM-DD +%A`).
-- [ ] All comment headers match their content (no leftovers from the previous issue).
+- [ ] All comment headers match their content (no leftovers from the template or a
+      previous issue).
 - [ ] All links https; every event card has a working URL.
-- [ ] `{$unsubscribe}` and `{$url}` present. Growth lines 1–3 above present.
+- [ ] `{$unsubscribe}` and `{$url}` present.
 - [ ] File under 85KB (`wc -c issue-NNN.html`) — Gmail clips at ~102KB after
       MailerLite adds tracking.
-- [ ] Record the subject line as a comment at the top of the file:
-      `<!-- Subject: ... -->` (we correlate these with open rates).
-- [ ] After sending: publish steps above (latest/ redirect + index.html list).
+- [ ] Subject line recorded in the `<!-- Subject: ... -->` comment.
+- [ ] After sending: `python3 scripts/publish.py issue-NNN.html`, then commit.
+
+(The publish script re-checks most of this and refuses to publish a file with
+unfilled slots or a missing header date.)
