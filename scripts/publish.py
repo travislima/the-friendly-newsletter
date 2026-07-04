@@ -88,9 +88,9 @@ def main():
     # ---- 3. Web meta tags -----------------------------------------------
     pre = re.search(
         r'aria-hidden="true">\s*(.*?)&nbsp;&zwnj;', out, flags=re.DOTALL)
-    description = htmllib.unescape(re.sub(r"\s+", " ", pre.group(1)).strip()) if pre else \
+    teaser = htmllib.unescape(re.sub(r"\s+", " ", pre.group(1)).strip()) if pre else \
         "Events, food, and things to do in Port Elizabeth this weekend."
-    description = htmllib.escape(description, quote=True)
+    description = htmllib.escape(teaser, quote=True)
     url = f"{SITE}/issue-{issue_no}.html"
     title = f"The Friendly — Issue #{issue_no} · {day} {month} {year}"
     meta = f"""<meta name="description" content="{description}">
@@ -119,20 +119,43 @@ def main():
     latest.write_text(txt, encoding="utf-8")
     print(f"latest/index.html now points at issue-{issue_no}.html ({n} URLs)")
 
-    # ---- 5. Past Issues list --------------------------------------------
+    # ---- 5. Homepage recent list + archive page --------------------------
+    short_date = f"{day} {month[:3]}"
+    teaser_html = htmllib.escape(teaser, quote=False)
+
+    def issue_li(kind):
+        return (f'        <li class="{kind}-issue"><a href="/issue-{issue_no}.html" '
+                f'class="{kind}-issue-link"><span class="{kind}-issue-num">#{issue_no} '
+                f'&middot; {short_date}</span><span class="{kind}-issue-teaser">'
+                f'{teaser_html}</span></a></li>')
+
     index = ROOT / "index.html"
     idx = index.read_text(encoding="utf-8")
-    short_date = f"{day} {month[:3]}"
-    li = (f'        <li><a href="/issue-{issue_no}.html" class="past-issue-link">'
-          f'#{issue_no} — {short_date}</a></li>\n')
-    if f"/issue-{issue_no}.html" in idx:
+    block = re.search(r"<!-- RECENT-ISSUES -->\n(.*?)<!-- /RECENT-ISSUES -->", idx, re.DOTALL)
+    if not block:
+        fail("couldn't find the RECENT-ISSUES markers in index.html")
+    items = [l for l in block.group(1).splitlines() if '<li class="recent-issue">' in l]
+    if f"/issue-{issue_no}.html" in block.group(1):
         print("index.html already lists this issue — skipping")
     else:
-        marker = '<ul class="past-issues-list">\n'
-        if marker not in idx:
-            fail("couldn't find the Past Issues list in index.html")
-        index.write_text(idx.replace(marker, marker + li, 1), encoding="utf-8")
-        print(f"index.html: added #{issue_no} — {short_date} to Past Issues")
+        items = ([issue_li("recent")] + items)[:3]  # newest first, keep 3
+        idx = idx.replace(block.group(0),
+                          "<!-- RECENT-ISSUES -->\n" + "\n".join(items)
+                          + "\n<!-- /RECENT-ISSUES -->")
+        index.write_text(idx, encoding="utf-8")
+        print(f"index.html: #{issue_no} added to Recent Issues (keeping {len(items)})")
+
+    archive = ROOT / "archive" / "index.html"
+    arc = archive.read_text(encoding="utf-8")
+    if f"/issue-{issue_no}.html" in arc:
+        print("archive/index.html already lists this issue — skipping")
+    else:
+        marker = "<!-- ARCHIVE-LIST -->"
+        if marker not in arc:
+            fail("couldn't find the ARCHIVE-LIST marker in archive/index.html")
+        arc = arc.replace(marker, marker + "\n" + issue_li("archive"), 1)
+        archive.write_text(arc, encoding="utf-8")
+        print(f"archive/index.html: #{issue_no} added to All Issues")
 
     print("\nDone. Review with `git diff`, then commit and push.")
 
