@@ -312,27 +312,64 @@
       text-align: center;
     }
 
-    .past-issues-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px 16px;
+    .recent-issues {
+      list-style: none;
       margin: 0;
       padding: 0;
-      list-style: none;
+      text-align: left;
     }
 
-    .past-issue-link {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      color: rgba(26, 26, 26, 0.45);
+    .recent-issue {
+      margin-bottom: 16px;
+    }
+
+    .recent-issue-link {
+      display: block;
       text-decoration: none;
+    }
+
+    .recent-issue-num {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      color: #C24A20;
+      margin-bottom: 2px;
+    }
+
+    .recent-issue-teaser {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #6B6B6B;
       transition: color 0.2s;
     }
 
-    .past-issue-link:hover {
-      color: #FF6B35;
+    .recent-issue-link:hover .recent-issue-teaser {
+      color: #1a1a1a;
+    }
+
+    .all-issues-wrap {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .all-issues-link {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #C24A20;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(194, 74, 32, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .all-issues-link:hover {
+      border-color: #C24A20;
     }
 
     footer {
@@ -396,26 +433,17 @@
       <a href="mailto:hello@thefriendly.co.za" class="tip-email">hello@thefriendly.co.za</a>
     </section>
 
-    <section class="past-issues" aria-label="Past issues">
+    <section class="past-issues" aria-label="Recent issues">
       <div class="tip-divider" aria-hidden="true"></div>
-      <h2 class="tip-heading">Past Issues</h2>
-      <ul class="past-issues-list">
-        <li><a href="/issue-015.html" class="past-issue-link">#015 — 25 Jun</a></li>
-        <li><a href="/issue-014.html" class="past-issue-link">#014 — 19 Jun</a></li>
-        <li><a href="/issue-013.html" class="past-issue-link">#013 — 4 Jun</a></li>
-        <li><a href="/issue-012.html" class="past-issue-link">#012 — 28 May</a></li>
-        <li><a href="/issue-011.html" class="past-issue-link">#011 — 21 May</a></li>
-        <li><a href="/issue-010.html" class="past-issue-link">#010 — 14 May</a></li>
-        <li><a href="/issue-009.html" class="past-issue-link">#009 — 7 May</a></li>
-        <li><a href="/issue-008.html" class="past-issue-link">#008 — 30 Apr</a></li>
-        <li><a href="/issue-007.html" class="past-issue-link">#007 — 23 Apr</a></li>
-        <li><a href="/issue-006.html" class="past-issue-link">#006 — 16 Apr</a></li>
-        <li><a href="/issue-005.html" class="past-issue-link">#005 — 9 Apr</a></li>
-        <li><a href="/issue-004.html" class="past-issue-link">#004 — 2 Apr</a></li>
-        <li><a href="/issue-003.html" class="past-issue-link">#003 — 27 Mar</a></li>
-        <li><a href="/issue-002.html" class="past-issue-link">#002 — 19 Mar</a></li>
-        <li><a href="/issue-001.html" class="past-issue-link">#001 — 13 Mar</a></li>
+      <h2 class="tip-heading">Recent Issues</h2>
+      <ul class="recent-issues">
+<!-- RECENT-ISSUES -->
+        <li class="recent-issue"><a href="/issue-015.html" class="recent-issue-link"><span class="recent-issue-num">#015 &middot; 25 Jun</span><span class="recent-issue-teaser">Night at the museum (literally), cookie decorating, Vespa's 80th birthday, jazz at the harbour, and a sushi burger. School holidays start here.</span></a></li>
+        <li class="recent-issue"><a href="/issue-014.html" class="recent-issue-link"><span class="recent-issue-num">#014 &middot; 19 Jun</span><span class="recent-issue-teaser">New kids park alert, Boks on the big screen, opera at the Savoy, a polar plunge at sunrise, and a Queen tribute tonight. Happy Father's Day weekend, PE.</span></a></li>
+        <li class="recent-issue"><a href="/issue-013.html" class="recent-issue-link"><span class="recent-issue-num">#013 &middot; 4 Jun</span><span class="recent-issue-teaser">Whale festival, vintage toys, handmade pottery, Monet-inspired painting, and live music. PE, you're spoilt. Your weekend sorted.</span></a></li>
+<!-- /RECENT-ISSUES -->
       </ul>
+      <p class="all-issues-wrap"><a href="/archive" class="all-issues-link">All issues &rarr;</a></p>
     </section>
 
     <div class="social-links">

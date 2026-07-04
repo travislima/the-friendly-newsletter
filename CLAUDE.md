@@ -44,9 +44,11 @@ verbatim in the sent HTML. MailerLite converts them at send time.
    in the `<!-- Subject: ... -->` comment.
 3. **Then** run `python3 scripts/publish.py issue-NNN.html`. This converts the
    file to the web version in place (strips MailerLite merge-tag links, adds a
-   subscribe line, injects OG/meta tags), points `latest/` at it, and adds it to
-   the Past Issues list in `index.html`. Order matters: publish AFTER pasting,
-   because the web version no longer contains `{$unsubscribe}`.
+   subscribe line, injects OG/meta tags), points `latest/` at it, rotates the
+   Recent Issues teasers on `index.html` (newest 3), and prepends the issue to
+   `archive/index.html`. The teaser shown on both pages is the preheader — one
+   more reason to write it well. Order matters: publish AFTER pasting, because
+   the web version no longer contains `{$unsubscribe}`.
 4. Review `git diff`, commit, push.
 
 ## WhatsApp and Slack versions
