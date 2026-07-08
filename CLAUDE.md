@@ -1,0 +1,95 @@
+# The Friendly — build notes for Claude
+
+The Friendly is a free weekly email newsletter about events, food, and things to do in
+Port Elizabeth (Gqeberha), South Africa. Sent Thursdays 8am via MailerLite (HTML is
+pasted in manually). This repo is also the public website (GitHub Pages,
+thefriendly.co.za) — the issue HTML files double as the web archive.
+
+**Past issues are a documented archive. Never edit a published `issue-NNN.html`.**
+All improvements go into `template.html`, which every new issue starts from.
+
+## Building a new issue
+
+1. `cp template.html issue-NNN.html`
+2. Fill every `[BRACKETED]` slot. Repeatable blocks (day label, event card,
+   quick-list row) are marked `BEGIN REPEATABLE` / `END REPEATABLE` — duplicate them
+   as needed, keeping the markup byte-identical apart from content.
+3. The last event card under each day label drops its
+   `border-bottom: 1px dashed #e5e5e0`.
+4. Delete the instruction banner comment at the top of the file, and update the
+   `<!-- Subject: ... -->` comment with the real subject line.
+5. Sections with no content this week (e.g. Worth Checking Out) can be removed
+   whole — from their section-divider row through their last card.
+6. Do NOT touch the `EMAIL-ONLY` / `WEB-ONLY` / `WEB-META` markers — the publish
+   script depends on them.
+
+`{$url}` (view in browser) and `{$unsubscribe}` are MailerLite merge tags — keep them
+verbatim in the sent HTML. MailerLite converts them at send time.
+
+### Template rules that are easy to break — don't
+
+- **Orange CTA buttons use dark text** (`#1a1a1a` on `#FF6B35`) — accessibility.
+  The Editor's Pick button is dark with cream text.
+- Vibe lines, eyebrows, and inline links on cream use `#C24A20` (accessible
+  orange), never `#FF6B35` for text.
+- Meta text is `#6B6B6B`. No rgba() text colors anywhere — dark-mode clients
+  invert alpha colors into invisibility.
+- Emoji are wrapped in `<span aria-hidden="true">` — keep that on new emoji.
+- Section titles are `<h2>`, event names `<h3>` — don't demote them to `<p>`.
+
+## Sending + publishing workflow
+
+1. Build `issue-NNN.html` (above). Run the pre-send checklist (below).
+2. **Paste the HTML into MailerLite and send/schedule.** Record the subject line
+   in the `<!-- Subject: ... -->` comment.
+3. **Then** run `python3 scripts/publish.py issue-NNN.html`. This converts the
+   file to the web version in place (strips MailerLite merge-tag links, adds a
+   subscribe line, injects OG/meta tags), points `latest/` at it, rotates the
+   Recent Issues teasers on `index.html` (newest 3), and prepends the issue to
+   `archive/index.html`. The teaser shown on both pages is the preheader — one
+   more reason to write it well. Order matters: publish AFTER pasting, because
+   the web version no longer contains `{$unsubscribe}`.
+4. Review `git diff`, commit, push.
+
+## WhatsApp and Slack versions
+
+Written to `whatsapp/issue-NNN.md` and `slack/issue-NNN.md`. **Every version ends
+with this footer** (the WhatsApp version is the most-forwarded artifact we produce —
+it must carry a subscribe path):
+
+```
+—
+Get this every Thursday by email: thefriendly.co.za
+```
+
+## Editorial rules (short version)
+
+- Voice: warm, local, first-person-plural. Opens "Hey PE 👋", pivots "Let's get into
+  it.", closes "That's your weekend sorted. 🧡 … See you next Thursday."
+- "PE" in the friendly register; "Gqeberha, South Africa" in the formal footer;
+  official event names exactly as organisers style them.
+- Every event: emoji · name · time · venue · price ("R250pp"), then one "vibe" line.
+- CTA buttons: playful but clear. Never reuse a label within 4 issues. Never bare
+  "Details". Keep a ticketed signal for paid events ("Grab tickets →",
+  "Reserve your seat →"). If the pun needs a re-read, it's too clever.
+- Preheader: concrete items, lead with the weirdest one. Don't reuse the intro
+  sentence, and vary the closing tail (not "Your PE weekend sorted." every week).
+- Phone bookings: link as `https://wa.me/27XXXXXXXXX` (drop the leading 0) when the
+  organiser uses WhatsApp, else `tel:`.
+
+## Pre-send checklist
+
+- [ ] No unfilled `[SLOTS]` (`grep -o '\[[A-Z][A-Z ]*\]' issue-NNN.html`).
+- [ ] Issue number and date in header, `<title>`, and preheader all match — and the
+      date really is a Thursday (`date -d YYYY-MM-DD +%A`).
+- [ ] All comment headers match their content (no leftovers from the template or a
+      previous issue).
+- [ ] All links https; every event card has a working URL.
+- [ ] `{$unsubscribe}` and `{$url}` present.
+- [ ] File under 85KB (`wc -c issue-NNN.html`) — Gmail clips at ~102KB after
+      MailerLite adds tracking.
+- [ ] Subject line recorded in the `<!-- Subject: ... -->` comment.
+- [ ] After sending: `python3 scripts/publish.py issue-NNN.html`, then commit.
+
+(The publish script re-checks most of this and refuses to publish a file with
+unfilled slots or a missing header date.)

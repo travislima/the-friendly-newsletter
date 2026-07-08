@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Friendly — Your Weekly Guide to PE</title>
-  <meta name="description" content="One email. Every Thursday. Everything worth knowing about in Port Elizabeth — events, food, good times.">
+  <meta name="description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://thefriendly.co.za/">
@@ -202,6 +202,27 @@
       color: rgba(26, 26, 26, 0.4);
     }
 
+    .sample-link-wrap {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(26, 26, 26, 0.5);
+      margin-top: 12px;
+    }
+
+    .sample-link {
+      font-weight: 500;
+      color: #FF6B35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .sample-link:hover {
+      border-color: #FF6B35;
+    }
+
     .social-links {
       display: flex;
       align-items: center;
@@ -291,27 +312,64 @@
       text-align: center;
     }
 
-    .past-issues-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px 16px;
+    .recent-issues {
+      list-style: none;
       margin: 0;
       padding: 0;
-      list-style: none;
+      text-align: left;
     }
 
-    .past-issue-link {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      color: rgba(26, 26, 26, 0.45);
+    .recent-issue {
+      margin-bottom: 16px;
+    }
+
+    .recent-issue-link {
+      display: block;
       text-decoration: none;
+    }
+
+    .recent-issue-num {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      color: #C24A20;
+      margin-bottom: 2px;
+    }
+
+    .recent-issue-teaser {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #6B6B6B;
       transition: color 0.2s;
     }
 
-    .past-issue-link:hover {
-      color: #FF6B35;
+    .recent-issue-link:hover .recent-issue-teaser {
+      color: #1a1a1a;
+    }
+
+    .all-issues-wrap {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .all-issues-link {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #C24A20;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(194, 74, 32, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .all-issues-link:hover {
+      border-color: #C24A20;
     }
 
     footer {
@@ -364,7 +422,9 @@
 
     <div class="ml-embedded" data-form="jH0n6N"></div>
 
-    <p class="privacy-note">Free. Every Thursday at 8am. Unsubscribe anytime.</p>
+    <p class="privacy-note">Join 400+ PE locals. Free. Every Thursday at 8am. Unsubscribe anytime.</p>
+
+    <p class="sample-link-wrap">Not sure yet? <a href="/latest" class="sample-link">Read the latest issue &rarr;</a></p>
 
     <section class="tip-section" aria-label="Submit a tip">
       <div class="tip-divider" aria-hidden="true"></div>
@@ -373,7 +433,7 @@
       <a href="mailto:hello@thefriendly.co.za" class="tip-email">hello@thefriendly.co.za</a>
     </section>
 
-    <section class="past-issues" aria-label="Past issues">
+    <section class="past-issues" aria-label="Recent issues">
       <div class="tip-divider" aria-hidden="true"></div>
       <h2 class="tip-heading">Past Issues</h2>
       <ul class="past-issues-list">
@@ -394,6 +454,7 @@
         <li><a href="/issue-002.html" class="past-issue-link">#002 — 20 Mar</a></li>
         <li><a href="/issue-001.html" class="past-issue-link">#001 — 13 Mar</a></li>
       </ul>
+      <p class="all-issues-wrap"><a href="/archive" class="all-issues-link">All issues &rarr;</a></p>
     </section>
 
     <div class="social-links">
