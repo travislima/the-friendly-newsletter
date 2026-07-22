@@ -78,3 +78,6 @@ Pre-loved clothes, accessories, and books. All proceeds to Isithembiso Babies Ho
 ━━━━━━━━━━━━━
 
 That's your weekend sorted 🧡
+
+—
+Get this every Thursday by email: thefriendly.co.za
