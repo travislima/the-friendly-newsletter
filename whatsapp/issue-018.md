@@ -63,5 +63,13 @@ https://www.facebook.com/events/1277361337393965
 🛍 Collective Market · Sun 9AM-2PM · PE Riding Club, Lorraine · Free
 
 ━━━━━━━━━━━━━
+📌 SAVE THE DATE
+━━━━━━━━━━━━━
+
+💚 *Isithembiso Pop-Up Thrift Shop*
+Sat 8 August · 9AM-2PM · Stir Coffee Co, 13 2nd Ave, Walmer
+Pre-loved clothes, accessories, and books. All proceeds to Isithembiso Babies Home.
+
+━━━━━━━━━━━━━
 
 That's your weekend sorted 🧡
