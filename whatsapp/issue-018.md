@@ -24,12 +24,6 @@ https://www.facebook.com/events/841488519014098/
 SATURDAY 25 JULY
 ━━━━━━━━━━━━━
 
-🏡 *Home & Garden Expo*
-9AM-6PM · African Skys Function Venue, 120 Nassau Ave, Theescombe
-Interior design, landscaping, solar, smart home tech, plus industry speakers on property and renovation.
-https://www.facebook.com/events/1309121327704222
-
-
 🌭 *BCRA Boerewors Roll Fundraiser*
 cnr Buffelsfontein & Milner, Mount Pleasant · R30/roll
 The Broadwood/Charlo Residents Association boerewors braai (they sold 300 last time). All profits go towards more security cameras for the neighbourhood.
