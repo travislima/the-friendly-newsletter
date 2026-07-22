@@ -30,6 +30,11 @@ Interior design, landscaping, solar, smart home tech, plus industry speakers on 
 https://www.facebook.com/events/1309121327704222
 
 
+🌭 *BCRA Boerewors Roll Fundraiser*
+cnr Buffelsfontein & Milner, Mount Pleasant · R30/roll
+The Broadwood/Charlo Residents Association boerewors braai (they sold 300 last time). All profits go towards more security cameras for the neighbourhood.
+
+
 📖 *Coenie de Villiers & Deon Meyer: Karoo-Keur*
 Two shows: 2PM & 5PM · NMU South Campus Auditorium · R250 on Quicket
 SA's biggest crime writer and a music legend, one stage. The award-winning Karoo Suite series live.
