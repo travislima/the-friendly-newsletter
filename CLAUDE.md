@@ -10,6 +10,12 @@ All improvements go into `template.html`, which every new issue starts from.
 
 ## Building a new issue
 
+> ⛔ **NEVER clone the previous issue** (`cp issue-0NN.html issue-0NN+1.html`).
+> **ALWAYS start from `template.html`.** Cloning issue-to-issue silently
+> propagates styling drift (wrong text colors, `<p>` headings, unwrapped emoji)
+> from whatever crept into an earlier issue. `template.html` is the one
+> known-compliant source. Step 1 is not optional.
+
 1. `cp template.html issue-NNN.html`
 2. Fill every `[BRACKETED]` slot. Repeatable blocks (day label, event card,
    quick-list row) are marked `BEGIN REPEATABLE` / `END REPEATABLE` — duplicate them
@@ -85,6 +91,13 @@ Get this every Thursday by email: thefriendly.co.za
 - [ ] All comment headers match their content (no leftovers from the template or a
       previous issue).
 - [ ] All links https; every event card has a working URL.
+- [ ] **No styling drift** — all three commands below return nothing:
+      `grep -o 'color: #888888' issue-NNN.html` (meta must be `#6B6B6B`),
+      `grep -oE 'color: #FF6B35; (font-style|text-decoration|">)' issue-NNN.html`
+      (vibe/link/eyebrow text must be `#C24A20`; `#FF6B35` is background-only),
+      `grep -o 'font-size: 11px; font-weight: 600; color: #FFFBF0' issue-NNN.html`
+      (orange CTA text must be dark `#1a1a1a`). Any hit means the issue drifted
+      from `template.html` — see the build-section warning.
 - [ ] `{$unsubscribe}` and `{$url}` present.
 - [ ] File under 85KB (`wc -c issue-NNN.html`) — Gmail clips at ~102KB after
       MailerLite adds tracking.
