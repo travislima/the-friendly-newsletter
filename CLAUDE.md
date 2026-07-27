@@ -83,6 +83,36 @@ Get this every Thursday by email: thefriendly.co.za
 - Phone bookings: link as `https://wa.me/27XXXXXXXXX` (drop the leading 0) when the
   organiser uses WhatsApp, else `tel:`.
 
+## Event selection — what actually gets clicked (data-backed)
+
+Analysis of click data across issues #013–#018 (MailerLite link activity). The
+event TYPE drives clicks far more than where it sits in the layout.
+
+**Click ranking by event type (highest → lowest):**
+1. **Novel experiences / festivals** — the biggest winners by far. Whale Festival
+   (18 clicks), SAAF Museum after-hours (15), Winter Solstice Polar Plunge (7),
+   Mardi Gras (7). "Only-in-PE", experiential, broadly appealing.
+2. **Markets** — the reliable workhorse. Pull 3–8 clicks *every* issue, even when
+   buried in the "Also Happening" quick-list (Collective Market 8, 67 Blankets 7
+   *from the tail*). Always include 2–3.
+3. **Food / new-restaurant spotlights** — overperform massively. ZZAN (10 clicks,
+   2nd in its issue) from "Worth Checking Out". Under-used — feature one most weeks.
+4. **Cars / motorsport** — strong. Rally (9, top of its issue), Vespa (3).
+5. **Live music / ticketed gigs / tributes** — the WORST category. Near-universally
+   0–1 clicks (Spoegwolf 1, Queen 0, Boks & ABBA 0, Music Bingo 0). Exception:
+   wine+culture "experiences" (Jazz & Wine 6). Demote gigs to the quick-list.
+6. **Kids-specific** — low (2 or fewer). Narrow audience.
+
+**Rules that follow:**
+- **Editor's Pick = always the most novel, broadly-appealing EXPERIENCE.** Never a
+  ticketed gig, never a permanent venue/kids park. When the Pick was niche it got
+  beaten by regular markets (e.g. #016 Grease Party came 5th; #014 Little Gravity
+  got 2 and lost to a demoted Polar Plunge at 7).
+- The Editor's Pick slot does **not** create clicks — the right event does.
+- Don't trim the "Also Happening" tail; markets there still pull well.
+- Total clicks track with how many markets + experiences + food + cars an issue
+  packs in. That's the lever — not send-time or button count.
+
 ## Pre-send checklist
 
 - [ ] No unfilled `[SLOTS]` (`grep -o '\[[A-Z][A-Z ]*\]' issue-NNN.html`).
