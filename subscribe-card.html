@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Friendly — Subscribe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #33302b;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  /* Instagram portrait 4:5 — screenshots clean for feed + WhatsApp */
+  .card {
+    position: relative;
+    width: 1080px;
+    height: 1350px;
+    background: #FFFBF0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* scale down so it fits your screen; the pixels stay 1080×1350 for a crisp shot */
+    transform: scale(0.52);
+    transform-origin: center center;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  }
+  @media (max-width: 640px) { .card { transform: scale(0.32); } }
+
+  .stripe {
+    height: 14px;
+    background: linear-gradient(90deg, #FF6B35 25%, #FFD23F 25%, #FFD23F 50%, #2EC4B6 50%, #2EC4B6 75%, #EE4266 75%);
+    flex-shrink: 0;
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 96px;
+  }
+
+  .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    color: #CFCBC1;
+    margin-bottom: 6px;
+    padding-left: 18px; /* balance the letter-spacing */
+  }
+
+  .logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 132px;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+  }
+  .logo .dot {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #FF6B35;
+    border-radius: 50%;
+    margin-left: 6px;
+    vertical-align: baseline;
+  }
+
+  .tagline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #8D8B84;
+    margin-top: 26px;
+  }
+
+  .rule {
+    width: 96px;
+    height: 5px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6);
+    margin: 54px 0;
+  }
+
+  .hook {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.15;
+    color: #1a1a1a;
+    max-width: 760px;
+  }
+  .hook em { font-style: italic; color: #C24A20; }
+
+  .sub {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.55;
+    color: #5b5751;
+    max-width: 680px;
+    margin-top: 30px;
+  }
+
+  .chips {
+    display: flex;
+    gap: 16px;
+    margin-top: 46px;
+  }
+  .chip {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #FFFBF0;
+    background: #1a1a1a;
+    padding: 12px 26px;
+    border-radius: 999px;
+  }
+
+  .cta {
+    margin-top: 58px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    background: #FF6B35;
+    padding: 26px 62px;
+    border-radius: 12px;
+  }
+
+  .url {
+    margin-top: 34px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 46px;
+    letter-spacing: -1px;
+    color: #1a1a1a;
+  }
+
+  .proof {
+    margin-top: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #8D8B84;
+  }
+
+  .footer {
+    flex-shrink: 0;
+    background: #1a1a1a;
+    color: #FFFBF0;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  .footer .at { color: #FF9B70; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stripe"></div>
+
+    <div class="body">
+      <p class="eyebrow">The</p>
+      <div class="logo">FRIENDLY<span class="dot"></span></div>
+      <p class="tagline">Your weekly guide to PE</p>
+
+      <div class="rule"></div>
+
+      <h1 class="hook">Everything worth doing in PE <em>this weekend</em>.</h1>
+      <p class="sub">One short email. Every Thursday. Events, food, good times — no politics, no crime, no doom. Just the good stuff.</p>
+
+      <div class="chips">
+        <span class="chip">Events</span>
+        <span class="chip">Food</span>
+        <span class="chip">Good times</span>
+      </div>
+
+      <div class="cta">Subscribe free</div>
+      <p class="url">thefriendly.co.za</p>
+      <p class="proof">Free every Thursday · Join 400+ PE locals</p>
+    </div>
+
+    <div class="footer">Follow us <span class="at">@thefriendlype</span></div>
+  </div>
+</body>
+</html>
