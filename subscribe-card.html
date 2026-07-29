@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Friendly — Subscribe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #33302b;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 40px 20px;
+  }
+
+  /* Instagram portrait 4:5 (1080×1350) — screenshots clean for feed + WhatsApp */
+  .card {
+    position: relative; width: 1080px; height: 1350px;
+    background: #FFFBF0; overflow: hidden;
+    display: flex; flex-direction: column;
+    transform: scale(0.52); transform-origin: center center;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  }
+  @media (max-width: 640px) { .card { transform: scale(0.32); } }
+
+  .stripe {
+    height: 14px; flex-shrink: 0;
+    background: linear-gradient(90deg, #FF6B35 25%, #FFD23F 25%, #FFD23F 50%, #2EC4B6 50%, #2EC4B6 75%, #EE4266 75%);
+  }
+
+  .body {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    padding: 0 96px;
+  }
+
+  .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 300;
+    font-size: 24px; letter-spacing: 18px; text-transform: uppercase;
+    color: #A8A49A; margin-bottom: 6px; padding-left: 18px;
+  }
+  .logo {
+    font-family: 'Archivo Black', sans-serif; font-size: 118px;
+    line-height: 0.9; letter-spacing: -5px; text-transform: uppercase; color: #1a1a1a;
+  }
+  .logo .dot {
+    display: inline-block; width: 24px; height: 24px; background: #FF6B35;
+    border-radius: 50%; margin-left: 6px; vertical-align: baseline;
+  }
+  .tagline {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400;
+    font-size: 22px; letter-spacing: 6px; text-transform: uppercase;
+    color: #8D8B84; margin-top: 22px;
+  }
+
+  .rule {
+    width: 90px; height: 5px; border-radius: 3px;
+    background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6); margin: 40px 0;
+  }
+
+  .hook {
+    font-family: 'Fraunces', Georgia, serif; font-weight: 600;
+    font-size: 58px; line-height: 1.15; color: #1a1a1a; max-width: 780px;
+  }
+  .hook em { font-style: italic; color: #C24A20; }
+
+  .sub {
+    font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 27px;
+    line-height: 1.5; color: #5b5751; max-width: 680px; margin-top: 26px;
+  }
+
+  /* QR block — the primary action (IG links aren't tappable) */
+  .qr-wrap {
+    margin-top: 48px; display: flex; align-items: center; gap: 40px;
+    background: #ffffff; border: 3px solid #1a1a1a; border-radius: 22px;
+    padding: 34px 44px 34px 34px;
+  }
+  .qr { width: 240px; height: 240px; flex-shrink: 0; }
+  .qr svg { width: 100%; height: 100%; display: block; }
+  .qr-cta { text-align: left; }
+  .qr-scan {
+    font-family: 'Archivo Black', sans-serif; font-size: 40px;
+    line-height: 1.05; text-transform: uppercase; color: #1a1a1a; letter-spacing: -1px;
+  }
+  .qr-scan span { color: #C24A20; }
+  .qr-url {
+    margin-top: 14px; font-family: 'Outfit', sans-serif; font-weight: 700;
+    font-size: 30px; color: #1a1a1a;
+  }
+  .qr-free {
+    margin-top: 6px; font-family: 'Outfit', sans-serif; font-weight: 400;
+    font-size: 24px; color: #8D8B84;
+  }
+
+  .footer {
+    flex-shrink: 0; background: #1a1a1a; color: #FFFBF0; text-align: center;
+    padding: 38px; font-family: 'Outfit', sans-serif; font-weight: 400;
+    font-size: 27px; letter-spacing: 1px;
+  }
+  .footer .at { color: #FF9B70; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stripe"></div>
+
+    <div class="body">
+      <p class="eyebrow">The</p>
+      <div class="logo">FRIENDLY<span class="dot"></span></div>
+      <p class="tagline">Your weekly guide to PE</p>
+
+      <div class="rule"></div>
+
+      <h1 class="hook">Everything worth doing in PE <em>this weekend</em>.</h1>
+      <p class="sub">One short email. Every Thursday. Events, food, good times — no politics, no crime, no doom. Just the good stuff.</p>
+
+      <div class="qr-wrap">
+        <div class="qr">
+          <svg viewBox="0 0 33 33" class="segno" shape-rendering="crispEdges" preserveAspectRatio="xMidYMid meet"><path fill="#ffffff" d="M0 0h33v33h-33z"/><path stroke="#1a1a1a" d="M0 0.5h7m1 0h1m1 0h1m4 0h2m4 0h1m1 0h2m1 0h7m-33 1h1m5 0h1m1 0h1m3 0h1m1 0h1m1 0h1m4 0h2m1 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h2m4 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h1m2 0h2m2 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m1 0h4m4 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h3m1 0h3m1 0h1m2 0h1m6 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h1m1 0h2m2 0h2m2 0h1m2 0h1m2 0h1m-23 1h3m1 0h1m1 0h1m4 0h2m1 0h3m3 0h1m2 0h3m2 0h3m-33 1h1m2 0h3m7 0h1m2 0h3m4 0h1m1 0h2m2 0h1m2 0h1m-33 1h4m2 0h1m1 0h4m2 0h1m1 0h1m5 0h1m1 0h2m1 0h1m2 0h2m-32 1h1m1 0h4m1 0h5m2 0h1m1 0h4m3 0h1m2 0h1m2 0h2m-27 1h1m1 0h3m1 0h6m1 0h9m1 0h1m1 0h1m1 0h1m-29 1h1m3 0h2m1 0h1m3 0h2m1 0h2m4 0h1m1 0h2m1 0h2m2 0h1m-28 1h2m1 0h1m1 0h2m4 0h1m1 0h1m1 0h1m1 0h1m4 0h2m2 0h1m-32 1h1m1 0h1m1 0h2m1 0h2m1 0h1m5 0h4m1 0h2m1 0h3m1 0h2m1 0h1m-31 1h2m1 0h1m1 0h3m4 0h1m1 0h2m1 0h2m3 0h1m1 0h1m1 0h2m1 0h1m1 0h1m-33 1h2m1 0h3m2 0h7m4 0h2m2 0h2m1 0h1m-27 1h2m1 0h1m1 0h2m1 0h1m1 0h1m1 0h5m1 0h1m3 0h1m4 0h2m1 0h1m-31 1h1m1 0h3m4 0h1m2 0h3m1 0h4m1 0h1m1 0h3m2 0h3m-30 1h1m4 0h3m1 0h1m2 0h6m1 0h1m1 0h1m1 0h1m2 0h3m-30 1h5m4 0h5m1 0h1m1 0h1m1 0h3m3 0h1m6 0h1m-33 1h1m1 0h1m1 0h4m1 0h1m1 0h2m2 0h3m1 0h1m1 0h1m1 0h2m5 0h2m-32 1h1m2 0h1m1 0h1m5 0h1m1 0h2m1 0h1m1 0h1m1 0h4m5 0h2m-31 1h1m1 0h5m1 0h3m1 0h3m1 0h1m1 0h4m1 0h6m2 0h1m-24 1h1m4 0h2m2 0h1m3 0h1m2 0h1m3 0h1m2 0h2m-33 1h7m2 0h3m3 0h7m1 0h2m1 0h1m1 0h4m-32 1h1m5 0h1m3 0h1m6 0h1m1 0h4m1 0h1m3 0h1m1 0h3m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h2m1 0h2m1 0h2m2 0h5m2 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h2m1 0h1m2 0h1m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h2m1 0h1m2 0h4m1 0h2m2 0h2m-31 1h1m5 0h1m4 0h1m1 0h2m4 0h1m1 0h1m5 0h1m2 0h1m-31 1h7m3 0h3m2 0h1m1 0h2m1 0h2m1 0h2m1 0h1m2 0h3"/></svg>
+        </div>
+        <div class="qr-cta">
+          <p class="qr-scan">Scan to<br><span>subscribe</span></p>
+          <p class="qr-url">thefriendly.co.za</p>
+          <p class="qr-free">Free · every Thursday</p>
+        </div>
+      </div>
+
+      <p class="qr-free" style="margin-top:30px;font-size:26px;">Join 400+ PE locals</p>
+    </div>
+
+    <div class="footer">Follow us <span class="at">@thefriendlype</span></div>
+  </div>
+</body>
+</html>

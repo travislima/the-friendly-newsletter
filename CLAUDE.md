@@ -68,6 +68,48 @@ it must carry a subscribe path):
 Get this every Thursday by email: thefriendly.co.za
 ```
 
+## Social cards (WhatsApp gallery + Instagram carousel)
+
+Every issue also ships a set of image cards — WhatsApp is our biggest
+forwarding/growth channel and pasted markdown reads badly there, so the cards
+carry the issue as a swipeable gallery. Source of truth is
+`whatsapp-cards/issue-NNN-cards.html` (one template) rendered by
+`whatsapp-cards/shoot.mjs`.
+
+**Build steps (after the issue is finalised):**
+1. `cp whatsapp-cards/issue-PREV-cards.html whatsapp-cards/issue-NNN-cards.html`
+   and swap in this week's content. The card set is: **1** cover · **2**
+   Editor's Pick · **3** a Friendly Highlight / second feature · **4** the
+   weekend line-up (What's On) · **5** Where to Eat · **6** follow closer.
+   Pull card copy straight from the finished `issue-NNN.html` so wording matches.
+2. Point `shoot.mjs` at the new file (the `file`/`out` issue number) and run
+   `node whatsapp-cards/shoot.mjs`. It writes both formats:
+   `issue-NNN-wa-N.png` (1080×1080, WhatsApp) and `issue-NNN-ig-N.png`
+   (1080×1350, Instagram 4:5). One HTML renders both via a `fmt-square` /
+   `fmt-portrait` body class — don't fork the template per size.
+3. Eyeball each PNG (fonts loaded, no clipped text) before sending.
+
+**Card design rules (same guardrails as the email):**
+- Cream `#FFFBF0` bg, four-colour gradient stripe on top, Archivo Black logo
+  with the orange dot, `#C24A20` for orange text, `#1a1a1a` dark footer.
+- **No link is tappable on an image.** Cards print `thefriendly.co.za` as a
+  visual CTA only; the real link goes in the WhatsApp caption / Instagram
+  link-in-bio. Card footers say where to tap ("Full details + links",
+  "Book via the link").
+- Note on Node: Playwright lives at `/opt/node22/lib/node_modules` — `shoot.mjs`
+  imports it by absolute path (ESM ignores `NODE_PATH`), and Chromium is at
+  `/opt/pw-browsers/chromium`.
+
+**Captions to ship with them:**
+- *WhatsApp* (paste with the album — the domain auto-links): lead line, 3–5
+  emoji event bullets weirdest-first, then `Full issue + links → thefriendly.co.za`.
+- *Instagram* (link isn't tappable — set link-in-bio to `thefriendly.co.za`):
+  same bullets + a hashtag block (`#GqeberhaEvents #PortElizabeth #ThingsToDoPE`
+  …). End on the free-every-Thursday line.
+
+Rendered PNGs are disposable (regenerate any time); commit the `-cards.html`
+template + `shoot.mjs` so next week starts from the last known-good source.
+
 ## Editorial rules (short version)
 
 - Voice: warm, local, first-person-plural. Opens "Hey PE 👋", pivots "Let's get into
