@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Friendly — WhatsApp Cards · Issue #019</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: #33302b;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex; flex-direction: column; align-items: center; gap: 30px;
+    padding: 40px 20px;
+  }
+
+  /* WhatsApp gallery — square 1080×1080 tiles cleanly in-chat */
+  .card {
+    position: relative; width: 1080px; height: 1080px;
+    background: #FFFBF0; overflow: hidden;
+    display: flex; flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+
+  .stripe {
+    height: 14px; flex-shrink: 0;
+    background: linear-gradient(90deg, #FF6B35 25%, #FFD23F 25%, #FFD23F 50%, #2EC4B6 50%, #2EC4B6 75%, #EE4266 75%);
+  }
+
+  .pad { flex: 1; display: flex; flex-direction: column; padding: 70px 80px; }
+
+  /* ── shared bits ── */
+  .brandline {
+    display: flex; align-items: baseline; gap: 14px;
+  }
+  .brandline .mark {
+    font-family: 'Archivo Black', sans-serif; font-size: 34px; letter-spacing: -1.5px;
+    text-transform: uppercase; color: #1a1a1a;
+  }
+  .brandline .dot {
+    display: inline-block; width: 11px; height: 11px; background: #FF6B35;
+    border-radius: 50%; margin-left: 1px; vertical-align: baseline;
+  }
+  .brandline .issue {
+    margin-left: auto; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;
+    font-size: 20px; letter-spacing: 3px; text-transform: uppercase; color: #8D8B84;
+  }
+
+  .kicker {
+    font-family: 'Archivo Black', sans-serif; font-size: 22px; letter-spacing: 4px;
+    text-transform: uppercase; color: #C24A20;
+  }
+
+  .footer {
+    flex-shrink: 0; background: #1a1a1a; color: #FFFBF0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 30px 80px; font-family: 'Outfit', sans-serif;
+  }
+  .footer .url { font-weight: 700; font-size: 30px; letter-spacing: 0.5px; }
+  .footer .url span { color: #FF9B70; }
+  .footer .free { font-weight: 400; font-size: 24px; color: #CFCBC1; letter-spacing: 1px; }
+
+  /* ── CARD 1 · cover ── */
+  #card-1 .pad { justify-content: center; }
+  #card-1 .eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 300; font-size: 26px;
+    letter-spacing: 20px; text-transform: uppercase; color: #CFCBC1; padding-left: 20px;
+  }
+  #card-1 .logo {
+    font-family: 'Archivo Black', sans-serif; font-size: 128px; line-height: 0.9;
+    letter-spacing: -5px; text-transform: uppercase; color: #1a1a1a; margin-top: 4px;
+  }
+  #card-1 .logo .dot {
+    display: inline-block; width: 26px; height: 26px; background: #FF6B35;
+    border-radius: 50%; margin-left: 8px; vertical-align: baseline;
+  }
+  #card-1 .dater {
+    margin-top: 26px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;
+    font-size: 24px; letter-spacing: 5px; text-transform: uppercase; color: #8D8B84;
+  }
+  #card-1 .hook {
+    font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 66px;
+    line-height: 1.1; color: #1a1a1a; margin-top: 40px;
+  }
+  #card-1 .hook em { font-style: italic; color: #C24A20; }
+  #card-1 .teasers { margin-top: 44px; display: flex; flex-direction: column; gap: 22px; }
+  #card-1 .teasers .t {
+    font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 32px; color: #3d3a35;
+    display: flex; align-items: center; gap: 20px;
+  }
+  #card-1 .teasers .t b { font-weight: 700; color: #1a1a1a; }
+  #card-1 .emoji { font-size: 38px; width: 46px; text-align: center; flex-shrink: 0; }
+
+  /* ── generic event card (2 & 4) ── */
+  .evt .pad { justify-content: flex-start; }
+  .evt .top { display: flex; align-items: baseline; }
+  .evt .bigmoji { font-size: 150px; line-height: 1; margin: 30px 0 10px; }
+  .evt .ename {
+    font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 62px; line-height: 1.08;
+    color: #1a1a1a; letter-spacing: -1px;
+  }
+  .evt .meta {
+    margin-top: 20px; font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 28px;
+    color: #6B6B6B; line-height: 1.4;
+  }
+  .evt .vibe {
+    margin-top: 30px; font-family: 'Fraunces', Georgia, serif; font-style: italic;
+    font-weight: 400; font-size: 38px; line-height: 1.4; color: #C24A20;
+  }
+
+  /* ── CARD 3 · line-up ── */
+  #card-3 .pad { justify-content: flex-start; }
+  #card-3 .h {
+    font-family: 'Archivo Black', sans-serif; font-size: 56px; letter-spacing: -1px;
+    text-transform: uppercase; color: #1a1a1a; margin-top: 8px; line-height: 1;
+  }
+  #card-3 .list { margin-top: 46px; display: flex; flex-direction: column; }
+  #card-3 .row {
+    display: flex; align-items: flex-start; gap: 22px; padding: 26px 0;
+    border-bottom: 2px solid #ece7dd;
+  }
+  #card-3 .row:last-child { border-bottom: 0; }
+  #card-3 .row .em { font-size: 44px; width: 56px; text-align: center; flex-shrink: 0; }
+  #card-3 .row .txt { display: flex; flex-direction: column; gap: 4px; }
+  #card-3 .row .nm {
+    font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 34px; color: #1a1a1a;
+    line-height: 1.15;
+  }
+  #card-3 .row .dt {
+    font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 25px; color: #6B6B6B;
+  }
+  #card-3 .row .day {
+    margin-left: auto; flex-shrink: 0; align-self: center;
+    font-family: 'Archivo Black', sans-serif; font-size: 18px; letter-spacing: 1px;
+    text-transform: uppercase; color: #FFFBF0; background: #1a1a1a; padding: 7px 16px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ═══ CARD 1 · COVER ═══ -->
+  <div class="card" id="card-1">
+    <div class="stripe"></div>
+    <div class="pad">
+      <p class="eyebrow">THE</p>
+      <div class="logo">FRIENDLY<span class="dot"></span></div>
+      <p class="dater">Issue #019 · 1–3 August</p>
+      <h1 class="hook">Your PE weekend, <em>sorted.</em></h1>
+      <div class="teasers">
+        <p class="t"><span class="emoji">🛩️</span><span>A market <b>inside</b> the Air Force Museum</span></p>
+        <p class="t"><span class="emoji">🍩</span><span>Crave's <b>gourmet donuts</b> in Walmer</span></p>
+        <p class="t"><span class="emoji">🏁</span><span>Circuit racing at <b>Scribante</b></span></p>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="url">thefriendly<span>.</span>co.za</span>
+      <span class="free">Free · every Thursday</span>
+    </div>
+  </div>
+
+  <!-- ═══ CARD 2 · EDITOR'S PICK ═══ -->
+  <div class="card evt" id="card-2">
+    <div class="stripe"></div>
+    <div class="pad">
+      <div class="brandline">
+        <span class="mark">FRIENDLY<span class="dot"></span></span>
+        <span class="issue">#019</span>
+      </div>
+      <p class="kicker" style="margin-top:48px;">★ Editor's Pick</p>
+      <div class="bigmoji">🛩️</div>
+      <h2 class="ename">SAAF Museum<br>Market Day</h2>
+      <p class="meta">Sat 1 Aug · 11AM · SAAF Museum, Forest Hill · Free entry</p>
+      <p class="vibe">Food stalls, shopping and lucky draws — with vintage aircraft as your backdrop. Where else do you browse for banana bread under a fighter jet?</p>
+    </div>
+    <div class="footer">
+      <span class="url">thefriendly<span>.</span>co.za</span>
+      <span class="free">Tap the caption for the link</span>
+    </div>
+  </div>
+
+  <!-- ═══ CARD 3 · THE LINE-UP ═══ -->
+  <div class="card" id="card-3">
+    <div class="stripe"></div>
+    <div class="pad">
+      <div class="brandline">
+        <span class="mark">FRIENDLY<span class="dot"></span></span>
+        <span class="issue">#019</span>
+      </div>
+      <p class="kicker" style="margin-top:44px;">What's On</p>
+      <h2 class="h">This Weekend</h2>
+      <div class="list">
+        <div class="row">
+          <span class="em">🏁</span>
+          <span class="txt"><span class="nm">AMSC Circuit Racing — Round 5</span><span class="dt">Aldo Scribante Racetrack</span></span>
+          <span class="day">Fri–Sat</span>
+        </div>
+        <div class="row">
+          <span class="em">🎨</span>
+          <span class="txt"><span class="nm">Watercolour Basics Workshop</span><span class="dt">Chat Noir, Richmond Hill</span></span>
+          <span class="day">Sat</span>
+        </div>
+        <div class="row">
+          <span class="em">🌻</span>
+          <span class="txt"><span class="nm">Windsong Bohemian Market</span><span class="dt">Holmeleigh Farmyard, Theescombe</span></span>
+          <span class="day">Sat</span>
+        </div>
+        <div class="row">
+          <span class="em">🏃‍♀️</span>
+          <span class="txt"><span class="nm">NMB Choose to Challenge</span><span class="dt">Baywest Mall · Women's Month run</span></span>
+          <span class="day">Sat</span>
+        </div>
+        <div class="row">
+          <span class="em">🕰️</span>
+          <span class="txt"><span class="nm">The Antique Collective</span><span class="dt">Walmer Park Shopping Centre</span></span>
+          <span class="day">Sun</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="url">thefriendly<span>.</span>co.za</span>
+      <span class="free">Full details + links</span>
+    </div>
+  </div>
+
+  <!-- ═══ CARD 4 · WHERE TO EAT ═══ -->
+  <div class="card evt" id="card-4">
+    <div class="stripe"></div>
+    <div class="pad">
+      <div class="brandline">
+        <span class="mark">FRIENDLY<span class="dot"></span></span>
+        <span class="issue">#019</span>
+      </div>
+      <p class="kicker" style="margin-top:48px;">Where To Eat</p>
+      <div class="bigmoji">🍩</div>
+      <h2 class="ename">Crave Burger<br>Gourmet Donuts</h2>
+      <p class="meta">152 Main Road, Walmer · 96% recommend (226 reviews)</p>
+      <p class="vibe">A Walmer burger joint that moonlights as PE's best donut counter on weekends. Death by Choc, Campfire S'mores, Biscoff Boston… Diet starts Monday.</p>
+    </div>
+    <div class="footer">
+      <span class="url">thefriendly<span>.</span>co.za</span>
+      <span class="free">Tap the caption for the link</span>
+    </div>
+  </div>
+
+</body>
+</html>
