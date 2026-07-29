@@ -65,6 +65,25 @@ def main():
     if len(src.encode()) > SIZE_BUDGET:
         warn(f"file is {len(src.encode())//1024}KB — over the {SIZE_BUDGET//1024}KB budget, Gmail may clip")
 
+    # Downstream files must be ready BEFORE we write anything. Steps 3-4 modify
+    # files on disk, so a failure discovered at step 5 leaves the issue converted
+    # and latest/ moved but the homepage and archive untouched — a half-publish
+    # that can only be undone with `git checkout`. Check the contracts up front.
+    index_path = ROOT / "index.html"
+    archive_path = ROOT / "archive" / "index.html"
+    latest_path = ROOT / "latest" / "index.html"
+    for p in (index_path, archive_path, latest_path):
+        if not p.exists():
+            fail(f"{p.relative_to(ROOT)} not found")
+    if not re.search(r"<!-- RECENT-ISSUES -->\n(.*?)<!-- /RECENT-ISSUES -->",
+                     index_path.read_text(encoding="utf-8"), re.DOTALL):
+        fail("index.html is missing the <!-- RECENT-ISSUES --> / <!-- /RECENT-ISSUES --> "
+             "markers — publish.py needs them to rotate the homepage teasers")
+    if "<!-- ARCHIVE-LIST -->" not in archive_path.read_text(encoding="utf-8"):
+        fail("archive/index.html is missing the <!-- ARCHIVE-LIST --> marker")
+    if not re.search(r"issue-\d{3}\.html", latest_path.read_text(encoding="utf-8")):
+        fail("latest/index.html has no issue-NNN.html link to point at the new issue")
+
     m = re.search(r"Issue #(\d+)\s*&middot;\s*(\w+)\s+(\d+)\s+(\w+)\s+(\d{4})", src)
     if not m:
         fail("couldn't find the 'Issue #NNN · Weekday D Month YYYY' header line")
@@ -88,8 +107,14 @@ def main():
     # ---- 3. Web meta tags -----------------------------------------------
     pre = re.search(
         r'aria-hidden="true">\s*(.*?)&nbsp;&zwnj;', out, flags=re.DOTALL)
-    teaser = htmllib.unescape(re.sub(r"\s+", " ", pre.group(1)).strip()) if pre else \
-        "Events, food, and things to do in Port Elizabeth this weekend."
+    if pre:
+        teaser = htmllib.unescape(re.sub(r"\s+", " ", pre.group(1)).strip())
+    else:
+        # Silent fallback here is how #016-#018 shipped generic teasers: issues
+        # cloned from a previous issue lost aria-hidden="true" on the preheader.
+        warn("couldn't read the preheader — is aria-hidden=\"true\" missing from it? "
+             "Falling back to a generic teaser on the homepage and archive")
+        teaser = "Events, food, and things to do in Port Elizabeth this weekend."
     description = htmllib.escape(teaser, quote=True)
     url = f"{SITE}/issue-{issue_no}.html"
     title = f"The Friendly — Issue #{issue_no} · {day} {month} {year}"
@@ -114,9 +139,8 @@ def main():
     print(f"issue-{issue_no}.html converted to web version")
 
     # ---- 4. latest/ redirect --------------------------------------------
-    latest = ROOT / "latest" / "index.html"
-    txt, n = re.subn(r"issue-\d{3}\.html", f"issue-{issue_no}.html", latest.read_text(encoding="utf-8"))
-    latest.write_text(txt, encoding="utf-8")
+    txt, n = re.subn(r"issue-\d{3}\.html", f"issue-{issue_no}.html", latest_path.read_text(encoding="utf-8"))
+    latest_path.write_text(txt, encoding="utf-8")
     print(f"latest/index.html now points at issue-{issue_no}.html ({n} URLs)")
 
     # ---- 5. Homepage recent list + archive page --------------------------
@@ -129,8 +153,7 @@ def main():
                 f'&middot; {short_date}</span><span class="{kind}-issue-teaser">'
                 f'{teaser_html}</span></a></li>')
 
-    index = ROOT / "index.html"
-    idx = index.read_text(encoding="utf-8")
+    idx = index_path.read_text(encoding="utf-8")
     block = re.search(r"<!-- RECENT-ISSUES -->\n(.*?)<!-- /RECENT-ISSUES -->", idx, re.DOTALL)
     if not block:
         fail("couldn't find the RECENT-ISSUES markers in index.html")
@@ -142,11 +165,10 @@ def main():
         idx = idx.replace(block.group(0),
                           "<!-- RECENT-ISSUES -->\n" + "\n".join(items)
                           + "\n<!-- /RECENT-ISSUES -->")
-        index.write_text(idx, encoding="utf-8")
+        index_path.write_text(idx, encoding="utf-8")
         print(f"index.html: #{issue_no} added to Recent Issues (keeping {len(items)})")
 
-    archive = ROOT / "archive" / "index.html"
-    arc = archive.read_text(encoding="utf-8")
+    arc = archive_path.read_text(encoding="utf-8")
     if f"/issue-{issue_no}.html" in arc:
         print("archive/index.html already lists this issue — skipping")
     else:
@@ -154,7 +176,7 @@ def main():
         if marker not in arc:
             fail("couldn't find the ARCHIVE-LIST marker in archive/index.html")
         arc = arc.replace(marker, marker + "\n" + issue_li("archive"), 1)
-        archive.write_text(arc, encoding="utf-8")
+        archive_path.write_text(arc, encoding="utf-8")
         print(f"archive/index.html: #{issue_no} added to All Issues")
 
     print("\nDone. Review with `git diff`, then commit and push.")
