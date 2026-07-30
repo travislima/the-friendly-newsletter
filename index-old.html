@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Friendly — Your Weekly Guide to PE</title>
+  <meta name="description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thefriendly.co.za/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Friendly — Your Weekly Guide to PE">
+  <meta property="og:description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
+  <meta property="og:url" content="https://thefriendly.co.za/">
+  <meta property="og:site_name" content="The Friendly">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:image" content="https://thefriendly.co.za/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Friendly — Your Weekly Guide to PE">
+  <meta name="twitter:description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
+  <meta name="twitter:image" content="https://thefriendly.co.za/og-image.png">
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#FFFBF0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Friendly",
+    "url": "https://thefriendly.co.za/",
+    "description": "A free weekly newsletter covering events, food, and good times in Port Elizabeth, South Africa.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Friendly",
+      "url": "https://thefriendly.co.za/",
+      "sameAs": [
+        "https://instagram.com/thefriendlype"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SubscribeAction",
+      "target": "https://thefriendly.co.za/",
+      "object": {
+        "@type": "Product",
+        "name": "The Friendly Weekly Newsletter"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    :focus-visible {
+      outline: 2px solid #FF6B35;
+      outline-offset: 2px;
+    }
+
+    body {
+      background: #FFFBF0;
+      color: #1a1a1a;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gradient-bar {
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6, #EE4266);
+    }
+
+    main {
+      max-width: 560px;
+      width: 100%;
+      padding: 60px 24px 48px;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      margin-bottom: 16px;
+      font-weight: normal;
+    }
+
+    .logo-the {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: rgba(26, 26, 26, 0.3);
+      margin-bottom: 4px;
+    }
+
+    .logo-friendly {
+      display: inline;
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      letter-spacing: 2px;
+    }
+
+    .logo-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #FF6B35;
+      border-radius: 50%;
+      margin-left: 4px;
+      vertical-align: super;
+    }
+
+    .tagline {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: rgba(26, 26, 26, 0.5);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .pitch {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      max-width: 480px;
+    }
+
+    .pitch-sub {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgba(26, 26, 26, 0.6);
+      margin-bottom: 40px;
+      max-width: 440px;
+    }
+
+    .ml-embedded {
+      width: 100%;
+      max-width: 440px;
+      margin-bottom: 16px;
+    }
+
+    .privacy-note {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: rgba(26, 26, 26, 0.4);
+    }
+
+    .sample-link-wrap {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(26, 26, 26, 0.5);
+      margin-top: 12px;
+    }
+
+    .sample-link {
+      font-weight: 500;
+      color: #FF6B35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .sample-link:hover {
+      border-color: #FF6B35;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: transparent;
+      transition: transform 0.2s;
+    }
+
+    .social-link:hover {
+      transform: scale(1.12);
+    }
+
+    .social-link svg {
+      width: 22px;
+      height: 22px;
+      fill: rgba(26, 26, 26, 0.3);
+      transition: fill 0.2s;
+    }
+
+    .social-link:hover svg {
+      fill: #FF6B35;
+    }
+
+    .tip-section {
+      margin-top: 32px;
+      padding: 0;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .tip-divider {
+      height: 1px;
+      background: rgba(26, 26, 26, 0.08);
+      margin-bottom: 32px;
+    }
+
+    .tip-section .tip-heading {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 20px;
+      font-weight: normal;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .tip-section .tip-text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(26, 26, 26, 0.5);
+      margin-bottom: 16px;
+    }
+
+    .tip-section .tip-email {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FF6B35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .tip-section .tip-email:hover {
+      border-color: #FF6B35;
+    }
+
+    .past-issues {
+      margin-top: 32px;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .recent-issues {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    .recent-issue {
+      margin-bottom: 16px;
+    }
+
+    .recent-issue-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .recent-issue-num {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      color: #C24A20;
+      margin-bottom: 2px;
+    }
+
+    .recent-issue-teaser {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #6B6B6B;
+      transition: color 0.2s;
+    }
+
+    .recent-issue-link:hover .recent-issue-teaser {
+      color: #1a1a1a;
+    }
+
+    .all-issues-wrap {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .all-issues-link {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #C24A20;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(194, 74, 32, 0.3);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .all-issues-link:hover {
+      border-color: #C24A20;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 24px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: rgba(26, 26, 26, 0.35);
+    }
+
+    @media (max-width: 500px) {
+      main {
+        padding: 40px 20px 32px;
+      }
+
+      .logo-friendly {
+        font-size: 36px;
+      }
+
+      .tagline {
+        letter-spacing: 1.5px;
+        font-size: 14px;
+      }
+
+      .pitch {
+        font-size: 18px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-bar" aria-hidden="true"></div>
+
+  <main>
+    <header>
+      <h1 class="logo">
+        <span class="logo-the">The</span>
+        <span class="logo-friendly">Friendly</span><span class="logo-dot" aria-hidden="true"></span>
+      </h1>
+
+      <p class="tagline">Your weekly guide to PE</p>
+    </header>
+
+    <p class="pitch">One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend.</p>
+
+    <p class="pitch-sub">Events, food, good times — no politics, no crime, no doom. Just the stuff that makes this city the best-kept secret on the coast.</p>
+
+    <div class="ml-embedded" data-form="jH0n6N"></div>
+
+    <p class="privacy-note">Join 400+ PE locals. Free. Every Thursday at 8am. Unsubscribe anytime.</p>
+
+    <p class="sample-link-wrap">Not sure yet? <a href="/latest" class="sample-link">Read the latest issue &rarr;</a></p>
+
+    <section class="tip-section" aria-label="Submit a tip">
+      <div class="tip-divider" aria-hidden="true"></div>
+      <h2 class="tip-heading">Got a tip?</h2>
+      <p class="tip-text">Know about an event, hidden gem, or new spot? Want to advertise to PE's most plugged-in crowd? We're all ears.</p>
+      <a href="mailto:hello@thefriendly.co.za" class="tip-email">hello@thefriendly.co.za</a>
+    </section>
+
+    <section class="past-issues" aria-label="Recent issues">
+      <div class="tip-divider" aria-hidden="true"></div>
+      <h2 class="tip-heading">Past Issues</h2>
+      <ul class="recent-issues">
+<!-- RECENT-ISSUES -->
+        <li class="recent-issue"><a href="/issue-019.html" class="recent-issue-link"><span class="recent-issue-num">#019 &middot; 30 Jul</span><span class="recent-issue-teaser">Gourmet donuts, a beginner watercolour class, circuit racing at Scribante, and three good markets. August starts strong.</span></a></li>
+        <li class="recent-issue"><a href="/issue-018.html" class="recent-issue-link"><span class="recent-issue-num">#018 &middot; 23 Jul</span><span class="recent-issue-teaser">Mardi Gras lands in Walmer, Spoegwolf plays The Music Kitchen, and Deon Meyer takes the stage at NMU.</span></a></li>
+        <li class="recent-issue"><a href="/issue-017.html" class="recent-issue-link"><span class="recent-issue-num">#017 &middot; 16 Jul</span><span class="recent-issue-teaser">A mohair workshop with actual angora goats, a Mandela Day drive, and two ABBA tributes in one weekend.</span></a></li>
+<!-- /RECENT-ISSUES -->
+      </ul>
+      <p class="all-issues-wrap"><a href="/archive" class="all-issues-link">All issues &rarr;</a></p>
+    </section>
+
+    <div class="social-links">
+      <a href="https://instagram.com/thefriendlype" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 011.47.958c.453.453.78.898.958 1.47.163.46.35 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 01-.958 1.47 4.088 4.088 0 01-1.47.958c-.46.163-1.26.35-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 01-1.47-.958 4.088 4.088 0 01-.958-1.47c-.163-.46-.35-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 01.958-1.47 4.088 4.088 0 011.47-.958c.46-.163 1.26-.35 2.43-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.775.13 4.902.333 4.14.63a6.21 6.21 0 00-2.228 1.452A6.21 6.21 0 00.46 4.31C.166 5.072-.038 5.945.014 7.223.07 8.503.014 8.911 0 12.17c0 3.259.014 3.668.072 4.948.058 1.278.26 2.15.558 2.913a6.21 6.21 0 001.452 2.228 6.21 6.21 0 002.228 1.452c.762.297 1.636.5 2.914.558C8.503 23.986 8.911 24 12 24s3.497-.014 4.777-.072c1.278-.058 2.152-.26 2.914-.558a6.21 6.21 0 002.228-1.452 6.21 6.21 0 001.452-2.228c.297-.762.5-1.636.558-2.914.058-1.28.072-1.688.072-4.948s-.014-3.668-.072-4.948c-.058-1.278-.26-2.152-.558-2.914a6.21 6.21 0 00-1.452-2.228A6.21 6.21 0 0019.69.458C18.928.162 18.055-.04 16.777.014 15.497.07 15.089 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://chat.whatsapp.com/IHOCXtWELjy5cNRE1hayO8?mode=gi_t" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join our WhatsApp group">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 The Friendly. Made in PE. · <a href="/privacy" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(26,26,26,0.15);">Privacy</a>
+  </footer>
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2177050');
+  </script>
+  <!-- End MailerLite Universal -->
+</body>
+</html>
