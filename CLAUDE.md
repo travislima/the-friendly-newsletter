@@ -124,6 +124,34 @@ template + `shoot.mjs` so next week starts from the last known-good source.
   sentence, and vary the closing tail (not "Your PE weekend sorted." every week).
 - Phone bookings: link as `https://wa.me/27XXXXXXXXX` (drop the leading 0) when the
   organiser uses WhatsApp, else `tel:`.
+- **No em dashes.** Not in the newsletter, not on the site, not in captions or
+  card copy. Use a colon for a reveal, a comma for an aside, a full stop to
+  split the sentence, and `&middot;` as a separator in titles and meta lines.
+  En dashes stay for ranges (`9AM&ndash;12PM`, `2&ndash;4 sentences`).
+  Published `issue-NNN.html` files are an archive and keep whatever they shipped
+  with, so the archive teasers quoting them may still contain em dashes.
+
+## The welcome email
+
+`welcome-email.html` is a MailerLite automation, not something `publish.py`
+touches. Editing the file changes nothing until it is pasted into MailerLite.
+
+It has **exactly one ask: reply with a favourite place to eat in PE.** Do not add
+a second competing call to action; a single CTA is worth several times the clicks
+of a page full of them. The reasoning is specific to this list:
+
+- A reply is the strongest signal Gmail accepts that a sender is wanted, and
+  ~71% of readers are on Gmail. It lifts inbox placement for *every* later issue,
+  which nothing else in the email does.
+- The answers feed the weekly Where to Eat slot, the highest repeat-click
+  category we run.
+
+Everything else is deliberately quiet: the latest-issue link and the WhatsApp
+group sit below a divider in small grey text. WhatsApp is covered properly on the
+thank-you page instead, and the evidence for demoting it here is #019, where the
+group link took 1 click from 189 opens. "Add us to your contacts" and "forward to
+a friend" were cut: near-zero compliance, and nobody forwards a newsletter they
+have not read yet.
 
 ## Event selection — what actually gets clicked (data-backed)
 
