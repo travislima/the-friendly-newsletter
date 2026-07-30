@@ -184,8 +184,26 @@ in recently will always outperform benchmarks drawn from far larger lists. Treat
 these as a floor to hold, not a trophy — and expect the percentages to drift down
 as the list grows, which is normal and not a quality problem.
 
-**Consistency beats everything.** #017 and #018 dipped to ~41% because weeks were
-skipped. #019 sent on schedule and recovered immediately. Don't skip.
+**Per-issue results (MailerLite, actual):**
+
+| Issue | Sent | Recipients | Open | Click | CTOR |
+|---|---|---|---|---|---|
+| #016 | 9 Jul  | 434 | **54.2%** | 5.99% | 11.1% |
+| #017 | 16 Jul | 439 | 43.3% | 4.33% | 10.0% |
+| #018 | 23 Jul | 438 | 42.9% | 4.11% | 9.6% |
+| #019 | 30 Jul | 444 | 45.5% | **6.53%** | **14.4%** |
+
+**What this actually says.** #019 reversed a three-issue slide in every click
+metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%,
+the highest on record. That is a content result — the event mix, not the layout.
+Opens recovered to 45.5% but still trail #016's 54.2%.
+
+**An earlier claim here was wrong: skipping a week does not explain the dips.**
+#016 came *after* a skipped week and posted the best open rate of the four; the
+decline then happened across #017 and #018, which were sent on consecutive
+weeks. Don't use "we skipped" to explain a soft issue — look at the event mix
+first. Consistency is still worth keeping for habit and list health, but the
+open-rate evidence for it isn't there.
 
 ## Pre-send checklist
 
