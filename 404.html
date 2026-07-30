@@ -1,33 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Friendly — Your Weekly Guide to PE</title>
-  <meta name="description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
+  <title>Page not found — The Friendly</title>
+  <meta name="description" content="That page isn't here. Try the latest issue of The Friendly, or the archive.">
+  <meta name="robots" content="noindex">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://thefriendly.co.za/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="The Friendly — Your Weekly Guide to PE">
-  <meta property="og:description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
-  <meta property="og:url" content="https://thefriendly.co.za/">
-  <meta property="og:site_name" content="The Friendly">
-  <meta property="og:locale" content="en_ZA">
-  <meta property="og:image" content="https://thefriendly.co.za/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Friendly — Your Weekly Guide to PE">
-  <meta name="twitter:description" content="One email. Every Thursday. Everything worth doing in Port Elizabeth this weekend — events, food, good times.">
-  <meta name="twitter:image" content="https://thefriendly.co.za/og-image.png">
-
-  <!-- Favicon & Theme -->
+<!-- Favicon & Theme -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -38,34 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "The Friendly",
-    "url": "https://thefriendly.co.za/",
-    "description": "A free weekly newsletter covering events, food, and good times in Port Elizabeth, South Africa.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "The Friendly",
-      "url": "https://thefriendly.co.za/",
-      "sameAs": [
-        "https://instagram.com/thefriendlype"
-      ]
-    },
-    "potentialAction": {
-      "@type": "SubscribeAction",
-      "target": "https://thefriendly.co.za/",
-      "object": {
-        "@type": "Product",
-        "name": "The Friendly Weekly Newsletter"
-      }
-    }
-  }
-  </script>
-
   <style>
+
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
@@ -330,11 +284,33 @@
       .tip-inner { padding: 26px 22px; }
       .subscribe { padding: 48px 0 44px; }
     }
+  
+
+    .oops { background: var(--ink); color: var(--cream); padding: 76px 0 80px; }
+    .oops-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+    .oops .eyebrow { color: #FF9B70; }
+    .oops h1 {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(48px, 9vw, 92px); text-transform: uppercase;
+      letter-spacing: -3px; line-height: 0.95; margin-top: 14px;
+    }
+    .oops h1 .dot { color: var(--orange); }
+    .oops .lede {
+      font-family: 'Fraunces', Georgia, serif; font-style: italic;
+      font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5;
+      color: #CFCBC1; margin-top: 20px;
+    }
+    .oops-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 34px; }
+    .oops-tail { padding: 56px 0 72px; text-align: center; }
+    .oops-tail p { font-size: 16px; line-height: 1.6; color: #4a4740; }
+    .oops-tail a { color: var(--orange-text); font-weight: 500; }
+    main { display: block; }
+
   </style>
 </head>
 <body>
 
-  <a href="#subscribe" class="sr-only skip-link">Skip to subscribe</a>
+  <a href="#main" class="sr-only skip-link">Skip to content</a>
 
   <!-- ══ NAV ══ -->
   <div class="nav-wrap">
@@ -347,7 +323,7 @@
         <div class="nav-links">
           <a href="/latest" class="nav-link">This weekend</a>
           <a href="/archive" class="nav-link">Archive</a>
-          <a href="#subscribe" class="btn btn-dark">Subscribe</a>
+          <a href="/#subscribe" class="btn btn-dark">Subscribe</a>
         </div>
       </nav>
     </div>
@@ -355,114 +331,29 @@
 
   <div class="gradient-bar" aria-hidden="true"></div>
 
-  <!-- ══ HERO ══ -->
-  <section class="hero">
-    <div class="shell">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Gqeberha / Port Elizabeth</p>
-          <h1>Your guide to everything happening in PE<span class="dot">.</span></h1>
-          <p class="hero-sub">One short email, every Thursday morning. Markets, gigs, classes, food — the good stuff, rounded up so you don't have to go looking.</p>
-          <div class="hero-actions">
-            <a href="#subscribe" class="btn btn-orange">Subscribe free</a>
-            <a href="/latest" class="btn btn-ghost">Read this week &rarr;</a>
+  <main id="main">
+    <section class="oops">
+      <div class="shell">
+        <div class="oops-inner">
+          <p class="eyebrow">Page not found</p>
+          <h1>Nothing on<br>this weekend<span class="dot">.</span></h1>
+          <p class="lede">Well &mdash; not on this page, anyway. Plenty on everywhere else in PE.</p>
+          <div class="oops-actions">
+            <a href="/latest" class="btn btn-orange">Read this week&rsquo;s issue</a>
+            <a href="/" class="btn btn-ghost">Go to the homepage</a>
           </div>
-          <p class="hero-note">Free forever. No politics, no crime, no doom.</p>
-        </div>
-
-        <div class="peek">
-          <div class="gradient-bar" aria-hidden="true"></div>
-          <div class="peek-body">
-            <p class="peek-label">What's inside every issue</p>
-            <div class="peek-item">
-              <span class="peek-emoji" aria-hidden="true">&#x2605;</span>
-              <span class="peek-text">
-                <span class="peek-name">The Editor's Pick</span>
-                <span class="peek-meta">The one thing we'd clear the weekend for</span>
-              </span>
-            </div>
-            <div class="peek-item">
-              <span class="peek-emoji" aria-hidden="true">&#x1F4C5;</span>
-              <span class="peek-text">
-                <span class="peek-name">What's On</span>
-                <span class="peek-meta">Friday to Sunday, with times, venues and prices</span>
-              </span>
-            </div>
-            <div class="peek-item">
-              <span class="peek-emoji" aria-hidden="true">&#x1F37D;&#xFE0F;</span>
-              <span class="peek-text">
-                <span class="peek-name">Where to Eat</span>
-                <span class="peek-meta">A new spot or an old favourite worth the drive</span>
-              </span>
-            </div>
-            <div class="peek-item">
-              <span class="peek-emoji" aria-hidden="true">&#x26A1;</span>
-              <span class="peek-text">
-                <span class="peek-name">Also Happening</span>
-                <span class="peek-meta">The quick list — markets, gigs and one-offs</span>
-              </span>
-            </div>
-          </div>
-          <p class="peek-foot">Lands Thursdays &middot; 8am</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══ SUBSCRIBE ══ -->
-  <section class="subscribe" id="subscribe" aria-labelledby="subscribe-title">
-    <div class="shell">
-      <div class="subscribe-inner">
-        <p class="eyebrow">Free every Thursday</p>
-        <h2 id="subscribe-title">Get the weekend in your inbox</h2>
-        <p class="lede">Everything worth doing in PE this weekend — events, food, good times. Just the stuff that makes this city the best-kept secret on the coast.</p>
-
-        <div class="ml-embedded" data-form="jH0n6N"></div>
-
-        <p class="privacy-note">Join 400+ PE locals. Free. Every Thursday at 8am. Unsubscribe anytime.</p>
-
-        <div class="trust-row">
-          <span>No spam, ever</span>
-          <span>One email a week</span>
-          <span>Unsubscribe in one click</span>
-        </div>
+    <section class="oops-tail">
+      <div class="shell">
+        <p>Looking for an older issue? It&rsquo;s in <a href="/archive">the archive</a>.<br>
+        Think something&rsquo;s broken? Tell us at <a href="mailto:hello@thefriendly.co.za">hello@thefriendly.co.za</a>.</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ══ RECENT ISSUES ══ -->
-  <section class="issues" aria-labelledby="issues-title">
-    <div class="shell">
-      <div class="issues-head">
-        <div>
-          <p class="eyebrow">Have a look first</p>
-          <h2 class="section-title" id="issues-title">Recent issues</h2>
-        </div>
-        <a href="/archive" class="all-issues-link">All issues &rarr;</a>
-      </div>
-
-      <ul class="recent-issues">
-<!-- RECENT-ISSUES -->
-        <li class="recent-issue"><a href="/issue-018.html" class="recent-issue-link"><span class="recent-issue-num">#018 &middot; 23 Jul</span><span class="recent-issue-teaser">Mardi Gras lands in Walmer, Spoegwolf plays The Music Kitchen, and Deon Meyer takes the stage at NMU.</span></a></li>
-        <li class="recent-issue"><a href="/issue-017.html" class="recent-issue-link"><span class="recent-issue-num">#017 &middot; 16 Jul</span><span class="recent-issue-teaser">A mohair workshop with actual angora goats, a Mandela Day drive, and two ABBA tributes in one weekend.</span></a></li>
-        <li class="recent-issue"><a href="/issue-016.html" class="recent-issue-link"><span class="recent-issue-num">#016 &middot; 9 Jul</span><span class="recent-issue-teaser">Grease Party at a speakeasy, rally racing at Scribante, and a farewell show at The Music Kitchen.</span></a></li>
-<!-- /RECENT-ISSUES -->
-      </ul>
-    </div>
-  </section>
-
-  <!-- ══ TIP BAND ══ -->
-  <section class="tip-band" aria-labelledby="tip-title">
-    <div class="shell">
-      <div class="tip-inner">
-        <div class="tip-text-col">
-          <h2 id="tip-title">Got a tip? Running an event?</h2>
-          <p>Know about a hidden gem, a new spot, or something worth doing? Want to reach PE's most plugged-in crowd? We're all ears.</p>
-        </div>
-        <a href="mailto:hello@thefriendly.co.za" class="btn btn-dark">Tell us about it &rarr;</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ══ FOOTER ══ -->
   <footer>
@@ -497,15 +388,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- MailerLite Universal -->
-  <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2177050');
-  </script>
-  <!-- End MailerLite Universal -->
 </body>
 </html>

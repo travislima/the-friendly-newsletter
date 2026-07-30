@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>You're In! — The Friendly</title>
   <meta name="description" content="Thanks for subscribing to The Friendly — your weekly guide to PE.">
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://thefriendly.co.za/thank-you">
 
-  <!-- Favicon & Theme -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="You're In! — The Friendly">
+  <meta property="og:description" content="Thanks for subscribing to The Friendly — your weekly guide to PE.">
+  <meta property="og:url" content="https://thefriendly.co.za/thank-you">
+  <meta property="og:site_name" content="The Friendly">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:image" content="https://thefriendly.co.za/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon & Theme -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -18,233 +26,431 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #FFFBF0;
+      --ink: #1a1a1a;
+      --orange: #FF6B35;
+      --orange-text: #C24A20;
+      --yellow: #FFD23F;
+      --teal: #2EC4B6;
+      --pink: #EE4266;
+      --meta: #6B6B6B;
+      --line: #e6e1d6;
+      --shell: 1120px;
+    }
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
     }
 
     body {
-      background: #FFFBF0;
-      color: #1a1a1a;
-      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 400;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-font-smoothing: antialiased;
     }
 
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+    .skip-link:focus {
+      position: fixed; top: 10px; left: 10px; z-index: 99; width: auto; height: auto;
+      clip: auto; margin: 0; padding: 12px 20px; background: var(--ink);
+      color: var(--cream); border-radius: 4px; font-weight: 600; font-size: 14px;
+    }
+
+    .shell { max-width: var(--shell); margin: 0 auto; padding: 0 24px; width: 100%; }
+
+    /* ── shared bits ─────────────────────────────────────────── */
     .gradient-bar {
-      width: 100%;
-      height: 6px;
-      background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6, #EE4266);
+      height: 6px; width: 100%;
+      background: linear-gradient(90deg, var(--orange) 25%, var(--yellow) 25%, var(--yellow) 50%, var(--teal) 50%, var(--teal) 75%, var(--pink) 75%);
     }
 
-    main {
-      max-width: 560px;
-      width: 100%;
-      padding: 60px 24px 48px;
-      text-align: center;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    .eyebrow {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;
+      font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--orange-text);
     }
 
-    .logo {
-      margin-bottom: 16px;
-      font-weight: normal;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .section-title {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(26px, 4vw, 38px); letter-spacing: -0.5px;
+      text-transform: uppercase; line-height: 1.05; margin-top: 6px;
     }
 
-    .logo-the {
-      display: block;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      letter-spacing: 10px;
-      text-transform: uppercase;
-      color: rgba(26, 26, 26, 0.3);
-      margin-bottom: 4px;
+    .btn {
+      display: inline-block; font-family: 'Outfit', sans-serif; font-weight: 600;
+      font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+      text-decoration: none; padding: 15px 26px; border-radius: 4px;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-orange { background: var(--orange); color: var(--ink); }
+    .btn-orange:hover { background: #ff7d4d; }
+    .btn-dark { background: var(--ink); color: var(--cream); }
+    .btn-dark:hover { background: #333; }
+    .btn-ghost {
+      background: transparent; color: var(--cream);
+      box-shadow: inset 0 0 0 2px rgba(255,251,240,0.35);
+    }
+    .btn-ghost:hover { box-shadow: inset 0 0 0 2px var(--cream); }
+
+    /* ── nav ─────────────────────────────────────────────────── */
+    .nav-wrap { background: var(--cream); border-bottom: 0; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding-top: 18px; padding-bottom: 18px;
+    }
+    .brand { display: flex; flex-direction: column; text-decoration: none; }
+    .brand-the {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 300;
+      font-size: 9px; letter-spacing: 7px; text-transform: uppercase;
+      color: #A8A49A; margin-bottom: 1px;
+    }
+    .brand-name {
+      font-family: 'Archivo Black', sans-serif; font-size: 24px;
+      text-transform: uppercase; letter-spacing: -1px; color: var(--ink); line-height: 1;
+    }
+    .brand-dot {
+      display: inline-block; width: 8px; height: 8px; background: var(--orange);
+      border-radius: 50%; margin-left: 3px; vertical-align: baseline;
+    }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-link {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600;
+      font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--ink); text-decoration: none; padding: 4px 0;
+      border-bottom: 2px solid transparent; transition: border-color 0.15s;
+    }
+    .nav-link:hover { border-bottom-color: var(--orange); }
+    .nav .btn { padding: 14px 20px; font-size: 12px; }
+
+    /* ── hero ────────────────────────────────────────────────── */
+    .hero { background: var(--ink); color: var(--cream); padding: 64px 0 72px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
+    }
+    .hero .eyebrow { color: #FF9B70; }
+    .hero h1 {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(38px, 6.2vw, 68px); line-height: 0.98;
+      letter-spacing: -1.5px; text-transform: uppercase; margin: 14px 0 0;
+    }
+    .hero h1 .dot { color: var(--orange); }
+    .hero-sub {
+      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5;
+      color: #CFCBC1; margin-top: 22px; max-width: 30em;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-note {
+      margin-top: 18px; font-size: 14px; font-weight: 300; color: #A8A49A;
     }
 
-    .logo-friendly {
-      display: inline;
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 48px;
-      text-transform: uppercase;
-      color: #1a1a1a;
-      letter-spacing: 2px;
+    /* "what's inside" card */
+    .peek {
+      background: var(--cream); color: var(--ink); border-radius: 10px;
+      overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    }
+    .peek-body { padding: 22px 24px 24px; }
+    .peek-label {
+      font-family: 'Archivo Black', sans-serif; font-size: 10px; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--orange-text);
+    }
+    .peek-item { padding: 14px 0; border-bottom: 1px dashed var(--line); display: flex; gap: 12px; }
+    .peek-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .peek-emoji { font-size: 20px; line-height: 1.2; flex-shrink: 0; width: 26px; text-align: center; }
+    .peek-text { display: flex; flex-direction: column; gap: 3px; }
+    .peek-name { display: block; font-weight: 600; font-size: 15px; line-height: 1.25; }
+    .peek-meta { display: block; font-size: 13px; color: var(--meta); line-height: 1.4; }
+    .peek-foot {
+      background: #f0ece4; padding: 12px 24px; font-size: 12px;
+      font-weight: 500; letter-spacing: 0.5px; color: var(--meta);
+      text-transform: uppercase; font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
-    .logo-dot {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      background: #FF6B35;
-      border-radius: 50%;
-      margin-left: 4px;
-      vertical-align: super;
+    /* ── subscribe ───────────────────────────────────────────── */
+    .subscribe { padding: 64px 0 60px; scroll-margin-top: 20px; }
+    .subscribe-inner { max-width: 620px; margin: 0 auto; text-align: center; }
+    .subscribe h2 { font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(24px, 3.6vw, 34px); text-transform: uppercase;
+      letter-spacing: -0.5px; margin-top: 6px; line-height: 1.1; }
+    .subscribe p.lede {
+      font-size: 17px; line-height: 1.6; color: #4a4740; margin-top: 14px;
     }
-
-    .confirmation-box {
-      margin-top: 40px;
-      padding: 32px;
-      background: #1a1a1a;
-      color: #FFFBF0;
-      border-radius: 12px;
-      max-width: 440px;
-      width: 100%;
+    .ml-embedded { margin: 26px auto 14px; max-width: 440px; width: 100%; }
+    .privacy-note { font-size: 13px; font-weight: 300; color: var(--meta); }
+    .trust-row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px;
+      margin-top: 22px; font-size: 13px; color: var(--meta); font-weight: 400;
     }
+    .trust-row span::before { content: "✓"; color: var(--orange-text); font-weight: 700; margin-right: 6px; }
 
-    .confirmation-box h2 {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
+    /* ── recent issues ───────────────────────────────────────── */
+    .issues { padding: 8px 0 64px; }
+    .issues-head {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 20px; flex-wrap: wrap; margin-bottom: 26px;
     }
-
-    .confirmation-box .dot {
-      color: #FF6B35;
+    .recent-issues { list-style: none; display: grid; gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .recent-issue { display: flex; }
+    .recent-issue-link {
+      display: flex; flex-direction: column; gap: 8px; text-decoration: none;
+      background: #fff; border: 2px solid var(--ink); border-radius: 8px;
+      padding: 20px; width: 100%;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
-
-    .confirmation-box p {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 1.6;
-      color: rgba(255, 251, 240, 0.7);
+    .recent-issue-link:hover {
+      transform: translateY(-3px); box-shadow: 0 10px 0 -2px var(--orange);
     }
-
-    .mini-divider {
-      height: 3px;
-      border-radius: 2px;
-      background: linear-gradient(90deg, #FF6B35, #FFD23F, #2EC4B6);
-      margin: 20px 0;
+    .recent-issue-num {
+      font-family: 'Archivo Black', sans-serif; font-size: 11px; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--orange-text);
     }
-
-    .checklist {
-      text-align: left;
-      list-style: none;
-      margin-top: 16px;
+    .recent-issue-teaser {
+      font-size: 15px; line-height: 1.55; color: #3d3a35; font-weight: 400;
     }
-
-    .checklist li {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      font-size: 15px;
-      color: rgba(255, 251, 240, 0.6);
-      padding: 6px 0;
+    .all-issues-link {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 13px;
+      letter-spacing: 1px; text-transform: uppercase; color: var(--orange-text);
+      text-decoration: none; display: inline-block; padding: 8px 0 4px;
+      border-bottom: 2px solid rgba(194,74,32,0.3); white-space: nowrap;
     }
+    .all-issues-link:hover { border-bottom-color: var(--orange-text); }
 
-    .checklist li span {
-      color: #2EC4B6;
-      margin-right: 8px;
+    /* ── tip band ────────────────────────────────────────────── */
+    .tip-band { padding-bottom: 72px; }
+    .tip-inner {
+      background: var(--yellow); border: 3px solid var(--ink); border-radius: 10px;
+      padding: 34px 36px; display: flex; align-items: center;
+      justify-content: space-between; gap: 28px; flex-wrap: wrap;
     }
-
-    .checklist-link {
-      color: rgba(255, 251, 240, 0.6);
-      text-decoration: underline;
-      text-decoration-color: rgba(255, 107, 53, 0.5);
-      text-underline-offset: 3px;
+    .tip-inner h2 {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(20px, 2.8vw, 27px); text-transform: uppercase;
+      letter-spacing: -0.5px; line-height: 1.1;
     }
+    .tip-inner p { margin-top: 10px; font-size: 15px; line-height: 1.55; color: #40382a; max-width: 46ch; }
+    .tip-text-col { flex: 1 1 320px; }
 
-    .checklist-link:hover {
-      color: #FF6B35;
+    /* ── footer ──────────────────────────────────────────────── */
+    footer { background: var(--ink); color: var(--cream); padding: 48px 0 40px; }
+    .foot-grid {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 32px; flex-wrap: wrap;
     }
-
-    .preview-link {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 12px 24px;
-      background: #FF6B35;
-      color: #FFFBF0;
-      font-family: 'Outfit', sans-serif;
-      font-weight: 600;
-      font-size: 15px;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: transform 0.2s;
+    .foot-brand .brand-name { color: var(--cream); }
+    .foot-tag { font-size: 13px; color: #A8A49A; margin-top: 10px; font-weight: 300; }
+    .foot-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .foot-links a {
+      font-size: 14px; color: #CFCBC1; text-decoration: none; display: inline-block;
+      padding: 8px 0; border-bottom: 1px solid transparent; transition: color 0.15s;
     }
-
-    .preview-link:hover {
-      transform: translateY(-1px);
+    .foot-links a:hover { color: var(--cream); border-bottom-color: var(--orange); }
+    .social-links { display: flex; gap: 10px; margin-top: 18px; }
+    .social-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,251,240,0.08); transition: background 0.15s, transform 0.15s;
     }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-      font-family: 'Outfit', sans-serif;
-      font-weight: 500;
-      font-size: 14px;
-      color: #FF6B35;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255, 107, 53, 0.3);
-      padding-bottom: 2px;
-      transition: border-color 0.2s;
+    .social-link:hover { background: var(--orange); transform: translateY(-2px); }
+    .social-link svg { width: 19px; height: 19px; fill: #CFCBC1; transition: fill 0.15s; }
+    .social-link:hover svg { fill: var(--ink); }
+    .foot-legal {
+      margin-top: 36px; padding-top: 22px; border-top: 1px solid rgba(255,251,240,0.12);
+      font-size: 13px; color: #8D8B84; font-weight: 300;
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
     }
-
-    .back-link:hover {
-      border-color: #FF6B35;
+    .foot-legal a {
+      color: inherit; text-decoration: none; display: inline-block; padding: 6px 0;
+      border-bottom: 1px solid rgba(255,251,240,0.2);
     }
+    .foot-legal a:hover { color: var(--cream); }
 
-    footer {
-      width: 100%;
-      text-align: center;
-      padding: 24px;
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      font-size: 13px;
-      color: rgba(26, 26, 26, 0.35);
+    /* ── responsive ──────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero { padding: 48px 0 56px; }
     }
-
-    @media (max-width: 500px) {
-      main {
-        padding: 40px 20px 32px;
-      }
-
-      .logo-friendly {
-        font-size: 36px;
-      }
+    @media (max-width: 640px) {
+      .nav-links { gap: 14px; }
+      .nav-link { display: none; }
+      .shell { padding: 0 18px; }
+      .tip-inner { padding: 26px 22px; }
+      .subscribe { padding: 48px 0 44px; }
     }
+  
+
+    /* ── inner page header ── */
+    .page-head { padding: 56px 0 28px; }
+    .page-head h1 {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(32px, 5.4vw, 52px); text-transform: uppercase;
+      letter-spacing: -1px; line-height: 1.02; margin-top: 8px;
+    }
+    .page-head p.standfirst {
+      margin-top: 16px; font-size: 17px; line-height: 1.6;
+      color: #4a4740; max-width: 56ch;
+    }
+    .page-head p.standfirst a { color: var(--orange-text); font-weight: 500; }
+    main { display: block; }
+
+    .welcome { background: var(--ink); color: var(--cream); padding: 64px 0 68px; }
+    .welcome-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+    .welcome .eyebrow { color: #FF9B70; }
+    .welcome h1 {
+      font-family: 'Archivo Black', sans-serif; font-weight: 400;
+      font-size: clamp(40px, 7vw, 72px); text-transform: uppercase;
+      letter-spacing: -2px; line-height: 0.98; margin-top: 14px;
+    }
+    .welcome h1 .dot { color: var(--orange); }
+    .welcome .lede {
+      font-family: 'Fraunces', Georgia, serif; font-style: italic;
+      font-size: clamp(17px, 2.2vw, 21px); line-height: 1.5;
+      color: #CFCBC1; margin-top: 20px;
+    }
+    .next-steps { padding: 56px 0 8px; }
+    .steps {
+      list-style: none; display: grid; gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 26px;
+    }
+    .step {
+      background: #fff; border: 2px solid var(--ink); border-radius: 8px;
+      padding: 22px 20px;
+    }
+    .step-num {
+      font-family: 'Archivo Black', sans-serif; font-size: 11px; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--orange-text);
+    }
+    .step h3 { font-size: 17px; font-weight: 600; margin-top: 8px; line-height: 1.3; }
+    .step p { font-size: 15px; line-height: 1.55; color: #55514a; margin-top: 6px; }
+    .step a { color: var(--orange-text); font-weight: 500; }
+    .step code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px;
+      background: #f3efe6; padding: 2px 6px; border-radius: 3px; word-break: break-all;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; padding-bottom: 64px; }
+
   </style>
 </head>
 <body>
+
+  <a href="#main" class="sr-only skip-link">Skip to content</a>
+
+  <!-- ══ NAV ══ -->
+  <div class="nav-wrap">
+    <div class="shell">
+      <nav class="nav" aria-label="Primary">
+        <a href="/" class="brand" aria-label="The Friendly — home">
+          <span class="brand-the">The</span>
+          <span class="brand-name">Friendly<span class="brand-dot" aria-hidden="true"></span></span>
+        </a>
+        <div class="nav-links">
+          <a href="/latest" class="nav-link">This weekend</a>
+          <a href="/archive" class="nav-link">Archive</a>
+          <a href="/latest" class="btn btn-dark">Read this week</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
   <div class="gradient-bar" aria-hidden="true"></div>
 
-  <main>
-    <a href="/" class="logo">
-      <span class="logo-the">The</span>
-      <span class="logo-friendly">Friendly<span class="logo-dot" aria-hidden="true"></span></span>
-    </a>
+  <main id="main">
+    <section class="welcome">
+      <div class="shell">
+        <div class="welcome-inner">
+          <p class="eyebrow">Subscription confirmed</p>
+          <h1>You&rsquo;re in<span class="dot">.</span></h1>
+          <p class="lede">Welcome to the crew. Your first issue lands this Thursday at 8am &mdash; and every Thursday after that.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="confirmation-box">
-      <h2>You're in<span class="dot"> &#x25CF;</span></h2>
-      <p>Welcome to the crew. Your first issue lands Thursday at 8am.</p>
-      <div class="mini-divider"></div>
-      <ul class="checklist">
-        <li><span>&#x2713;</span>Check your inbox for a confirmation email</li>
-        <li><span>&#x2713;</span>Add hello@thefriendly.co.za to your contacts</li>
-        <li><span>&#x2713;</span><a href="https://wa.me/?text=Just%20found%20The%20Friendly%20%E2%80%94%20a%20free%20weekly%20email%20about%20everything%20worth%20doing%20in%20PE%20this%20weekend.%20Sign%20up%20at%20https%3A%2F%2Fthefriendly.co.za" target="_blank" rel="noopener noreferrer" class="checklist-link">Tell a friend who loves PE</a></li>
-      </ul>
-    </div>
+    <section class="next-steps" aria-labelledby="next-title">
+      <div class="shell">
+        <p class="eyebrow">Two minutes, worth it</p>
+        <h2 class="section-title" id="next-title">Do these now</h2>
 
-    <a href="/latest" class="preview-link">Read the latest issue &rarr;</a>
-    <a href="/" class="back-link">&larr; Back to thefriendly.co.za</a>
+        <ul class="steps">
+          <li class="step">
+            <p class="step-num">Step 01</p>
+            <h3>Check your inbox</h3>
+            <p>There&rsquo;s a confirmation email waiting. If it&rsquo;s not there, have a look in Promotions or Spam &mdash; that&rsquo;s usually where it hides.</p>
+          </li>
+          <li class="step">
+            <p class="step-num">Step 02</p>
+            <h3>Save our address</h3>
+            <p>Add <code>hello@thefriendly.co.za</code> to your contacts so Thursday&rsquo;s issue lands in your main inbox, not the Promotions tab.</p>
+          </li>
+          <li class="step">
+            <p class="step-num">Step 03</p>
+            <h3>Join the WhatsApp group</h3>
+            <p>We post every issue there, and it&rsquo;s where the weekend chat actually happens. <a href="https://chat.whatsapp.com/IHOCXtWELjy5cNRE1hayO8?mode=gi_t" target="_blank" rel="noopener noreferrer">Come say hi &rarr;</a></p>
+          </li>
+          <li class="step">
+            <p class="step-num">Step 04</p>
+            <h3>Bring a friend</h3>
+            <p>Know someone who&rsquo;s always asking what&rsquo;s on this weekend? <a href="https://wa.me/?text=Just%20found%20The%20Friendly%20%E2%80%94%20a%20free%20weekly%20email%20about%20everything%20worth%20doing%20in%20PE%20this%20weekend.%20Sign%20up%20at%20https%3A%2F%2Fthefriendly.co.za" target="_blank" rel="noopener noreferrer">Send them The Friendly &rarr;</a></p>
+          </li>
+        </ul>
+
+        <div class="cta-row">
+          <a href="/latest" class="btn btn-orange">Read this week&rsquo;s issue</a>
+          <a href="/archive" class="btn btn-dark">Browse the archive</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+
+  <!-- ══ FOOTER ══ -->
   <footer>
-    &copy; 2026 The Friendly. Made in PE. · <a href="/privacy" style="color: inherit; text-decoration: none; border-bottom: 1px solid rgba(26,26,26,0.15);">Privacy</a>
+    <div class="shell">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <span class="brand-the" style="color:#6B6B6B;">The</span>
+          <div class="brand-name">Friendly<span class="brand-dot" aria-hidden="true"></span></div>
+          <p class="foot-tag">Your weekly guide to PE &middot; Gqeberha, South Africa</p>
+          <div class="social-links">
+            <a href="https://instagram.com/thefriendlype" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 011.47.958c.453.453.78.898.958 1.47.163.46.35 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 01-.958 1.47 4.088 4.088 0 01-1.47.958c-.46.163-1.26.35-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 01-1.47-.958 4.088 4.088 0 01-.958-1.47c-.163-.46-.35-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 01.958-1.47 4.088 4.088 0 011.47-.958c.46-.163 1.26-.35 2.43-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.775.13 4.902.333 4.14.63a6.21 6.21 0 00-2.228 1.452A6.21 6.21 0 00.46 4.31C.166 5.072-.038 5.945.014 7.223.07 8.503.014 8.911 0 12.17c0 3.259.014 3.668.072 4.948.058 1.278.26 2.15.558 2.913a6.21 6.21 0 001.452 2.228 6.21 6.21 0 002.228 1.452c.762.297 1.636.5 2.914.558C8.503 23.986 8.911 24 12 24s3.497-.014 4.777-.072c1.278-.058 2.152-.26 2.914-.558a6.21 6.21 0 002.228-1.452 6.21 6.21 0 001.452-2.228c.297-.762.5-1.636.558-2.914.058-1.28.072-1.688.072-4.948s-.014-3.668-.072-4.948c-.058-1.278-.26-2.152-.558-2.914a6.21 6.21 0 00-1.452-2.228A6.21 6.21 0 0019.69.458C18.928.162 18.055-.04 16.777.014 15.497.07 15.089 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://chat.whatsapp.com/IHOCXtWELjy5cNRE1hayO8?mode=gi_t" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join our WhatsApp group">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="foot-links">
+          <a href="/latest">This weekend</a>
+          <a href="/archive">All issues</a>
+          <a href="https://chat.whatsapp.com/IHOCXtWELjy5cNRE1hayO8?mode=gi_t" target="_blank" rel="noopener noreferrer">WhatsApp group</a>
+          <a href="mailto:hello@thefriendly.co.za">Got a tip?</a>
+          <a href="/privacy">Privacy</a>
+        </div>
+      </div>
+
+      <div class="foot-legal">
+        <span>&copy; 2026 The Friendly. Made in PE.</span>
+        <span><a href="mailto:hello@thefriendly.co.za">hello@thefriendly.co.za</a></span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
