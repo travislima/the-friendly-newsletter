@@ -186,12 +186,12 @@ as the list grows, which is normal and not a quality problem.
 
 **Per-issue results (MailerLite, actual):**
 
-| Issue | Sent | Recipients | Open | Click | CTOR |
-|---|---|---|---|---|---|
-| #016 | 9 Jul  | 434 | **54.2%** | 5.99% | 11.1% |
-| #017 | 16 Jul | 439 | 43.3% | 4.33% | 10.0% |
-| #018 | 23 Jul | 438 | 42.9% | 4.11% | 9.6% |
-| #019 | 30 Jul | 444 | 45.5% | **6.53%** | **14.4%** |
+| Issue | Sent | Recip | Open | Click | CTOR | Unsub | Bounces |
+|---|---|---|---|---|---|---|---|
+| #016 | 9 Jul  | 434 | **54.2%** (235) | 5.99% (26) | 11.1% | 2 | 8 |
+| #017 | 16 Jul | 439 | 43.3% (190) | 4.33% (19) | 10.0% | 0 | 2 |
+| #018 | 23 Jul | 438 | 42.9% (188) | 4.11% (18) | 9.6% | 2 | 2 |
+| #019 | 30 Jul | 444 | 45.5% (202) | **6.53%** (29) | **14.4%** | 1 | **0** |
 
 **What this actually says.** #019 reversed a three-issue slide in every click
 metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%,
@@ -224,9 +224,19 @@ Two things follow, and both are unusual:
 unsubscribes; #019 had **zero bounces** and 1 unsubscribe (0.23%). List hygiene
 is healthy — nothing to fix.
 
-**Send time is not the variable. Stop blaming it.** #016 went out 07:10:41 and
-#019 at 07:11:37 — 56 seconds apart — and opened at 54.2% vs 45.5%. Same slot,
-8.7pp apart. The difference is the subject line and what's in the issue.
+**Send time is not the variable. Stop blaming it.** All four exports:
+
+| Sent (UTC) | Issue | Open |
+|---|---|---|
+| 07:08:42 | #017 | 43.3% |
+| 07:10:41 | #016 | **54.2%** |
+| 07:11:37 | #019 | 45.5% |
+| 07:32:06 | #018 | 42.9% |
+
+Three sends inside a **three-minute window** span **10.9 points**, and the
+*earliest* send placed third. Keep sending ~07:10 UTC (09:10 SAST) for habit,
+but never explain a soft issue with timing — the variance is in the subject
+line and the event mix.
 
 **Subject lines, ranked by the open rate they produced:**
 
