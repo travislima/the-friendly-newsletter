@@ -228,9 +228,37 @@ is healthy — nothing to fix.
 #019 at 07:11:37 — 56 seconds apart — and opened at 54.2% vs 45.5%. Same slot,
 8.7pp apart. The difference is the subject line and what's in the issue.
 
-**Record the subject line every week.** #016–#018 have no `<!-- Subject: -->`
-comment, so the best open rate on record (54.2%) can't be diagnosed or repeated.
-That is the single most avoidable gap in this data.
+**Subject lines, ranked by the open rate they produced:**
+
+| Issue | Subject line | Open | What it does |
+|---|---|---|---|
+| #016 | `Weekend plans: sorted. ✅` | **54.2%** | promises the reader an outcome |
+| #019 | `A market inside the Air Force Museum 🛩️` | 45.5% | one specific curiosity hook |
+| #017 | `PE Weekend: Goats, ABBA & More!` | 43.3% | lists contents, "& More!" filler |
+| #018 | `PE's epic weekend awaits` | 42.9% | generic hype, says nothing |
+
+**Sell the outcome, not the contents.** The winner is the only one that makes a
+promise about the reader's life rather than describing what's inside. Length
+isn't the lever — #016 and #018 are both ~24 characters and 11 points apart.
+Hype words ("epic", "awaits") and content lists both underperform. Never put a
+dead category in the subject line (#017 led with ABBA, a tribute act).
+
+**Subject and preheader should do different jobs.** #016 split them properly:
+subject made the promise ("sorted"), preheader supplied the proof (Grease Party,
+rally racing, coastal walks). #019 used specifics in both, so the preheader
+added nothing the subject hadn't already promised. Promise in the subject,
+evidence in the preheader.
+
+**Next test:** #020 should run an outcome-promise subject in the #016 mould with
+a specifics-led preheader, and see whether opens climb back toward 54%. Timing
+is ruled out, so the subject line is the only open-rate lever left.
+
+Caveat: one issue per style, and #016 also followed a skipped week. Treat this
+as the best available direction, not a proven law.
+
+**Record the subject line every week.** #016–#018 had no `<!-- Subject: -->`
+comment and had to be recovered by hand — the best open rate on record was
+nearly undiagnosable. Fill that comment in every single time.
 
 **An earlier claim here was wrong: skipping a week does not explain the dips.**
 #016 came *after* a skipped week and posted the best open rate of the four; the
