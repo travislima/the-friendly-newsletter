@@ -186,17 +186,89 @@ as the list grows, which is normal and not a quality problem.
 
 **Per-issue results (MailerLite, actual):**
 
-| Issue | Sent | Recipients | Open | Click | CTOR |
-|---|---|---|---|---|---|
-| #016 | 9 Jul  | 434 | **54.2%** | 5.99% | 11.1% |
-| #017 | 16 Jul | 439 | 43.3% | 4.33% | 10.0% |
-| #018 | 23 Jul | 438 | 42.9% | 4.11% | 9.6% |
-| #019 | 30 Jul | 444 | 45.5% | **6.53%** | **14.4%** |
+| Issue | Sent | Recip | Open | Click | CTOR | Unsub | Bounces |
+|---|---|---|---|---|---|---|---|
+| #016 | 9 Jul  | 434 | **54.2%** (235) | 5.99% (26) | 11.1% | 2 | 8 |
+| #017 | 16 Jul | 439 | 43.3% (190) | 4.33% (19) | 10.0% | 0 | 2 |
+| #018 | 23 Jul | 438 | 42.9% (188) | 4.11% (18) | 9.6% | 2 | 2 |
+| #019 | 30 Jul | 444 | 45.5% (202) | **6.53%** (29) | **14.4%** | 1 | **0** |
 
 **What this actually says.** #019 reversed a three-issue slide in every click
 metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%,
 the highest on record. That is a content result — the event mix, not the layout.
 Opens recovered to 45.5% but still trail #016's 54.2%.
+
+**Who actually reads it (from the #016 and #019 campaign exports):**
+
+| | #016 | #019 |
+|---|---|---|
+| Gmail Image Proxy | 66.3% | **71.0%** |
+| Webmail overall | 87% | **89.1%** |
+| Apple Mail | 1.2% | **0.47%** |
+| Outlook | 0.4% | 0.93% |
+
+Two things follow, and both are unusual:
+
+- **Optimise for Gmail, nothing else.** ~71% of readers are on Gmail and 89% on
+  webmail. This is why the 85KB budget matters (Gmail clips at ~102KB) and why
+  the Promotions tab is the real deliverability battle. The MSO/Outlook
+  conditionals in `template.html` serve under 1% of readers — harmless to keep,
+  but never trade Gmail rendering for Outlook.
+- **Our open rate is trustworthy, unlike most.** Industry open rates are inflated
+  by Apple's Mail Privacy Protection, which pre-fetches images and logs opens
+  nobody made. Apple Mail is **0.47%** of this list. Gmail's proxy loads images
+  when the message is actually displayed. So treat our open numbers as close to
+  real — a genuine advantage when comparing against inflated benchmarks.
+
+**Deliverability is improving:** #016 had 1 hard + 7 soft bounces and 2
+unsubscribes; #019 had **zero bounces** and 1 unsubscribe (0.23%). List hygiene
+is healthy — nothing to fix.
+
+**Send time is not the variable. Stop blaming it.** All four exports:
+
+| Sent (UTC) | Issue | Open |
+|---|---|---|
+| 07:08:42 | #017 | 43.3% |
+| 07:10:41 | #016 | **54.2%** |
+| 07:11:37 | #019 | 45.5% |
+| 07:32:06 | #018 | 42.9% |
+
+Three sends inside a **three-minute window** span **10.9 points**, and the
+*earliest* send placed third. Keep sending ~07:10 UTC (09:10 SAST) for habit,
+but never explain a soft issue with timing — the variance is in the subject
+line and the event mix.
+
+**Subject lines, ranked by the open rate they produced:**
+
+| Issue | Subject line | Open | What it does |
+|---|---|---|---|
+| #016 | `Weekend plans: sorted. ✅` | **54.2%** | promises the reader an outcome |
+| #019 | `A market inside the Air Force Museum 🛩️` | 45.5% | one specific curiosity hook |
+| #017 | `PE Weekend: Goats, ABBA & More!` | 43.3% | lists contents, "& More!" filler |
+| #018 | `PE's epic weekend awaits` | 42.9% | generic hype, says nothing |
+
+**Sell the outcome, not the contents.** The winner is the only one that makes a
+promise about the reader's life rather than describing what's inside. Length
+isn't the lever — #016 and #018 are both ~24 characters and 11 points apart.
+Hype words ("epic", "awaits") and content lists both underperform. Never put a
+dead category in the subject line (#017 led with ABBA, a tribute act).
+
+**Subject and preheader should do different jobs.** #016 split them properly:
+subject made the promise ("sorted"), preheader supplied the proof (Grease Party,
+rally racing, coastal walks). #019 used specifics in both, so the preheader
+added nothing the subject hadn't already promised. Promise in the subject,
+evidence in the preheader.
+
+**Next test:** #020 should run an outcome-promise subject in the #016 mould with
+a specifics-led preheader, and see whether opens climb back toward 54%. Timing
+is ruled out, so the subject line is the only open-rate lever left.
+
+Caveat: one issue per style, and #016 also followed a skipped week. Treat this
+as the best available direction, not a proven law.
+
+**Record the subject line every week.** #016–#018 had no `<!-- Subject: -->`
+comment and had to be recovered by hand — the best open rate on record was
+nearly undiagnosable. Fill that comment in every single time.
 
 **An earlier claim here was wrong: skipping a week does not explain the dips.**
 #016 came *after* a skipped week and posted the best open rate of the four; the
