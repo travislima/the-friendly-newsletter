@@ -168,11 +168,21 @@ event TYPE drives clicks far more than where it sits in the layout.
 - Total clicks track with how many markets + experiences + food + cars an issue
   packs in. That's the lever — not send-time or button count.
 
-**Benchmarks (#019, the reference issue):** 444 recipients · 42.6%+ open ·
-6.5%+ click · **15.3% CTOR** · 0 bounces · 0 spam · 1 unsubscribe. CTOR climbed
-all day (11.9% → 13.5% → 15.3%), which is the signal to watch — it stabilises
-early and measures content quality independent of the subject line. The mix that
-produced it: 1 novel experience + 3 markets + 1 food + 1 motorsport.
+**Benchmarks (#019, the reference issue):** 444 recipients · **45.5% open** ·
+**6.5% click** · **14.4% CTOR** · 0 bounces · 0 spam · 1 unsubscribe (0.2%).
+The mix that produced it: 1 novel experience + 3 markets + 1 food + 1 motorsport.
+
+Watch CTOR, not opens — it measures content quality independently of the subject
+line. But read it *late*: it climbed 11.9% → 13.5% → 15.3% through the day, then
+settled to 14.4% as late openers arrived without clicking. **Judge against the
+settled figure, never the mid-day peak** — clicks finish hours before opens do.
+
+**How that sits against industry (2026):** MailerLite's global average open rate
+is 43.5%; media/publishing averages 4.1% click and 12.9% CTOR. #019 beat all
+three, the click rate by ~60%. Caveat worth keeping: a 444-person list that opted
+in recently will always outperform benchmarks drawn from far larger lists. Treat
+these as a floor to hold, not a trophy — and expect the percentages to drift down
+as the list grows, which is normal and not a quality problem.
 
 **Consistency beats everything.** #017 and #018 dipped to ~41% because weeks were
 skipped. #019 sent on schedule and recovered immediately. Don't skip.
