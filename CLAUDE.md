@@ -127,7 +127,7 @@ template + `shoot.mjs` so next week starts from the last known-good source.
 
 ## Event selection — what actually gets clicked (data-backed)
 
-Analysis of click data across issues #013–#018 (MailerLite link activity). The
+Analysis of click data across issues #013–#019 (MailerLite link activity). The
 event TYPE drives clicks far more than where it sits in the layout.
 
 **Click ranking by event type (highest → lowest):**
@@ -137,23 +137,73 @@ event TYPE drives clicks far more than where it sits in the layout.
 2. **Markets** — the reliable workhorse. Pull 3–8 clicks *every* issue, even when
    buried in the "Also Happening" quick-list (Collective Market 8, 67 Blankets 7
    *from the tail*). Always include 2–3.
-3. **Food / new-restaurant spotlights** — overperform massively. ZZAN (10 clicks,
-   2nd in its issue) from "Worth Checking Out". Under-used — feature one most weeks.
-4. **Cars / motorsport** — strong. Rally (9, top of its issue), Vespa (3).
-5. **Live music / ticketed gigs / tributes** — the WORST category. Near-universally
-   0–1 clicks (Spoegwolf 1, Queen 0, Boks & ABBA 0, Music Bingo 0). Exception:
-   wine+culture "experiences" (Jazz & Wine 6). Demote gigs to the quick-list.
-6. **Kids-specific** — low (2 or fewer). Narrow audience.
+3. **Food / new-restaurant spotlights** — overperform massively, and they pull the
+   highest *repeat* rate of anything we run: Crave donuts drew 9 clicks from 5
+   people (1.8×) — readers go back a second time. ZZAN 10 clicks (2nd in its
+   issue) from "Worth Checking Out". **Feature one every week.**
+4. **Cars / motorsport — but only marquee events.** A rally took 9 (top of its
+   issue); Vespa's 80th got 3. Round 5 of a club series managed 2. Spectacle
+   works, fixtures don't.
+5. **Live music / ticketed gigs** — near-universally 0–1 clicks (Spoegwolf 1,
+   Music Bingo 0). Exception: wine+culture "experiences" (Jazz & Wine 6).
+   Comedy and theatre are fine in the quick-list (Lag in Afrikaans 2).
+6. **Tribute shows — cut them.** Not weak, *dead*: Queen 0, Boks & ABBA 0,
+   Adele 0. Six straight issues at zero. They cost a slot and earn nothing.
+7. **Kids-specific / participation sport** — narrow (2 or fewer). A Women's
+   Month fun run took 1.
 
 **Rules that follow:**
-- **Editor's Pick = always the most novel, broadly-appealing EXPERIENCE.** Never a
-  ticketed gig, never a permanent venue/kids park. When the Pick was niche it got
-  beaten by regular markets (e.g. #016 Grease Party came 5th; #014 Little Gravity
-  got 2 and lost to a demoted Polar Plunge at 7).
+- **Editor's Pick = the most novel, broadly-appealing EXPERIENCE — and it works
+  best in an unexpected venue.** The strongest result on record is #019's SAAF
+  Museum Market Day: **14 of 29 clickers (48%)**, 2.8× the runner-up. It stacked
+  category 1 on category 2 — a *market* inside an *Air Force museum*. When the
+  Pick was niche it lost to ordinary markets (#016 Grease Party 5th; #017 mohair
+  hero 4; #014 Little Gravity 2, beaten by a demoted Polar Plunge at 7).
 - The Editor's Pick slot does **not** create clicks — the right event does.
+- **Never hand the Pick to a paid niche workshop, even a friend's.** #019's
+  watercolour workshop placed 4th on 3 clicks, behind a plain bohemian market.
+  Use the **Friendly Highlight** card instead: it gives partners real visibility
+  and a booking link without spending the hero slot.
 - Don't trim the "Also Happening" tail; markets there still pull well.
 - Total clicks track with how many markets + experiences + food + cars an issue
   packs in. That's the lever — not send-time or button count.
+
+**Benchmarks (#019, the reference issue):** 444 recipients · **45.5% open** ·
+**6.5% click** · **14.4% CTOR** · 0 bounces · 0 spam · 1 unsubscribe (0.2%).
+The mix that produced it: 1 novel experience + 3 markets + 1 food + 1 motorsport.
+
+Watch CTOR, not opens — it measures content quality independently of the subject
+line. But read it *late*: it climbed 11.9% → 13.5% → 15.3% through the day, then
+settled to 14.4% as late openers arrived without clicking. **Judge against the
+settled figure, never the mid-day peak** — clicks finish hours before opens do.
+
+**How that sits against industry (2026):** MailerLite's global average open rate
+is 43.5%; media/publishing averages 4.1% click and 12.9% CTOR. #019 beat all
+three, the click rate by ~60%. Caveat worth keeping: a 444-person list that opted
+in recently will always outperform benchmarks drawn from far larger lists. Treat
+these as a floor to hold, not a trophy — and expect the percentages to drift down
+as the list grows, which is normal and not a quality problem.
+
+**Per-issue results (MailerLite, actual):**
+
+| Issue | Sent | Recipients | Open | Click | CTOR |
+|---|---|---|---|---|---|
+| #016 | 9 Jul  | 434 | **54.2%** | 5.99% | 11.1% |
+| #017 | 16 Jul | 439 | 43.3% | 4.33% | 10.0% |
+| #018 | 23 Jul | 438 | 42.9% | 4.11% | 9.6% |
+| #019 | 30 Jul | 444 | 45.5% | **6.53%** | **14.4%** |
+
+**What this actually says.** #019 reversed a three-issue slide in every click
+metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%,
+the highest on record. That is a content result — the event mix, not the layout.
+Opens recovered to 45.5% but still trail #016's 54.2%.
+
+**An earlier claim here was wrong: skipping a week does not explain the dips.**
+#016 came *after* a skipped week and posted the best open rate of the four; the
+decline then happened across #017 and #018, which were sent on consecutive
+weeks. Don't use "we skipped" to explain a soft issue — look at the event mix
+first. Consistency is still worth keeping for habit and list health, but the
+open-rate evidence for it isn't there.
 
 ## Pre-send checklist
 
