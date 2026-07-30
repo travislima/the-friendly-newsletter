@@ -198,6 +198,40 @@ metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%
 the highest on record. That is a content result — the event mix, not the layout.
 Opens recovered to 45.5% but still trail #016's 54.2%.
 
+**Who actually reads it (from the #016 and #019 campaign exports):**
+
+| | #016 | #019 |
+|---|---|---|
+| Gmail Image Proxy | 66.3% | **71.0%** |
+| Webmail overall | 87% | **89.1%** |
+| Apple Mail | 1.2% | **0.47%** |
+| Outlook | 0.4% | 0.93% |
+
+Two things follow, and both are unusual:
+
+- **Optimise for Gmail, nothing else.** ~71% of readers are on Gmail and 89% on
+  webmail. This is why the 85KB budget matters (Gmail clips at ~102KB) and why
+  the Promotions tab is the real deliverability battle. The MSO/Outlook
+  conditionals in `template.html` serve under 1% of readers — harmless to keep,
+  but never trade Gmail rendering for Outlook.
+- **Our open rate is trustworthy, unlike most.** Industry open rates are inflated
+  by Apple's Mail Privacy Protection, which pre-fetches images and logs opens
+  nobody made. Apple Mail is **0.47%** of this list. Gmail's proxy loads images
+  when the message is actually displayed. So treat our open numbers as close to
+  real — a genuine advantage when comparing against inflated benchmarks.
+
+**Deliverability is improving:** #016 had 1 hard + 7 soft bounces and 2
+unsubscribes; #019 had **zero bounces** and 1 unsubscribe (0.23%). List hygiene
+is healthy — nothing to fix.
+
+**Send time is not the variable. Stop blaming it.** #016 went out 07:10:41 and
+#019 at 07:11:37 — 56 seconds apart — and opened at 54.2% vs 45.5%. Same slot,
+8.7pp apart. The difference is the subject line and what's in the issue.
+
+**Record the subject line every week.** #016–#018 have no `<!-- Subject: -->`
+comment, so the best open rate on record (54.2%) can't be diagnosed or repeated.
+That is the single most avoidable gap in this data.
+
 **An earlier claim here was wrong: skipping a week does not explain the dips.**
 #016 came *after* a skipped week and posted the best open rate of the four; the
 decline then happened across #017 and #018, which were sent on consecutive
