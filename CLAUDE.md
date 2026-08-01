@@ -169,9 +169,10 @@ event TYPE drives clicks far more than where it sits in the layout.
    highest *repeat* rate of anything we run: Crave donuts drew 9 clicks from 5
    people (1.8×) — readers go back a second time. ZZAN 10 clicks (2nd in its
    issue) from "Worth Checking Out". **Feature one every week.**
-4. **Cars / motorsport — but only marquee events.** A rally took 9 (top of its
-   issue); Vespa's 80th got 3. Round 5 of a club series managed 2. Spectacle
-   works, fixtures don't.
+4. **Cars / motorsport** — solid. A rally took 9 (top of its issue), a club
+   circuit round took 8, Vespa's 80th got 3. An earlier note here claimed club
+   fixtures underperform, based on reading that round at 2 clicks a day after
+   send. It finished at 8. Do not judge motorsport early.
 5. **Live music / ticketed gigs** — near-universally 0–1 clicks (Spoegwolf 1,
    Music Bingo 0). Exception: wine+culture "experiences" (Jazz & Wine 6).
    Comedy and theatre are fine in the quick-list (Lag in Afrikaans 2).
@@ -196,10 +197,15 @@ event TYPE drives clicks far more than where it sits in the layout.
 - Total clicks track with how many markets + experiences + food + cars an issue
   packs in. That's the lever — not send-time or button count.
 
-**Benchmarks (#019, the reference issue):** 444 recipients · **51.6% open** ·
-**7.4% click** · **14.4% CTOR** · 0 bounces · 0 spam · 1 unsubscribe (0.2%).
-Those are the settled 24-hour figures. Judging at 8 hours would have
-understated opens by 6 points.
+**Benchmarks (#019, the reference issue):** 444 recipients · **53.4% open** ·
+**9.2% click** · **17.3% CTOR** · 1 bounce · 0 spam · 1 unsubscribe (0.2%).
+
+**Measure on the Monday after, not the day of.** #019 read 42.6% open / 11.9%
+CTOR at 8 hours, 51.6% / 14.4% at 24 hours, and 53.4% / 17.3% once the weekend
+had passed. Clicks alone grew from 33 to 41 *after* the 24-hour mark, because
+this is weekend-planning content: people reopen the email on Friday and Saturday
+to decide what to actually do. Every early read understates the issue, and it
+understates events happening later in the weekend most of all.
 The mix that produced it: 1 novel experience + 3 markets + 1 food + 1 motorsport.
 
 Watch CTOR, not opens — it measures content quality independently of the subject
@@ -230,9 +236,9 @@ three issues before it sat in. That is a content result: the event mix, not the
 layout. Opens finished at 51.6%, within 2.6 points of #016's 54.2%, so the only
 metric #016 still wins is the one most exposed to subject-line luck.
 
-**Read the numbers late.** #019 measured 42.6% open at 8 hours and 51.6% at 24.
-Clicks finish hours before opens do, so an early CTOR reads high and an early
-open rate reads low. Never judge an issue on the day.
+**Read the numbers late.** See the benchmark note above: wait until the Monday
+after the weekend. Judging earlier has now produced three wrong calls in a row,
+including a playbook rule about motorsport that the final data contradicted.
 
 **Who actually reads it (from the #016 and #019 campaign exports):**
 
