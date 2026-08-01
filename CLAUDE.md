@@ -169,9 +169,10 @@ event TYPE drives clicks far more than where it sits in the layout.
    highest *repeat* rate of anything we run: Crave donuts drew 9 clicks from 5
    people (1.8×) — readers go back a second time. ZZAN 10 clicks (2nd in its
    issue) from "Worth Checking Out". **Feature one every week.**
-4. **Cars / motorsport — but only marquee events.** A rally took 9 (top of its
-   issue); Vespa's 80th got 3. Round 5 of a club series managed 2. Spectacle
-   works, fixtures don't.
+4. **Cars / motorsport** — solid. A rally took 9 (top of its issue), a club
+   circuit round took 8, Vespa's 80th got 3. An earlier note here claimed club
+   fixtures underperform, based on reading that round at 2 clicks a day after
+   send. It finished at 8. Do not judge motorsport early.
 5. **Live music / ticketed gigs** — near-universally 0–1 clicks (Spoegwolf 1,
    Music Bingo 0). Exception: wine+culture "experiences" (Jazz & Wine 6).
    Comedy and theatre are fine in the quick-list (Lag in Afrikaans 2).
@@ -196,8 +197,15 @@ event TYPE drives clicks far more than where it sits in the layout.
 - Total clicks track with how many markets + experiences + food + cars an issue
   packs in. That's the lever — not send-time or button count.
 
-**Benchmarks (#019, the reference issue):** 444 recipients · **45.5% open** ·
-**6.5% click** · **14.4% CTOR** · 0 bounces · 0 spam · 1 unsubscribe (0.2%).
+**Benchmarks (#019, the reference issue):** 444 recipients · **53.4% open** ·
+**9.2% click** · **17.3% CTOR** · 1 bounce · 0 spam · 1 unsubscribe (0.2%).
+
+**Measure on the Monday after, not the day of.** #019 read 42.6% open / 11.9%
+CTOR at 8 hours, 51.6% / 14.4% at 24 hours, and 53.4% / 17.3% once the weekend
+had passed. Clicks alone grew from 33 to 41 *after* the 24-hour mark, because
+this is weekend-planning content: people reopen the email on Friday and Saturday
+to decide what to actually do. Every early read understates the issue, and it
+understates events happening later in the weekend most of all.
 The mix that produced it: 1 novel experience + 3 markets + 1 food + 1 motorsport.
 
 Watch CTOR, not opens — it measures content quality independently of the subject
@@ -207,7 +215,7 @@ settled figure, never the mid-day peak** — clicks finish hours before opens do
 
 **How that sits against industry (2026):** MailerLite's global average open rate
 is 43.5%; media/publishing averages 4.1% click and 12.9% CTOR. #019 beat all
-three, the click rate by ~60%. Caveat worth keeping: a 444-person list that opted
+three: opens by 8 points, CTOR by 1.5, and the click rate by ~80%. Caveat worth keeping: a 444-person list that opted
 in recently will always outperform benchmarks drawn from far larger lists. Treat
 these as a floor to hold, not a trophy — and expect the percentages to drift down
 as the list grows, which is normal and not a quality problem.
@@ -219,12 +227,18 @@ as the list grows, which is normal and not a quality problem.
 | #016 | 9 Jul  | 434 | **54.2%** (235) | 5.99% (26) | 11.1% | 2 | 8 |
 | #017 | 16 Jul | 439 | 43.3% (190) | 4.33% (19) | 10.0% | 0 | 2 |
 | #018 | 23 Jul | 438 | 42.9% (188) | 4.11% (18) | 9.6% | 2 | 2 |
-| #019 | 30 Jul | 444 | 45.5% (202) | **6.53%** (29) | **14.4%** | 1 | **0** |
+| #019 | 30 Jul | 444 | 51.6% (229) | **7.43%** (33) | **14.4%** | 1 | **0** |
 
-**What this actually says.** #019 reversed a three-issue slide in every click
-metric: CTOR broke out of a tight 9.6–11.1% band to 14.4%, and clicks hit 6.5%,
-the highest on record. That is a content result — the event mix, not the layout.
-Opens recovered to 45.5% but still trail #016's 54.2%.
+**What this actually says.** #019 is the best issue on record on the two
+metrics we control. Clicks hit **7.4%** and CTOR **14.4%**, against previous bests
+of 5.99% and 11.1%, and CTOR broke clean out of the tight 9.6-11.1% band the
+three issues before it sat in. That is a content result: the event mix, not the
+layout. Opens finished at 51.6%, within 2.6 points of #016's 54.2%, so the only
+metric #016 still wins is the one most exposed to subject-line luck.
+
+**Read the numbers late.** See the benchmark note above: wait until the Monday
+after the weekend. Judging earlier has now produced three wrong calls in a row,
+including a playbook rule about motorsport that the final data contradicted.
 
 **Who actually reads it (from the #016 and #019 campaign exports):**
 
