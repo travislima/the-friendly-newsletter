@@ -57,6 +57,33 @@ verbatim in the sent HTML. MailerLite converts them at send time.
    the web version no longer contains `{$unsubscribe}`.
 4. Review `git diff`, commit, push.
 
+## Website analytics
+
+GoatCounter, at `https://thefriendly.goatcounter.com`. Cookieless, stores no IP
+address, honours Do Not Track, so **no consent banner is needed**. Free while the
+site stays non-commercial; GoatCounter asks commercial sites to take the $15/month
+plan, which is worth revisiting the day a sponsor is signed.
+
+The snippet lives in `template.html` inside a `WEB-ONLY` block right after
+`<!-- WEB-META -->`, so `publish.py` activates it on every new issue automatically.
+Every existing page got it in a one-off sweep. **Nothing to do per issue.**
+
+`latest/index.html` is deliberately *not* tracked: its meta-refresh fires before an
+async script can report, so the count would be wrong rather than merely absent.
+Traffic through `/latest` still shows up as a pageview on the issue it redirects
+to, with the referrer intact, which is the number that actually matters.
+
+What to read:
+- **`/thank-you` pageviews ÷ `/` pageviews = the signup conversion rate.** The
+  MailerLite form redirects there, so this needs no event tracking at all.
+- **Referrers on `issue-NNN.html`** answer the open question in `STRATEGY.md`:
+  do the WhatsApp cards actually send anyone to the site?
+- Click tracking on outbound links is *not* set up. MailerLite already measures
+  clicks where they happen, in the email.
+
+`privacy/index.html` describes all of this. If the analytics setup ever changes,
+that page changes with it.
+
 ## WhatsApp and Slack versions
 
 Written to `whatsapp/issue-NNN.md` and `slack/issue-NNN.md`. **Every version ends

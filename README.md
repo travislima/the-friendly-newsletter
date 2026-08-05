@@ -47,6 +47,11 @@ Thursday late afternoon, and **read the numbers on Monday, not Thursday.**
 | `subscribe-card.html` | Shareable signup card with a QR code. |
 | `*-old.html` | The pre-redesign pages, kept so a revert is a rename. |
 
+Site traffic is at [thefriendly.goatcounter.com](https://thefriendly.goatcounter.com).
+Cookieless, no consent banner, nothing to do per issue: the snippet rides along in
+`template.html`. `/thank-you` views over `/` views is the signup conversion rate.
+Details in `CLAUDE.md`.
+
 ---
 
 ## The three docs
