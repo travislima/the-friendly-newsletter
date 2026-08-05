@@ -70,45 +70,54 @@ Get this every Thursday by email: thefriendly.co.za
 
 ## Social cards (WhatsApp gallery + Instagram carousel)
 
-Every issue also ships a set of image cards — WhatsApp is our biggest
-forwarding/growth channel and pasted markdown reads badly there, so the cards
-carry the issue as a swipeable gallery. Source of truth is
-`whatsapp-cards/issue-NNN-cards.html` (one template) rendered by
-`whatsapp-cards/shoot.mjs`.
+Every issue also ships a set of image cards. WhatsApp is our biggest
+forwarding channel and pasted markdown reads badly there, so the cards carry
+the issue as a swipeable gallery.
+
+```
+card-source/
+  shoot.mjs                  the renderer, takes an issue number
+  issue-NNN-cards.html       one source per issue, drives both formats
+whatsapp-cards/issue-NNN/    card-1.png ... card-6.png  (1080x1080)
+instagram-cards/issue-NNN/   card-1.png ... card-6.png  (1080x1350)
+```
 
 **Build steps (after the issue is finalised):**
-1. `cp whatsapp-cards/issue-PREV-cards.html whatsapp-cards/issue-NNN-cards.html`
-   and swap in this week's content. The card set is: **1** cover · **2**
-   Editor's Pick · **3** a Friendly Highlight / second feature · **4** the
-   weekend line-up (What's On) · **5** Where to Eat · **6** follow closer.
-   Pull card copy straight from the finished `issue-NNN.html` so wording matches.
-2. Point `shoot.mjs` at the new file (the `file`/`out` issue number) and run
-   `node whatsapp-cards/shoot.mjs`. It writes both formats:
-   `issue-NNN-wa-N.png` (1080×1080, WhatsApp) and `issue-NNN-ig-N.png`
-   (1080×1350, Instagram 4:5). One HTML renders both via a `fmt-square` /
-   `fmt-portrait` body class — don't fork the template per size.
+1. `cp card-source/issue-PREV-cards.html card-source/issue-NNN-cards.html`
+   and swap in this week's content. The set is: **1** cover · **2** Editor's
+   Pick · **3** Friendly Highlight · **4** the weekend line-up · **5** Where
+   to Eat · **6** follow closer. Pull the copy straight from the finished
+   `issue-NNN.html` so the wording matches.
+2. `node card-source/shoot.mjs NNN`. It renders both formats into the right
+   folders. One HTML drives both sizes via a `fmt-square` / `fmt-portrait`
+   body class, so never fork the template per size.
 3. Eyeball each PNG (fonts loaded, no clipped text) before sending.
 
 **Card design rules (same guardrails as the email):**
 - Cream `#FFFBF0` bg, four-colour gradient stripe on top, Archivo Black logo
   with the orange dot, `#C24A20` for orange text, `#1a1a1a` dark footer.
+- **Keep the palette fixed every week.** The cards' job is to be recognisable
+  as The Friendly the moment they land in someone else's group chat, and
+  recognition is built by repetition. The gradient stripe already supplies
+  the colour variety. Do not rotate accent colours per issue.
 - **No link is tappable on an image.** Cards print `thefriendly.co.za` as a
-  visual CTA only; the real link goes in the WhatsApp caption / Instagram
-  link-in-bio. Card footers say where to tap ("Full details + links",
-  "Book via the link").
-- Note on Node: Playwright lives at `/opt/node22/lib/node_modules` — `shoot.mjs`
-  imports it by absolute path (ESM ignores `NODE_PATH`), and Chromium is at
-  `/opt/pw-browsers/chromium`.
+  visual CTA only; the real link goes in the WhatsApp caption or the
+  Instagram link-in-bio. Card footers say where to tap.
+- Note on Node: Playwright lives at `/opt/node22/lib/node_modules`, and
+  `shoot.mjs` imports it by absolute path because ESM ignores `NODE_PATH`.
+  Chromium is at `/opt/pw-browsers/chromium`.
 
 **Captions to ship with them:**
-- *WhatsApp* (paste with the album — the domain auto-links): lead line, 3–5
-  emoji event bullets weirdest-first, then `Full issue + links → thefriendly.co.za`.
-- *Instagram* (link isn't tappable — set link-in-bio to `thefriendly.co.za`):
-  same bullets + a hashtag block (`#GqeberhaEvents #PortElizabeth #ThingsToDoPE`
-  …). End on the free-every-Thursday line.
+- *WhatsApp* (paste with the album; the domain auto-links): lead line, 3 to 5
+  emoji event bullets weirdest-first, then
+  `Full issue + links → thefriendly.co.za/latest`.
+- *Instagram* (the link is not tappable, so set link-in-bio to
+  `thefriendly.co.za`): same bullets plus a hashtag block
+  (`#GqeberhaEvents #PortElizabeth #ThingsToDoPE`). End on the
+  free-every-Thursday line.
 
-Rendered PNGs are disposable (regenerate any time); commit the `-cards.html`
-template + `shoot.mjs` so next week starts from the last known-good source.
+Rendered PNGs are committed so past sets stay downloadable, but they are
+disposable: rerun `shoot.mjs` any time to regenerate them.
 
 ## Editorial rules (short version)
 
@@ -152,6 +161,9 @@ thank-you page instead, and the evidence for demoting it here is #019, where the
 group link took 1 click from 189 opens. "Add us to your contacts" and "forward to
 a friend" were cut: near-zero compliance, and nobody forwards a newsletter they
 have not read yet.
+
+> **Growth, pricing and sponsorship live in `STRATEGY.md`.** This file is how to
+> build and ship an issue. That one is whether the business is working.
 
 ## Event selection — what actually gets clicked (data-backed)
 
