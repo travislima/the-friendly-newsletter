@@ -153,6 +153,9 @@ group link took 1 click from 189 opens. "Add us to your contacts" and "forward t
 a friend" were cut: near-zero compliance, and nobody forwards a newsletter they
 have not read yet.
 
+> **Growth, pricing and sponsorship live in `STRATEGY.md`.** This file is how to
+> build and ship an issue. That one is whether the business is working.
+
 ## Event selection — what actually gets clicked (data-backed)
 
 Analysis of click data across issues #013–#019 (MailerLite link activity). The
