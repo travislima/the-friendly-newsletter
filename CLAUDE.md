@@ -24,8 +24,11 @@ All improvements go into `template.html`, which every new issue starts from.
    `border-bottom: 1px dashed #e5e5e0`.
 4. Delete the instruction banner comment at the top of the file, and update the
    `<!-- Subject: ... -->` comment with the real subject line.
-5. Sections with no content this week (e.g. Worth Checking Out) can be removed
-   whole — from their section-divider row through their last card.
+5. Sections with no content this week (e.g. Worth Checking Out, Save The Date) can
+   be removed whole — from their section-divider row through their last card.
+   Check `UPCOMING.md` before dropping Save The Date: it is the parking lot for
+   future-dated events, and the section quietly vanished from #020 because the
+   block was missing from `template.html` entirely.
 6. Do NOT touch the `EMAIL-ONLY` / `WEB-ONLY` / `WEB-META` markers — the publish
    script depends on them.
 

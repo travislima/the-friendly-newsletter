@@ -63,7 +63,8 @@ Details in `CLAUDE.md`.
   who to sell to, list hygiene, and the 90-day plan.
 - **`BRAND.md`** is fonts, colours and the logo, for making visuals elsewhere.
 
-`AUDIT.md` is an older one-off review, kept for reference.
+`UPCOMING.md` is the parking lot for future-dated events, feeding the Save The
+Date block. `AUDIT.md` is an older one-off review, kept for reference.
 
 ---
 
