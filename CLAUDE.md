@@ -197,8 +197,12 @@ have not read yet.
 
 ## Event selection — what actually gets clicked (data-backed)
 
-Analysis of click data across issues #013–#019 (MailerLite link activity). The
+Analysis of click data across issues #013–#020 (MailerLite link activity). The
 event TYPE drives clicks far more than where it sits in the layout.
+
+**#020's full ranking**, for reference below: Pasta Evening @ Savages 10 &middot;
+Pretty In Pink Ladies 5km 6 &middot; Food &amp; Craft Night Market 6 &middot;
+Laser Tag (Editor's Pick) 6 &middot; A Mezza (Where to Eat) 5.
 
 **Click ranking by event type (highest → lowest):**
 1. **Novel experiences / festivals** — the biggest winners by far. Whale Festival
@@ -211,6 +215,12 @@ event TYPE drives clicks far more than where it sits in the layout.
    highest *repeat* rate of anything we run: Crave donuts drew 9 clicks from 5
    people (1.8×) — readers go back a second time. ZZAN 10 clicks (2nd in its
    issue) from "Worth Checking Out". **Feature one every week.**
+   #020 settles it: food took **45% of all clicks** (15 of 33). A restaurant
+   *event* topped the issue outright (Savages pasta evening, 10) and A Mezza
+   repeated the pattern exactly, 8 clicks from 5 people (1.6×). Three separate
+   issues now show food producing return visits nothing else produces.
+   **A restaurant hosting an event is the single strongest slot we have** — it
+   stacks category 3 on category 1 and beat the Editor's Pick by 67%.
 4. **Cars / motorsport** — solid. A rally took 9 (top of its issue), a club
    circuit round took 8, Vespa's 80th got 3. An earlier note here claimed club
    fixtures underperform, based on reading that round at 2 clicks a day after
@@ -220,8 +230,11 @@ event TYPE drives clicks far more than where it sits in the layout.
    Comedy and theatre are fine in the quick-list (Lag in Afrikaans 2).
 6. **Tribute shows — cut them.** Not weak, *dead*: Queen 0, Boks & ABBA 0,
    Adele 0. Six straight issues at zero. They cost a slot and earn nothing.
-7. **Kids-specific / participation sport** — narrow (2 or fewer). A Women's
-   Month fun run took 1.
+7. **Kids-specific / participation sport** — usually narrow (2 or fewer). A Women's
+   Month fun run took 1. **But #020's Pretty In Pink Ladies 5km took 6**, tied for
+   second in its issue. The rule needs qualifying: an *established local charity
+   fixture with its own following* is a different animal from a generic fun run.
+   Ask whether the event already has a name in PE. If it does, it can carry a slot.
 
 **Rules that follow:**
 - **Editor's Pick = the most novel, broadly-appealing EXPERIENCE — and it works
@@ -230,7 +243,17 @@ event TYPE drives clicks far more than where it sits in the layout.
   category 1 on category 2 — a *market* inside an *Air Force museum*. When the
   Pick was niche it lost to ordinary markets (#016 Grease Party 5th; #017 mohair
   hero 4; #014 Little Gravity 2, beaten by a demoted Polar Plunge at 7).
+- **The unexpected venue is not the magic. Broad appeal is.** #020's Pick was laser
+  tag at the Algoa Flying Club: an experience, in a genuinely unexpected venue, and
+  it still placed 4th on 6 clicks behind a Thursday pasta night. It was narrow
+  (participatory, R180pp, aimed young), and narrow beats novel every time. Read the
+  #019 result correctly: the SAAF market won because a *market* is broadly
+  appealing, and the museum made it novel on top. Venue is the garnish.
 - The Editor's Pick slot does **not** create clicks — the right event does.
+- **Weeknight events are fair game.** #020's winner was a *Thursday* pasta evening,
+  included against the weekend-only habit because the venue is well known locally.
+  It beat everything. A popular venue doing something specific outranks the day of
+  the week.
 - **Never hand the Pick to a paid niche workshop, even a friend's.** #019's
   watercolour workshop placed 4th on 3 clicks, behind a plain bohemian market.
   Use the **Friendly Highlight** card instead: it gives partners real visibility
@@ -270,26 +293,65 @@ as the list grows, which is normal and not a quality problem.
 | #017 | 16 Jul | 439 | 43.3% (190) | 4.33% (19) | 10.0% | 0 | 2 |
 | #018 | 23 Jul | 438 | 42.9% (188) | 4.11% (18) | 9.6% | 2 | 2 |
 | #019 | 30 Jul | 444 | 51.6% (229) | **7.43%** (33) | **14.4%** | 1 | **0** |
+| #020 | 6 Aug  | 424 | 41.0% (174) | 8.25% (35) | **20.11%** | **0** | **0** |
 
-**What this actually says.** #019 is the best issue on record on the two
-metrics we control. Clicks hit **7.4%** and CTOR **14.4%**, against previous bests
-of 5.99% and 11.1%, and CTOR broke clean out of the tight 9.6-11.1% band the
-three issues before it sat in. That is a content result: the event mix, not the
-layout. Opens finished at 51.6%, within 2.6 points of #016's 54.2%, so the only
-metric #016 still wins is the one most exposed to subject-line luck.
+(#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
+is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.)
+
+**What this actually says.** #020 posted the **best CTOR on record, 20.11%**, nearly
+3 points above #019's settled 17.3%, with the second-best click rate and a clean
+sheet: zero unsubscribes, zero spam complaints, zero hard bounces. It also posted
+the **worst open rate on record, 41.0%**, two points below #018.
+
+That combination is the whole story of the issue: **far fewer people opened it, and
+those who did engaged harder than any audience we have ever had.** Whatever went
+wrong happened at the "decide to open" step, not in the content.
+
+**The cause is unresolved, and two explanations fit equally well.** Both predict a
+low open rate *and* a record CTOR, because both filter for the most loyal readers:
+
+1. **The subject line.** `Three days off. Sorted. ✅` was a near-repeat of #016's
+   winner in construction, wording and emoji. Formats decay even when lines do
+   not, "sorted" already closes every issue, and "three days off" is untrue for
+   anyone working the public holiday.
+2. **Deliverability, from the sunset send.** A campaign to people defined by never
+   opening posts a dreadful engagement rate, and Gmail is 70%+ of this list.
+
+The email-client split was proposed as the tiebreaker and **it failed**: #020's
+export carries a **33.9% "Unknown"** bucket absent from earlier exports, and the
+reading-environment percentages imply most of it is webmail, i.e. probably
+unfingerprinted Gmail. So the apparent Gmail fall from 71% to 48.6% is likely a
+reporting artefact, not readers disappearing. Do not cite it as evidence.
+
+The one real signal: **zero spam complaints and zero hard bounces**, which is not
+what a damaged sender reputation usually looks like. That leans toward the subject
+line.
+
+**#021 settles it.** Run a genuinely fresh subject line. Opens recovering toward
+50% means the subject line was the cause. Opens sitting near 41% behind a good
+line means deliverability, which mends over a few issues on its own.
 
 **Read the numbers late.** See the benchmark note above: wait until the Monday
 after the weekend. Judging earlier has now produced three wrong calls in a row,
 including a playbook rule about motorsport that the final data contradicted.
+#020 confirmed it again: Friday read 36.8% / 18.6%, Monday read 41.0% / 20.1%.
 
-**Who actually reads it (from the #016 and #019 campaign exports):**
+**Who actually reads it (from the #016, #019 and #020 campaign exports):**
 
-| | #016 | #019 |
-|---|---|---|
-| Gmail Image Proxy | 66.3% | **71.0%** |
-| Webmail overall | 87% | **89.1%** |
-| Apple Mail | 1.2% | **0.47%** |
-| Outlook | 0.4% | 0.93% |
+| | #016 | #019 | #020 |
+|---|---|---|---|
+| Gmail Image Proxy | 66.3% | **71.0%** | 48.6% † |
+| Unknown | — | — | **33.9%** † |
+| Webmail overall | 87% | **89.1%** | 83.4% |
+| Apple Mail | 1.2% | **0.47%** | 1.13% |
+| Outlook | 0.4% | 0.93% | 1.13% |
+
+† **Do not read #020's Gmail figure as a real fall.** A 33.9% "Unknown" bucket
+appears in that export and not in the earlier ones. Identified webmail only reaches
+about 60% of openers, so most of Unknown has to be webmail too, which at this list's
+composition means unfingerprinted Gmail. Gmail is almost certainly still ~70-80%.
+Treat client-mix comparisons across exports as unreliable unless the Unknown bucket
+is small in both.
 
 Two things follow, and both are unusual:
 
@@ -330,6 +392,23 @@ line and the event mix.
 | #019 | `A market inside the Air Force Museum 🛩️` | 45.5% | one specific curiosity hook |
 | #017 | `PE Weekend: Goats, ABBA & More!` | 43.3% | lists contents, "& More!" filler |
 | #018 | `PE's epic weekend awaits` | 42.9% | generic hype, says nothing |
+| #020 | `Three days off. Sorted. ✅` | **41.0%** | re-ran #016's format a second time |
+
+**Do not re-run a winning subject line as a template.** This is the #020 lesson and
+it cost 13 points against #016. Take the *principle* (promise an outcome), never
+the wording. `Sorted` plus `✅` was fresh once; by its second outing the list had
+already seen it, and "That's your weekend sorted" closes every single issue, so the
+word was worn out before it reached the subject line. A repeated format also stops
+reading as a promise and starts reading as a template, which is exactly what
+"generic" feels like from the inbox.
+
+**Check the promise is true for everyone.** "Three days off" only applied to readers
+who got the public holiday. Retail, hospitality, healthcare and the self-employed
+did not. #016's "Weekend plans" applies to the whole list. A promise that excludes
+part of the audience is worse than a vaguer one that includes all of it.
+
+(The #020 figure is confounded: see the per-issue results above. The subject line is
+the leading explanation but not a proven one.)
 
 **Sell the outcome, not the contents.** The winner is the only one that makes a
 promise about the reader's life rather than describing what's inside. Length
@@ -343,9 +422,11 @@ rally racing, coastal walks). #019 used specifics in both, so the preheader
 added nothing the subject hadn't already promised. Promise in the subject,
 evidence in the preheader.
 
-**Next test:** #020 should run an outcome-promise subject in the #016 mould with
-a specifics-led preheader, and see whether opens climb back toward 54%. Timing
-is ruled out, so the subject line is the only open-rate lever left.
+**Next test (#021):** an outcome promise in a **construction the list has not seen
+before**. No "sorted", no ✅, and a promise that holds for someone working the
+weekend. This doubles as the tiebreaker on #020's open-rate collapse, so it matters
+that the line is genuinely good: a weak one leaves the question open for another
+week.
 
 Caveat: one issue per style, and #016 also followed a skipped week. Treat this
 as the best available direction, not a proven law.

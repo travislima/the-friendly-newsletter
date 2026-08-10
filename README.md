@@ -110,13 +110,18 @@ only; the real link goes in the WhatsApp caption or the Instagram link-in-bio.
 
 As of issue #020, August 2026:
 
-| | |
-|---|---|
-| Subscribers | ~443 |
-| Open rate | 53.4% |
-| Click rate | 9.2% |
-| CTOR | 17.3% |
-| Bounces / spam complaints | 0 |
+| | #019 | #020 |
+|---|---|---|
+| Recipients | 444 | 424 |
+| Open rate | 53.4% | 41.0% |
+| Click rate | 9.2% | 8.25% |
+| CTOR | 17.3% | **20.11%** |
+| Unsubscribes / spam / hard bounces | 1 / 0 / 0 | 0 / 0 / 0 |
+
+#020 is the best CTOR on record and the worst open rate on record, at the same
+time. Fewer people opened it; everyone who did engaged harder than any audience
+we have had. The cause of the open drop is unresolved, and #021 is the test.
+See `CLAUDE.md`.
 
 For context, media and publishing averages are roughly 4.1% click and 12.9%
 CTOR. Apple Mail is under 1% of this list, so unlike most senders the open rate
