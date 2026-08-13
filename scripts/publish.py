@@ -117,7 +117,7 @@ def main():
         teaser = "Events, food, and things to do in Port Elizabeth this weekend."
     description = htmllib.escape(teaser, quote=True)
     url = f"{SITE}/issue-{issue_no}.html"
-    title = f"The Friendly — Issue #{issue_no} · {day} {month} {year}"
+    title = f"The Friendly · Issue #{issue_no} · {day} {month} {year}"
     meta = f"""<meta name="description" content="{description}">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article">
