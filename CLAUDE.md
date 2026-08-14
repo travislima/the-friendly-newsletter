@@ -69,14 +69,27 @@ verbatim in the sent HTML. MailerLite converts them at send time.
 
 ## Website analytics
 
-GoatCounter, at `https://thefriendly.goatcounter.com`. Cookieless, stores no IP
-address, honours Do Not Track, so **no consent banner is needed**. Free while the
-site stays non-commercial; GoatCounter asks commercial sites to take the $15/month
-plan, which is worth revisiting the day a sponsor is signed.
+Two trackers currently run side by side, both cookieless and neither needing a
+consent banner:
 
-The snippet lives in `template.html` inside a `WEB-ONLY` block right after
-`<!-- WEB-META -->`, so `publish.py` activates it on every new issue automatically.
-Every existing page got it in a one-off sweep. **Nothing to do per issue.**
+- **Umami**, self-hosted on Vercel. This is the one to keep. Self-hosted means the
+  data is ours, it is free at any volume, and it does not carry GoatCounter's
+  commercial-use question.
+- **GoatCounter**, at `https://thefriendly.goatcounter.com`. Now redundant. It only
+  still exists because Umami was added on top rather than swapped in.
+
+**Running both is waste, not redundancy.** Two scripts on every page, two dashboards
+to check, and two numbers that will never quite agree. Remove GoatCounter once
+Umami has proved it is recording.
+
+⚠️ **The Umami script URL is a Vercel deployment URL** (it has a build hash in it,
+`umami-heyd87xv6-...`). Those change on every redeploy. If tracking silently stops,
+this is why. Point it at the stable production alias or a custom domain.
+
+Both snippets live in `template.html` inside `WEB-ONLY` blocks right after
+`<!-- WEB-META -->`, so `publish.py` activates them on every new issue
+automatically. Every existing page got them in one-off sweeps. **Nothing to do per
+issue.**
 
 `latest/index.html` is deliberately *not* tracked: its meta-refresh fires before an
 async script can report, so the count would be wrong rather than merely absent.
