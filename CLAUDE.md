@@ -347,9 +347,16 @@ The one real signal: **zero spam complaints and zero hard bounces**, which is no
 what a damaged sender reputation usually looks like. That leans toward the subject
 line.
 
-**#021 settles it.** Run a genuinely fresh subject line. Opens recovering toward
-50% means the subject line was the cause. Opens sitting near 41% behind a good
-line means deliverability, which mends over a few issues on its own.
+**#021 settled it: the subject line.** `You have an excuse to dress up this weekend`
+posted **56.6% opens at 22 hours**, the best on record, against #020's 36.79% at the
+same point. A 20-point swing on the same list two weeks apart. Deliverability was
+never damaged and the sunset send did no harm.
+
+Note the reasoning that got this wrong, because it will recur: the argument against
+the subject line was that a 15-point drop sat outside the range subject lines had
+ever moved this list. That range was built on **four observations**. Four points do
+not bound a distribution. When a cheap test exists, run it instead of arguing from
+a thin prior.
 
 **Read the numbers late.** See the benchmark note above: wait until the Monday
 after the weekend. Judging earlier has now produced three wrong calls in a row,
@@ -413,6 +420,9 @@ line and the event mix.
 | #017 | `PE Weekend: Goats, ABBA & More!` | 43.3% | lists contents, "& More!" filler |
 | #018 | `PE's epic weekend awaits` | 42.9% | generic hype, says nothing |
 | #020 | `Three days off. Sorted. ✅` | **41.0%** | re-ran #016's format a second time |
+| #021 | `You have an excuse to dress up this weekend` | **56.6%** † | a promise, in a shape never used before |
+
+† 22-hour reading, still climbing. Already the best on record.
 
 **Do not re-run a winning subject line as a template.** This is the #020 lesson and
 it cost 13 points against #016. Take the *principle* (promise an outcome), never
@@ -442,11 +452,16 @@ rally racing, coastal walks). #019 used specifics in both, so the preheader
 added nothing the subject hadn't already promised. Promise in the subject,
 evidence in the preheader.
 
-**Next test (#021):** an outcome promise in a **construction the list has not seen
-before**. No "sorted", no ✅, and a promise that holds for someone working the
-weekend. This doubles as the tiebreaker on #020's open-rate collapse, so it matters
-that the line is genuinely good: a weak one leaves the question open for another
-week.
+**What #021 proves about subject lines.** Its line is 42 characters, by far the
+longest we have sent, and it beat five shorter ones. Length is not the lever;
+freshness and a true promise are. It named no event, so the curiosity lived in the
+*claim* rather than in a proper noun, and the preheader carried the specifics. That
+is the #016 split done properly.
+
+**Next test (#022):** hold the open rate with another unused construction, and fix
+the *click* side instead. #021's mix was thin on the categories that actually
+convert (see below): one market, no motorsport, and three items from weak
+categories.
 
 Caveat: one issue per style, and #016 also followed a skipped week. Treat this
 as the best available direction, not a proven law.
