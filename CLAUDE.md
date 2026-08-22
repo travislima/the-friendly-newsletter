@@ -314,6 +314,8 @@ as the list grows, which is normal and not a quality problem.
 | #018 | 23 Jul | 438 | 42.9% (188) | 4.11% (18) | 9.6% | 2 | 2 |
 | #019 | 30 Jul | 444 | 51.6% (229) | **7.43%** (33) | **14.4%** | 1 | **0** |
 | #020 | 6 Aug  | 424 | 41.0% (174) | 8.25% (35) | **20.11%** | **0** | **0** |
+| #021 | 13 Aug | 424 | **56.6%** (240) | 5.42% (23) | 9.58% | **0** | **0** |
+| #022 | 20 Aug | 423 | 56.03% (237) | 6.15% (26) | 10.97% | **0** | **0** |
 
 (#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
 is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.)
@@ -420,9 +422,13 @@ line and the event mix.
 | #017 | `PE Weekend: Goats, ABBA & More!` | 43.3% | lists contents, "& More!" filler |
 | #018 | `PE's epic weekend awaits` | 42.9% | generic hype, says nothing |
 | #020 | `Three days off. Sorted. ✅` | **41.0%** | re-ran #016's format a second time |
-| #021 | `You have an excuse to dress up this weekend` | **56.6%** † | a promise, in a shape never used before |
+| #021 | `You have an excuse to dress up this weekend` | **56.6%** | a promise, in a shape never used before |
+| #022 | `This weekend costs almost nothing` | **56.03%** | a promise about the reader's wallet |
 
-† 22-hour reading, still climbing. Already the best on record.
+**#021 and #022 replicate each other.** Two consecutive fresh constructions, both
+~56%, against #020's 41% for a recycled one. The subject line is the open-rate
+lever and nothing else comes close. Opens are now a solved problem: write a promise
+the list has not seen and expect the mid-fifties.
 
 **Do not re-run a winning subject line as a template.** This is the #020 lesson and
 it cost 13 points against #016. Take the *principle* (promise an outcome), never
@@ -458,10 +464,28 @@ freshness and a true promise are. It named no event, so the curiosity lived in t
 *claim* rather than in a proper noun, and the preheader carried the specifics. That
 is the #016 split done properly.
 
-**Next test (#022):** hold the open rate with another unused construction, and fix
-the *click* side instead. #021's mix was thin on the categories that actually
-convert (see below): one market, no motorsport, and three items from weak
-categories.
+**Opens are solved. Clicks are the open problem.** #022 held the open rate and still
+returned 26 clicks against #020's 35. Stop optimising subject lines beyond "fresh
+promise, never reused" and put the effort into the event mix instead.
+
+### Read absolute clicks, not CTOR, when open rates differ
+
+| | opens | clicks |
+|---|---|---|
+| #020 | 174 | **35** |
+| #021 | 240 | 23 |
+| #022 | 237 | 26 |
+
+The ~65 extra people the better subject lines brought in contributed **roughly zero
+clicks**. The marginal opener is a casual reader who was never going to click, so
+CTOR falls mechanically as opens rise. #020's record 20.11% CTOR is partly an
+artefact of its *bad* open rate concentrating the most loyal readers.
+
+**So: judge content on absolute clicks, judge subject lines on opens, and never
+compare CTOR across issues whose open rates differ by 15 points.** #021 and #022
+were not the content disasters their CTOR implies, but they were genuinely thinner
+than #020, which had a restaurant event, a market, a new-restaurant spotlight and
+motorsport.
 
 Caveat: one issue per style, and #016 also followed a skipped week. Treat this
 as the best available direction, not a proven law.
