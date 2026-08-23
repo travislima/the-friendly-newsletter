@@ -69,24 +69,27 @@ verbatim in the sent HTML. MailerLite converts them at send time.
 
 ## Website analytics
 
-Two trackers currently run side by side, both cookieless and neither needing a
-consent banner:
+**Three** trackers now run side by side, which is one or two too many:
 
-- **Umami**, self-hosted on Vercel. This is the one to keep. Self-hosted means the
-  data is ours, it is free at any volume, and it does not carry GoatCounter's
-  commercial-use question.
-- **GoatCounter**, at `https://thefriendly.goatcounter.com`. Now redundant. It only
-  still exists because Umami was added on top rather than swapped in.
+- **Umami**, self-hosted on Vercel. The counter to keep. Cookieless, the data is
+  ours, free at any volume, no commercial-use question.
+- **Microsoft Clarity** (`y71bf6foow`). Session recordings and heatmaps. Different
+  in kind from the other two, and the reason to have it: watching real people fail
+  to subscribe beats any aggregate at this traffic level.
+- **GoatCounter**. Redundant. Umami does everything it does, better. Remove it.
 
-**Running both is waste, not redundancy.** Two scripts on every page, two dashboards
-to check, and two numbers that will never quite agree. Remove GoatCounter once
-Umami has proved it is recording.
+⚠️ **Clarity is not cookieless and changes the privacy position.** It sets cookies,
+including a Microsoft-wide identifier, and Microsoft processes the data too. Session
+replay is genuinely invasive and `privacy/index.html` says so in plain terms rather
+than burying it. **The cookie-consent question is open**: Clarity requires consent
+in the EEA, UK and Switzerland, and POPIA applies to a mostly South African
+audience. Not a settled matter, and worth proper advice rather than a guess.
 
 ⚠️ **The Umami script URL is a Vercel deployment URL** (it has a build hash in it,
 `umami-heyd87xv6-...`). Those change on every redeploy. If tracking silently stops,
 this is why. Point it at the stable production alias or a custom domain.
 
-Both snippets live in `template.html` inside `WEB-ONLY` blocks right after
+All three snippets live in `template.html` inside `WEB-ONLY` blocks right after
 `<!-- WEB-META -->`, so `publish.py` activates them on every new issue
 automatically. Every existing page got them in one-off sweeps. **Nothing to do per
 issue.**
@@ -101,6 +104,8 @@ What to read:
   MailerLite form redirects there, so this needs no event tracking at all.
 - **Referrers on `issue-NNN.html`** answer the open question in `STRATEGY.md`:
   do the WhatsApp cards actually send anyone to the site?
+- **Clarity for the "why".** Umami says how many; Clarity shows what they did.
+  Watch recordings of `/` and `/thank-you` when the signup rate looks wrong.
 - Click tracking on outbound links is *not* set up. MailerLite already measures
   clicks where they happen, in the email.
 

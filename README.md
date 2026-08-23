@@ -47,11 +47,11 @@ Thursday late afternoon, and **read the numbers on Monday, not Thursday.**
 | `subscribe-card.html` | Shareable signup card with a QR code. |
 | `*-old.html` | The pre-redesign pages, kept so a revert is a rename. |
 
-Site traffic is on self-hosted **Umami**, with GoatCounter still running alongside
-it until one of them is retired. Both are cookieless, need no consent banner, and
-ride along in `template.html`, so there is nothing to do per issue. `/thank-you`
-views over `/` views is the signup conversion rate. Details, and a warning about
-the Umami script URL, in `CLAUDE.md`.
+Site traffic runs on self-hosted **Umami** (counts) and **Microsoft Clarity**
+(session recordings and heatmaps), with GoatCounter still attached and due for
+removal. All three ride along in `template.html`, so there is nothing to do per
+issue. Clarity sets cookies and the consent question is open: see `CLAUDE.md` and
+`privacy/index.html`.
 
 ---
 
