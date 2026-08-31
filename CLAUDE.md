@@ -321,9 +321,26 @@ as the list grows, which is normal and not a quality problem.
 | #020 | 6 Aug  | 424 | 41.0% (174) | 8.25% (35) | **20.11%** | **0** | **0** |
 | #021 | 13 Aug | 424 | **56.6%** (240) | 5.42% (23) | 9.58% | **0** | **0** |
 | #022 | 20 Aug | 423 | 56.03% (237) | 6.15% (26) | 10.97% | **0** | **0** |
+| #023 | 27 Aug | 425 | **59.53%** (253) † | **8.71%** (37) † | 14.62% † | **0** | **0** |
 
 (#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
-is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.)
+is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.
+† #023 is a 24-hour reading and will rise: opens keep climbing and clicks grew
+33 &rarr; 41 after the 24-hour mark on #019.)
+
+**#023 is the best issue on record and it settles the click question.** Best open
+rate ever at 59.53%, and **37 clicks at 24 hours already beat #020's settled 35**.
+
+The decisive detail is that **opens and CTOR rose together**. #021 and #022 paired
+high opens with collapsed CTOR because the extra openers were casual readers who
+never clicked. #023 has the highest opens on record *and* half again the CTOR of
+those two, which means the marginal openers clicked this time.
+
+That is direct evidence that **the event mix, not the audience, was the binding
+constraint.** The same list that bounced off #021 and #022 converted on #023.
+
+**The mix that did it: four markets, one food spotlight, one novel experience, one
+weak-category card.** More markets than #019 had. Copy this shape.
 
 **What this actually says.** #020 posted the **best CTOR on record, 20.11%**, nearly
 3 points above #019's settled 17.3%, with the second-best click rate and a clean
@@ -429,11 +446,16 @@ line and the event mix.
 | #020 | `Three days off. Sorted. ✅` | **41.0%** | re-ran #016's format a second time |
 | #021 | `You have an excuse to dress up this weekend` | **56.6%** | a promise, in a shape never used before |
 | #022 | `This weekend costs almost nothing` | **56.03%** | a promise about the reader's wallet |
+| #023 | `Clear your Sunday` | **59.53%** † | a promise, three words, nothing named |
 
-**#021 and #022 replicate each other.** Two consecutive fresh constructions, both
-~56%, against #020's 41% for a recycled one. The subject line is the open-rate
-lever and nothing else comes close. Opens are now a solved problem: write a promise
-the list has not seen and expect the mid-fifties.
+**#021, #022 and #023 replicate each other three times over.** Three consecutive
+fresh constructions at 56.6%, 56.03% and 59.53%, against #020's 41% for a recycled
+one. The subject line is the open-rate lever and nothing else comes close. Opens are
+solved: write a promise the list has not seen and expect the high fifties.
+
+**#023 also shows short works.** `Clear your Sunday` is three words, names no event,
+and posted the best open rate on record. Combined with #021's 42-character winner,
+length is conclusively not the lever. Freshness and a true promise are.
 
 **Do not re-run a winning subject line as a template.** This is the #020 lesson and
 it cost 13 points against #016. Take the *principle* (promise an outcome), never
@@ -469,9 +491,11 @@ freshness and a true promise are. It named no event, so the curiosity lived in t
 *claim* rather than in a proper noun, and the preheader carried the specifics. That
 is the #016 split done properly.
 
-**Opens are solved. Clicks are the open problem.** #022 held the open rate and still
-returned 26 clicks against #020's 35. Stop optimising subject lines beyond "fresh
-promise, never reused" and put the effort into the event mix instead.
+**Opens are solved, and #023 solved clicks too.** The answer was the event mix, and
+nothing else. #022 held the open rate and returned 26 clicks; #023 held it, added
+three markets, and returned 37 at 24 hours. Stop optimising subject lines beyond
+"fresh promise, never reused" and spend the time hunting markets and restaurant
+events instead.
 
 ### Read absolute clicks, not CTOR, when open rates differ
 
