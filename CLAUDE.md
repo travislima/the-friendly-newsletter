@@ -38,6 +38,13 @@ All improvements go into `template.html`, which every new issue starts from.
    (`STRATEGY.md`); label paid placements "Friendly Highlight &middot; Sponsored".
 8. Do NOT touch the `EMAIL-ONLY` / `WEB-ONLY` / `WEB-META` markers — the publish
    script depends on them.
+9. **Take times from the poster, never from Facebook's event header.** Facebook
+   localises the header to whatever timezone the *viewer* is in, so it silently
+   shows the wrong time whenever you are travelling or your device clock is off.
+   The poster artwork and the organiser's own caption are authored in SAST and do
+   not move. Every time we print is South African time.
+   Sanity check: `WITA (Bali) = SAST + 6`, `CEST (Europe) = SAST`,
+   `BST (UK) = SAST - 1`. If the header and the poster disagree, the poster wins.
 
 `{$url}` (view in browser) and `{$unsubscribe}` are MailerLite merge tags — keep them
 verbatim in the sent HTML. MailerLite converts them at send time.
