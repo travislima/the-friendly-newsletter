@@ -42,9 +42,17 @@ Same two tags every week so the numbers accumulate in Umami and stay comparable.
 WhatsApp and Instagram both strip the referrer, so untagged traffic disappears
 into the `(unknown)` bucket.
 
-## Note for the card build
+## Cards
 
-`card-source/issue-025-cards.html` has not been written yet. Copy
-`issue-023-cards.html`, swap in the six panels (cover, Editor's Pick, Friendly
-Highlight, weekend line-up, Where to Eat, follow closer) from `issue-025.html`,
-then run `node card-source/shoot.mjs 025`.
+Built. Six panels in both formats:
+
+- `whatsapp-cards/issue-025/` — 1080x1080
+- `instagram-cards/issue-025/` — 1080x1350
+
+Set: **1** cover · **2** Editor's Pick, the Medieval Fayre · **3** Sunday in Walmer,
+Filthys Market · **4** Also On · **5** Where to Eat, Herms · **6** follow closer.
+
+Card 3 carries Filthys rather than the Friendly Highlight this week, because the
+Highlight and the Where To Eat slot are both Herms in this issue and the set would
+have run the same business twice in six cards. The Herms bash still appears as the
+first row on card 4. Regenerate any time with `node card-source/shoot.mjs 025`.

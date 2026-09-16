@@ -170,9 +170,13 @@ instagram-cards/issue-NNN/   card-1.png ... card-6.png  (1080x1350)
 - **No link is tappable on an image.** Cards print `thefriendly.co.za` as a
   visual CTA only; the real link goes in the WhatsApp caption or the
   Instagram link-in-bio. Card footers say where to tap.
-- Note on Node: Playwright lives at `/opt/node22/lib/node_modules`, and
-  `shoot.mjs` imports it by absolute path because ESM ignores `NODE_PATH`.
-  Chromium is at `/opt/pw-browsers/chromium`.
+- Note on Node: `shoot.mjs` resolves Playwright and the browser binary at
+  runtime, trying `/opt/node22/lib/node_modules` and `/opt/pw-browsers/chromium`
+  first (the container image), then a local `node_modules`, then the system
+  Chrome. It imports by explicit path because ESM ignores `NODE_PATH`.
+  On a fresh machine run `npm install` once in the repo root: `package.json`
+  pulls in `playwright-core` only, which is a few MB and downloads no browser,
+  because the renderer drives the Chrome that is already installed.
 
 **Captions to ship with them:**
 - *WhatsApp* (paste with the album; the domain auto-links): lead line, 3 to 5
