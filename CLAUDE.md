@@ -5,6 +5,11 @@ Port Elizabeth (Gqeberha), South Africa. Sent Thursdays 8am via MailerLite (HTML
 pasted in manually). This repo is also the public website (GitHub Pages,
 thefriendly.co.za) — the issue HTML files double as the web archive.
 
+> **Finding the week's events lives in `SOURCING.md`.** Instagram first, then the
+> Facebook group *event* tabs, then date-filtered Discover, then Quicket for
+> anything ticketed. It also records the conflicts to watch for. This file is how
+> to *build* an issue once you have the events.
+
 **Past issues are a documented archive. Never edit a published `issue-NNN.html`.**
 All improvements go into `template.html`, which every new issue starts from.
 
