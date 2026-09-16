@@ -1,0 +1,11 @@
+{
+  "name": "the-friendly-newsletter",
+  "private": true,
+  "description": "Tooling for The Friendly. Only the social-card renderer needs Node; the site and issues are plain HTML.",
+  "scripts": {
+    "cards": "node card-source/shoot.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.1"
+  }
+}
