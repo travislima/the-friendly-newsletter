@@ -28,7 +28,7 @@ returns *three* separate listings under near-identical names, and they disagree:
 - "Roots, Rides & Rhythm Heritage Festival" &middot; Thu 24 Sep 9AM &middot;
   Fairview Sports Centre &middot; 262 interested
 
-It was pulled from #024 for exactly this reason. The 1.2K-interested listing is the
+It was pulled from #025 for exactly this reason. The 1.2K-interested listing is the
 one to chase, but confirm the venue with the organiser before it goes in an issue.
 On the playbook it is a strong candidate: a festival is category 1, and the
 response numbers are the biggest on our radar for the Heritage weekend.
@@ -39,12 +39,12 @@ response numbers are the biggest on our radar for the Heritage weekend.
 
 A public holiday falling on our send day. Two things follow:
 
-1. **#025 sends into a long weekend**, so the issue should cover Thursday the 24th
+1. **#026 sends into a long weekend**, so the issue should cover Thursday the 24th
    through Sunday the 27th rather than the usual Friday start.
 2. Check the promise in the subject line against the #020 lesson: "three days off"
    is not true for retail, hospitality, healthcare or the self-employed. Do not
    build the subject line on an assumed day off.
 
 Already placed: **Crossways Village Market Heritage Day** ran as the Save The Date
-in #024 (Thu 24 Sept, 9AM&ndash;2PM, free, Crossways Farm Village). That is one of
-its two permitted appearances. It can run once more in #025 as a live listing.
+in #025 (Thu 24 Sept, 9AM&ndash;2PM, free, Crossways Farm Village). That is one of
+its two permitted appearances. It can run once more in #026 as a live listing.

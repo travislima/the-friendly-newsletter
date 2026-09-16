@@ -1,4 +1,4 @@
-# Issue #024 captions
+# Issue #025 captions
 
 ## WhatsApp (paste with the album, the domain auto-links)
 
@@ -44,7 +44,7 @@ into the `(unknown)` bucket.
 
 ## Note for the card build
 
-`card-source/issue-024-cards.html` has not been written yet. Copy
+`card-source/issue-025-cards.html` has not been written yet. Copy
 `issue-023-cards.html`, swap in the six panels (cover, Editor's Pick, Friendly
-Highlight, weekend line-up, Where to Eat, follow closer) from `issue-024.html`,
-then run `node card-source/shoot.mjs 024`.
+Highlight, weekend line-up, Where to Eat, follow closer) from `issue-025.html`,
+then run `node card-source/shoot.mjs 025`.

@@ -334,6 +334,7 @@ as the list grows, which is normal and not a quality problem.
 | #021 | 13 Aug | 424 | **56.6%** (240) | 5.42% (23) | 9.58% | **0** | **0** |
 | #022 | 20 Aug | 423 | 56.03% (237) | 6.15% (26) | 10.97% | **0** | **0** |
 | #023 | 27 Aug | 425 | **59.53%** (253) † | **8.71%** (37) † | 14.62% † | **0** | **0** |
+| #024 | 3 Sep  | 428 | **57.71%** (247) | 5.14% (22) | 8.91% | ? | ? |
 
 (#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
 is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.
@@ -459,6 +460,7 @@ line and the event mix.
 | #021 | `You have an excuse to dress up this weekend` | **56.6%** | a promise, in a shape never used before |
 | #022 | `This weekend costs almost nothing` | **56.03%** | a promise about the reader's wallet |
 | #023 | `Clear your Sunday` | **59.53%** † | a promise, three words, nothing named |
+| #024 | `The first proper weekend of spring` | **57.71%** | a promise about the season, not the contents |
 
 **#021, #022 and #023 replicate each other three times over.** Three consecutive
 fresh constructions at 56.6%, 56.03% and 59.53%, against #020's 41% for a recycled
@@ -508,6 +510,23 @@ nothing else. #022 held the open rate and returned 26 clicks; #023 held it, adde
 three markets, and returned 37 at 24 hours. Stop optimising subject lines beyond
 "fresh promise, never reused" and spend the time hunting markets and restaurant
 events instead.
+
+**#024 confirms the subject-line finding and sharpens the click problem.** Four
+consecutive fresh constructions now sit at 56.03%, 59.53%, 57.71% and 56.6%. Opens
+are solved; stop tuning them.
+
+Clicks are not. #024 took **22 clicks from 247 opens**, the weakest absolute count
+since #018, on the best-attended issues we have run. Its mix was market-heavy and
+almost nothing else: no restaurant event, no novel experience, no motorsport. That
+is the mix the playbook predicts will underperform, and it did.
+
+⚠️ **#024 was sent but never published or recorded.** `publish.py` was never run on
+it, so it is missing from `latest/` and the archive, no social cards were built, and
+its results sat unrecorded for two weeks. That gap caused a real error: a later
+session read the missing archive entry, missing cards and missing results row as
+evidence the issue had never been sent, and renumbered the following issue over it.
+**Run `publish.py` the same day you send, every time.** The repo is the only record
+of what shipped, and when it disagrees with MailerLite, MailerLite is right.
 
 ### Read absolute clicks, not CTOR, when open rates differ
 

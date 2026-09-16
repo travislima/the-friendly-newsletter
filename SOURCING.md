@@ -1,7 +1,7 @@
 # Sourcing an issue
 
 How to find the week's events without anyone sending screenshots. Written after the
-first end-to-end run (#024, 17 September 2026), which used Claude driving Travis's
+first end-to-end run (#025, 17 September 2026), which used Claude driving Travis's
 own logged-in Chrome via the Claude in Chrome extension.
 
 > **This supersedes the pessimism in `AUDIT.md` §8.** That section ruled out
@@ -32,7 +32,7 @@ firehose it is.
    - `@crosswaysvillagemarket` — Crossways Village Market
    - `@flavorsofgqeberha` — food creator, useful for the Where To Eat slot
 
-**What it produced in #024:** Filthys Market (Sunday, full times and address) and
+**What it produced in #025:** Filthys Market (Sunday, full times and address) and
 the Crossways Heritage Day market (date, times, free entry, directions). Facebook
 had neither.
 
@@ -74,14 +74,14 @@ Expect roughly 9 results and expect some to be in the wrong country. Filter by e
 
 Quicket is the source of truth for **price and venue**, and it has a public API if
 this is ever scripted properly. Any Facebook event with a "Tickets" link is worth
-following through. In #024 it supplied the fayre's full pricing, which Facebook
+following through. In #025 it supplied the fayre's full pricing, which Facebook
 did not show at all.
 
 ---
 
 ## Rules learned the hard way
 
-**Never print a venue or time that only one source gives you.** The #024 Editor's
+**Never print a venue or time that only one source gives you.** The #025 Editor's
 Pick had the fayre at *Hellenic Hall, Parsons Hill* on Quicket and at *Norm-Hudlin
 Trails, Kragga Kamma Rd* on Facebook. Quicket won on three grounds: it is the
 ticketing platform, its structured date matched, and the event's own "Greek or
@@ -96,7 +96,7 @@ silently picking, but lead with the ticketing platform.
 
 **Duplicate Facebook listings are common and they disagree.** "Roots, Rides &
 Rhythm" returned three near-identical events across two different venues. It was
-pulled from #024 for that reason. When listings conflict and none is clearly
+pulled from #025 for that reason. When listings conflict and none is clearly
 authoritative, drop the event. A gap is cheaper than a wrong address.
 
 **Facebook event headers localise to the viewer's timezone.** This is already rule
@@ -123,9 +123,9 @@ Ranked by payoff over effort:
 2. **A capture inbox** (still the best idea in `AUDIT.md` §8). Anything Travis sees
    during the week gets forwarded to one running list. Kills the collecting half.
 3. **The three browser passes above**, as a repeatable prompt. This is what ran for
-   #024 and it took one session with no screenshots.
+   #025 and it took one session with no screenshots.
 
 **The realistic target is a Wednesday candidate list for Travis to approve, not an
-unattended issue.** The #024 venue conflict is the argument: a human had to decide
+unattended issue.** The #025 venue conflict is the argument: a human had to decide
 which of two sources to believe, and getting it wrong puts readers at the wrong
 address on a Saturday morning.
