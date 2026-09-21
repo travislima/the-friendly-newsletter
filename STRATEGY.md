@@ -224,3 +224,95 @@ because the doubt is half right. Two different questions:
 
 **The product is strong; the audience is small.** Those need different fixes, and
 conflating them makes a scale problem feel like a confidence problem.
+
+---
+
+# Review, 19 September 2026 (after #025)
+
+The August plan above still holds. **None of it was done**, and the data below is
+what that cost. Kept as a separate section rather than a rewrite, because the gap
+between the August diagnosis and the September numbers is the most useful thing in
+this file.
+
+## Growth did not slow. It stopped.
+
+Pulled from all 24 MailerLite campaign reports, March to September:
+
+| Phase | Recipients | Net growth |
+|---|---|---|
+| Apr 2 &rarr; Jul 30 (launch push) | 357 &rarr; 444 | **+22.2/month** |
+| Aug 6 &rarr; Sep 17 (since the prune) | 424 &rarr; 426 | **+1.4/month** |
+
+The August plan assumed ~30/month and put 1,000 subscribers 19 months out. At
++1.4/month it is **34 years**. Currently 428 active.
+
+**The product is not the problem.** Open rate is flat at **55.7%** across the last
+six issues, statistically identical to the first twelve (56.0%). Click rate halved,
+11.6% to 6.7%, but that is the marginal-subscriber effect `CLAUDE.md` already
+documents, not decay.
+
+## What the money actually needs
+
+763 clicks sent to local businesses across 24 issues, all unpaid. That number is the
+only sponsorship asset nobody can argue with.
+
+At the industry-normal $3 per subscriber per year, 428 subscribers is worth about
+**R1,741/month** fully monetised. So:
+
+| Target | What it needs |
+|---|---|
+| **R2,000/month** | Available now. 4 Highlights at R500, or 1 Month Partner at R2,800. No growth required. |
+| R5,000/month | ~1,200 subscribers. A size problem, not a pricing problem. |
+
+**Stop treating R5,000 as this year's number.** Sell at R2,000 to R2,800 now, fix
+distribution, revisit in 2027.
+
+## The pricing test still has not run
+
+Zero of the five R500 emails from the August plan were sent. After six months the
+cheapest available piece of information, *will a Gqeberha business pay R500*, is
+still unknown. Everything downstream of it is guesswork until it is answered.
+
+## Correction: subscriber businesses are mostly not ad prospects
+
+52 of 428 addresses are non-free-email, 49 of them have opened. But they are
+professional services, government and education, which `CLAUDE.md` correctly tiers
+as poor advertising prospects for a weekend-planning audience.
+
+**Pitch businesses you have featured, not businesses who subscribe.** You have click
+receipts for the first group and none for the second. The two guesthouses on the
+list, King George and Sunnyside, were considered and rejected: 7 sends each, 0
+clicks between them, and accommodation sells to out-of-towners while the list is
+local.
+
+## The two contacts that actually matter
+
+Found by ranking the list by engagement. Both are distribution partnerships, not
+ad sales, and both are worth more than any R500 slot.
+
+| Contact | Record | Why |
+|---|---|---|
+| **shere@kingfisherfm.co.za** | **25/25 opens**, 10 clicks | Kingfisher FM. Local radio reaches more of this city in an hour than the list has in six months. |
+| **arisha.prahaladh@mandela.ac.za** | 14/23 opens, 11 clicks | Nelson Mandela University, ~30,000 students. One residence mention at 0.5% is 150 subscribers. |
+
+Also engaged and worth knowing: `jamneckc@sjmsa.co.za` (18 clicks, the highest on
+the list), `edwin@kowin.co.za` (26/26 opens, but a personal friend, not a lead), and
+two Nelson Mandela Bay Municipality addresses at 22 clicks between them.
+
+Both emails are drafted and sitting in Travis's personal Gmail under the
+`hello@thefriendly.co.za` alias, unsent.
+
+## What is now automated, and what the bottleneck became
+
+Automated as of this review: issue build from `template.html`, same-day publishing to
+the site, social card rendering in both formats, event sourcing documented in
+`SOURCING.md`, and a Wednesday prep brief delivered by email.
+
+**So the bottleneck is no longer the work.** Everything remaining is asking a person
+for something: two partnership emails, five sponsor emails, twenty share requests,
+and thirty seconds a week posting the cards. No script does any of that, and no
+further automation will change the growth number.
+
+Working plan, rendered: https://claude.ai/artifact/PVT73uy74tszJiF6Miy2VN
+Outreach lists: `~/Documents/the-friendly-outreach/` (not in this repo, contains
+subscriber email addresses).
