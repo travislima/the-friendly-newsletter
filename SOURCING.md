@@ -77,6 +77,14 @@ this is ever scripted properly. Any Facebook event with a "Tickets" link is wort
 following through. In #025 it supplied the fayre's full pricing, which Facebook
 did not show at all.
 
+**Browser mechanics worth knowing (learned building #026).** A `navigate` that
+changes domain (Facebook to Instagram, Instagram to Facebook) fails inside a
+`browser_batch` with "Navigation to this domain is not allowed", but works as a
+standalone call. Batch within a domain, switch domains standalone. Facebook's
+Discover feed also stops rendering text after a scroll; take the event IDs with
+the console one-liner instead of `get_page_text`. MailerLite sessions expire
+between issues: expect the sign-in page and hand it to Travis, never type into it.
+
 ---
 
 ## Rules learned the hard way

@@ -9,42 +9,30 @@ mention trains people to skip the section.
 
 ---
 
-## Roots, Rides & Rhythm Heritage Festival
+## Cleared in #026 (24 September)
 
-| | |
-|---|---|
-| **When** | Thursday 24 September 2026, possibly running to Friday 25 |
-| **Where** | **Unconfirmed.** See the warning below |
-| **Price** | Not confirmed |
-| **Source** | Facebook event search, three competing listings |
+- **Roots, Rides & Rhythm Heritage Festival** ran as the Editor's Pick. The venue
+  conflict resolved: organiser description, tourism board and the poster all say
+  Fairview Sports Centre, Willow Road. The 1.3K-interested Facebook listing still
+  carries a stale Mount Croix pin, so #026 links the 570-interested listing with
+  the correct pin (`facebook.com/events/2539470246524234`).
+- **Crossways Village Market Heritage Day** ran as a Thursday card, its second
+  and final appearance.
 
-⚠️ **Do not print this until the venue is confirmed.** A Facebook event search
-returns *three* separate listings under near-identical names, and they disagree:
+## Candidates spotted, not yet verified
 
-- "Roots Rides & Rhythm Heritage day Festival" &middot; Thu 24 Sep 9AM &middot;
-  Fairview Sport Centre, Willow Road &middot; 342 interested
-- "Roots, Rides & Rhythm Heritage Festival" &middot; Thu 24 &ndash; Fri 25 Sep &middot;
-  Mount Croix &middot; 1,262 interested
-- "Roots, Rides & Rhythm Heritage Festival" &middot; Thu 24 Sep 9AM &middot;
-  Fairview Sports Centre &middot; 262 interested
+Seen on Facebook Discover "Suggested events" on 23 September. Response counts are
+Facebook's. Times, prices and venues all still need a primary source before any of
+these prints.
 
-It was pulled from #025 for exactly this reason. The 1.2K-interested listing is the
-one to chase, but confirm the venue with the organiser before it goes in an issue.
-On the playbook it is a strong candidate: a festival is category 1, and the
-response numbers are the biggest on our radar for the Heritage weekend.
+| Event | When | Where | Signal |
+|---|---|---|---|
+| Marktfees 2026 "Almost Heaven" | Thu 26 to Sun 29 Nov | Old Tramways Building | 810 interested |
+| Christmas Craft Market 2026 | Thu 19 to Sat 21 Nov | Old Grey Sports Club | 520 interested |
+| Amazing Race 2026 | Sat 5 Dec, 8AM | "Gqebera" | 158 interested |
+| Community Market | Fri 2 Oct, 5PM | not captured | shared to Local is lekker |
+| River Clean Up (Sundays River Adventures) | Sat 3 Oct, 7:30AM | Sundays River | shared to Local is lekker |
 
----
-
-## Heritage Day, Thursday 24 September
-
-A public holiday falling on our send day. Two things follow:
-
-1. **#026 sends into a long weekend**, so the issue should cover Thursday the 24th
-   through Sunday the 27th rather than the usual Friday start.
-2. Check the promise in the subject line against the #020 lesson: "three days off"
-   is not true for retail, hospitality, healthcare or the self-employed. Do not
-   build the subject line on an assumed day off.
-
-Already placed: **Crossways Village Market Heritage Day** ran as the Save The Date
-in #025 (Thu 24 Sept, 9AM&ndash;2PM, free, Crossways Farm Village). That is one of
-its two permitted appearances. It can run once more in #026 as a live listing.
+Marktfees is the one to chase first: a multi-day market with the biggest count on
+the board, category 1 stacked on 2. Tickets or stallholder details should exist by
+early October, which is the right week for its first appearance.
