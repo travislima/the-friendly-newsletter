@@ -339,6 +339,7 @@ as the list grows, which is normal and not a quality problem.
 | #022 | 20 Aug | 423 | 56.03% (237) | 6.15% (26) | 10.97% | **0** | **0** |
 | #023 | 27 Aug | 425 | **59.53%** (253) † | **8.71%** (37) † | 14.62% † | **0** | **0** |
 | #024 | 3 Sep  | 428 | **57.71%** (247) | 5.14% (22) | 8.91% | ? | ? |
+| #025 | 17 Sep | 426 | 54.23% (231) | 6.57% (28) | 12.12% | **0** | 1 hard, 1 soft |
 
 (#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
 is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.
@@ -465,6 +466,7 @@ line and the event mix.
 | #022 | `This weekend costs almost nothing` | **56.03%** | a promise about the reader's wallet |
 | #023 | `Clear your Sunday` | **59.53%** † | a promise, three words, nothing named |
 | #024 | `The first proper weekend of spring` | **57.71%** | a promise about the season, not the contents |
+| #025 | `You don't need a plan for Saturday` | 54.23% | a promise, negation shape, first time used |
 
 **#021, #022 and #023 replicate each other three times over.** Three consecutive
 fresh constructions at 56.6%, 56.03% and 59.53%, against #020's 41% for a recycled
@@ -532,6 +534,31 @@ evidence the issue had never been sent, and renumbered the following issue over 
 **Run `publish.py` the same day you send, every time.** The repo is the only record
 of what shipped, and when it disagrees with MailerLite, MailerLite is right.
 
+**#025 (settled, six days out): 54.23% open, 28 clicks, 12.12% CTOR, zero unsubscribes,
+zero spam.** Fifth consecutive fresh subject line in the mid-fifties. The click
+ranking is the useful part, and it repeats two patterns already in this file:
+
+| Link | Unique | Total |
+|---|---|---|
+| Saturday Workshop at Crafty Arts (free, participatory) | **7** | 7 |
+| Heritage Day Walk, easy 5km (free) | 6 | 7 |
+| Filthys Market (Instagram post) | 5 | **8** |
+| It's all in your head (Sat theatre) | 5 | 7 |
+| Medieval Fayre, the Editor's Pick | 4 | 6 |
+| HERMS Birthday Bash, the Friendly Highlight | 4 | 6 |
+| Bla Bla Café, St Albans golf day | 0 | 0 |
+
+1. **The Pick placed fifth.** Third issue running where the hero slot did not win.
+   The playbook already says the slot does not create clicks; the event does. A
+   R50 fayre lost to a free craft workshop and a free walk, which is the
+   "narrow beats novel" lesson from #020 again, from the other direction: cheap
+   and undemanding beat novel and costumed.
+2. **Filthys had the highest repeat ratio, 1.6x**, matching the food-and-market
+   return-visit pattern (Crave 1.8x, A Mezza 1.6x). People go back to a market
+   link to check the time. Markets remain the workhorse.
+3. **The two zeros were both Thursday-morning or weekday-daytime items** for
+   people at work. Weeknight events are fair game; weekday-daytime ones are not.
+
 ### Read absolute clicks, not CTOR, when open rates differ
 
 | | opens | clicks |
@@ -539,6 +566,8 @@ of what shipped, and when it disagrees with MailerLite, MailerLite is right.
 | #020 | 174 | **35** |
 | #021 | 240 | 23 |
 | #022 | 237 | 26 |
+| #024 | 247 | 22 |
+| #025 | 231 | 28 |
 
 The ~65 extra people the better subject lines brought in contributed **roughly zero
 clicks**. The marginal opener is a casual reader who was never going to click, so
