@@ -447,11 +447,20 @@ is healthy — nothing to fix.
 | 07:10:41 | #016 | **54.2%** |
 | 07:11:37 | #019 | 45.5% |
 | 07:32:06 | #018 | 42.9% |
+| 06:00:00 | #026 | (pending) | deliberate: Heritage Day, sent at 08:00 SAST so a holiday morning could sleep in |
 
 Three sends inside a **three-minute window** span **10.9 points**, and the
 *earliest* send placed third. Keep sending ~07:10 UTC (09:10 SAST) for habit,
 but never explain a soft issue with timing — the variance is in the subject
 line and the event mix.
+
+**#026 sent at 06:00 UTC on a public holiday, on purpose.** Heritage Day fell on the
+send day and the Editor's Pick, the Highlight and two cards all started at 9AM that
+morning, so the usual 07:15 UTC slot would have landed after people had already
+left the house. Travis chose 08:00 SAST as the holiday-morning compromise. Read the
+open rate against the fresh-subject-line run (mid-fifties), and if it dips, do not
+blame the send time without also weighing that a holiday morning is a different
+inbox from a working Thursday. One data point, not a new schedule.
 
 **Subject lines, ranked by the open rate they produced:**
 
