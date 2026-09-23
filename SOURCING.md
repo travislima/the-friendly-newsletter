@@ -115,6 +115,14 @@ wins.
 "Saturday, 15 August 2026" while the structured date field said 19 September. Trust
 the structured field, not the prose.
 
+**Check sold-out status before printing a book, enter or buy CTA.** #026 went out
+with "Enter online" on the SPAR Women's Challenge after entries had closed, and
+Bubbly Brunch was only caught because Facebook's title said FULLY BOOKED. For any
+ticketed or entry-limited event, open the actual ticket or entry page and look for
+sold out, closed, or a zero-availability state before choosing the CTA. If it is
+gone, the event can still run as a watch-and-support card, with the CTA pointed at
+the organiser page rather than the dead entry link.
+
 **Do not invent the Where To Eat slot.** It is the highest repeat-click category we
 run, which is exactly why a fabricated recommendation is the most expensive kind.
 If no new opening can be verified, use a real restaurant and write only what is
