@@ -340,6 +340,7 @@ as the list grows, which is normal and not a quality problem.
 | #023 | 27 Aug | 425 | **59.53%** (253) † | **8.71%** (37) † | 14.62% † | **0** | **0** |
 | #024 | 3 Sep  | 428 | **57.71%** (247) | 5.14% (22) | 8.91% | ? | ? |
 | #025 | 17 Sep | 426 | 54.23% (231) | 6.57% (28) | 12.12% | **0** | 1 hard, 1 soft |
+| #026 | 24 Sep | 427 | **58.31%** (249) | 6.79% (29) | 11.65% | ? | ? |
 
 (#016&ndash;#019 rows are 24-hour readings. #020 is the settled Monday figure, which
 is why it is not comparable to #019's row: #019 settled at 53.4% / 9.2% / 17.3%.
@@ -447,7 +448,7 @@ is healthy — nothing to fix.
 | 07:10:41 | #016 | **54.2%** |
 | 07:11:37 | #019 | 45.5% |
 | 07:32:06 | #018 | 42.9% |
-| 06:00:00 | #026 | (pending) | deliberate: Heritage Day, sent at 08:00 SAST so a holiday morning could sleep in |
+| 06:00:00 | #026 | **58.3%** | deliberate: Heritage Day, sent at 08:00 SAST. Settled two weeks out, no penalty for the early send |
 
 Three sends inside a **three-minute window** span **10.9 points**, and the
 *earliest* send placed third. Keep sending ~07:10 UTC (09:10 SAST) for habit,
