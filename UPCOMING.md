@@ -9,33 +9,38 @@ mention trains people to skip the section.
 
 ---
 
-## Cleared in #026 (24 September)
+## Cleared in #027 (8 October)
 
-- **Roots, Rides & Rhythm Heritage Festival** ran as the Editor's Pick. The venue
-  conflict resolved: organiser description, tourism board and the poster all say
-  Fairview Sports Centre, Willow Road. The 1.3K-interested Facebook listing still
-  carries a stale Mount Croix pin, so #026 links the 570-interested listing with
-  the correct pin (`facebook.com/events/2539470246524234`).
-- **Crossways Village Market Heritage Day** ran as a Thursday card, its second
-  and final appearance.
+- **Crossways Village Market** ran as a Save The Date for **Sunday 18 October**
+  (postponed from 4 October for weather). First appearance. One more allowed, in
+  #028 the week before. Source: Instagram `crosswaysvillagemarket/p/DeMv36igg3B`.
+- **Food & Craft Night Market, Fairview** (What's Good In The Hood) ran as a Save
+  The Date for **Friday 16 October, 5PM to 9PM, 60 Willow Road**. First
+  appearance; it is next weekend's Friday card.
+- **Algoa FM Big Walk for Cancer** ran as a Save The Date for **Saturday 31
+  October, 8AM, Pollok Beach, R80**, first 10,000 entries nationally get the pink
+  T-shirt. First appearance (entries open). Second and final allowed in #030.
+- Dropped from the candidates table: Community Market (2 Oct) and River Clean Up
+  (3 Oct) have passed.
 
 ## Candidates spotted, not yet verified
 
-Seen on Facebook Discover "Suggested events" on 23 September. Response counts are
+Seen on Facebook Discover and the Local is lekker group. Response counts are
 Facebook's. Times, prices and venues all still need a primary source before any of
 these prints.
 
 | Event | When | Where | Signal |
 |---|---|---|---|
-| Marktfees 2026 "Almost Heaven" | Thu 26 to Sun 29 Nov | Old Tramways Building | 810 interested |
+| Marktfees 2026 "Almost Heaven" | Thu 26 to Sun 29 Nov | Old Tramways Building | 983 interested |
+| Dinosaur Beer Festival 2026 | Fri 13 to Sun 15 Nov | Victoria Park, Walmer | 1,047 interested |
 | Christmas Craft Market 2026 | Thu 19 to Sat 21 Nov | Old Grey Sports Club | 520 interested |
+| Summer fest 2026 | Sat 28 Nov, 10AM | Bubble House PE | 200 interested |
 | Amazing Race 2026 | Sat 5 Dec, 8AM | "Gqebera" | 158 interested |
-| Community Market | Fri 2 Oct, 5PM | not captured | shared to Local is lekker |
-| River Clean Up (Sundays River Adventures) | Sat 3 Oct, 7:30AM | Sundays River | shared to Local is lekker |
+| Filthys Wednesday pizza pop-up | Wednesdays | 55 Main Road, Walmer | 2 for R200, weeknight food card candidate |
 
-Marktfees is the one to chase first: a multi-day market with the biggest count on
-the board, category 1 stacked on 2. Tickets or stallholder details should exist by
-early October, which is the right week for its first appearance.
+Marktfees and the Dinosaur Beer Festival are the two to chase first: both are
+multi-day, both have four-figure interest counts, and tickets should exist by
+mid-October, which is the right week for a first appearance.
 
 ## Found on Quicket, 8 October pass (prices unverified, Quicket lists them as 0.0 = not populated)
 
