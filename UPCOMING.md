@@ -36,3 +36,19 @@ these prints.
 Marktfees is the one to chase first: a multi-day market with the biggest count on
 the board, category 1 stacked on 2. Tickets or stallholder details should exist by
 early October, which is the right week for its first appearance.
+
+## Found on Quicket, 8 October pass (prices unverified, Quicket lists them as 0.0 = not populated)
+
+| Event | When | Where | Read |
+|---|---|---|---|
+| **CONect Geek Convention** | Sat 7 Nov | Fairview Sports Centre, 60 Willow Rd | Convention: category 1 on 2, broad. Strongest Save The Date if Marktfees stays unverified |
+| NMBPride festival 2026 | Sat 14 Nov, 10AM | Fairview Sports Centre | Festival |
+| Mythopia, aerial arts | Fri 13 & Sat 14 Nov | Centrestage@Baywest | Novel experience, ticketed |
+| Barry Hilton, Audience Unplugged | Sat 31 Oct | The Capital Boardwalk | Comedy: quick list, not a card |
+| Hey Hey Divorcé | 16 to 18 Oct (18th at Centrestage) | Savoy Theatre, Parsons Hill | Theatre: quick list the week of 15 Oct |
+| Mission Mito | Sun 1 Nov | Norm-Hudlin Trails, Kragga Kamma | Participation, unknown following |
+| Oktoberfest Corporate Evening | Thu 29 Oct | tourism board listing | "Corporate" in the name: probably not a reader event |
+
+Quicket links are in `NEXT-ISSUE.md`. **Marktfees is on neither the tourism board
+nor Quicket as of 8 October**; it still needs the organiser's page before it can
+print, and early October was meant to be its first appearance.
