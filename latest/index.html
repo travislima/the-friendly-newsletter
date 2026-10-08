@@ -7,7 +7,16 @@
   <meta name="description" content="Read the latest issue of The Friendly — your weekly guide to PE.">
   <meta name="robots" content="noindex">
   <!-- Evergreen redirect: update the URL below (two places) when each new issue is published -->
-  <meta http-equiv="refresh" content="0; url=/issue-027.html">
+  <!-- The script below asks the server which issue is current, bypassing any cached copy
+       of this page (WhatsApp and in-app browsers keep it for a while). The meta refresh
+       is the no-JS fallback. publish.py updates current.txt and both URLs below. -->
+  <script>
+    fetch('/latest/current.txt?ts=' + Date.now(), {cache: 'no-store'})
+      .then(function (r) { return r.ok ? r.text() : ''; })
+      .then(function (t) { t = t.trim(); if (/^issue-\d{3}\.html$/.test(t)) location.replace('/' + t + location.search); })
+      .catch(function () {});
+  </script>
+  <meta http-equiv="refresh" content="2; url=/issue-027.html">
   <link rel="canonical" href="https://thefriendly.co.za/issue-027.html">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">

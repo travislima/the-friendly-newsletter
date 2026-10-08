@@ -141,7 +141,8 @@ def main():
     # ---- 4. latest/ redirect --------------------------------------------
     txt, n = re.subn(r"issue-\d{3}\.html", f"issue-{issue_no}.html", latest_path.read_text(encoding="utf-8"))
     latest_path.write_text(txt, encoding="utf-8")
-    print(f"latest/index.html now points at issue-{issue_no}.html ({n} URLs)")
+    (ROOT / "latest" / "current.txt").write_text(f"issue-{issue_no}.html\n", encoding="utf-8")
+    print(f"latest/index.html now points at issue-{issue_no}.html ({n} URLs); latest/current.txt updated")
 
     # ---- 5. Homepage recent list + archive page --------------------------
     short_date = f"{day} {month[:3]}"
