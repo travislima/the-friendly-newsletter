@@ -316,3 +316,16 @@ further automation will change the growth number.
 Working plan, rendered: https://claude.ai/artifact/PVT73uy74tszJiF6Miy2VN
 Outreach lists: `~/Documents/the-friendly-outreach/` (not in this repo, contains
 subscriber email addresses).
+
+# Pricing test log (started 9 October 2026)
+
+The R500 test finally ran. Record every ask here, with the answer, so the
+"will a Gqeberha business pay" question gets answered by count rather than by
+feel.
+
+| Date | Business | Ask | Answer | Notes |
+|---|---|---|---|---|
+| 9 Oct 2026 | German Club PE / Oktoberfest (germanbeerfest.pe@gmail.com) | R1,500 for a Top Highlight in #028 to #030, refund under 15 clicks | pending, deadline Mon 12 Oct | Ran free in #027 Save The Date first. Mock-up sent. |
+| 9 Oct 2026 | 4Racing / Algoa Cup (Gail Rieder, inbound) | R500 Sunday Highlight in #028 | **no reply to the paid line**, took the free card ("Perfect, thank you") | Inbound free-listing request. Upsell was a footnote in a reply that said yes to free first, so a non-answer is the expected outcome, not a rejection. Next time: lead with the paid option or ask a direct question. |
+
+Tally: 0 yes, 0 no, 1 pending, 1 non-answer. Five asks needed before reading it.

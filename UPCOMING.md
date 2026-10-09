@@ -23,6 +23,24 @@ mention trains people to skip the section.
 - Dropped from the candidates table: Community Market (2 Oct) and River Clean Up
   (3 Oct) have passed.
 
+## Booked for #028 (15 October)
+
+- **The Algoa Cup: Festival of Racing**, Sunday 18 October, Fairview Racecourse,
+  Draaifontein Road, Greenbushes. Gates 11:30AM, free entry, market, beer tent,
+  kids' play area, tote on course. Friday 16 Oct is the NMB Racing Poly Challenge
+  (leg 3), a racing-only day. Bold Silvano room package (buffet, welcome drink,
+  betting voucher) books via gailr@4racing.com or 083 390 0968. Runs as a **free
+  Sunday card**. Gail Rieder (4Racing) sent it to hello@ on 5 Oct and accepted the
+  free listing on 9 Oct; she did not respond to the R500 Highlight offer. **She has
+  not sent a link yet**: use 4Racing's or the Fairview Racecourse Facebook event if
+  nothing arrives by Tuesday. Mock-up of the Highlight version is at
+  `previews/algoa-cup-sunday-highlight.html`.
+- **Oktoberfest PE at the German Club** (31 Oct and 1 Nov): sponsored Top Highlight
+  under the Editor's Pick in #028, #029 and #030 **if the German Club says yes** by
+  Monday 12 Oct (R1,500 for three, refund below 15 clicks). Mock-up at
+  `previews/oktoberfest-top-highlight.html`. If no reply, run it as a plain Save The
+  Date card in #029 (second and final appearance).
+
 ## Candidates spotted, not yet verified
 
 Seen on Facebook Discover and the Local is lekker group. Response counts are
