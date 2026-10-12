@@ -1,123 +1,119 @@
-# Prep brief: next issue, Thursday 8 October 2026
+# Prep brief: Issue #028, Thursday 15 October 2026
 
-Covers **Friday 9 to Sunday 11 October**, plus Thursday 8 evening.
+Covers **Friday 16 to Sunday 18 October**. Candidate list from a Monday 12 October
+pass of all three logged-in sources (Instagram, the Facebook group event tabs,
+date-filtered Discover) plus the tourism board and Quicket. **Nothing is locked.**
+Re-check the "unverified" items on Wednesday before building.
 
-**Issue number is unconfirmed.** The repo ends at #026 (24 September) and holds no
-#027. If an issue went out on Thursday 1 October and was never committed, this is
-**#028**; if that week was skipped, this is **#027**. `CLAUDE.md` records a
-renumbering mistake made from exactly this gap, so the number comes from MailerLite,
-not from the archive. Confirm before scaffolding.
+## Still waiting on
 
-Written by a public-web research pass with no browser and no logged-in sessions:
-nmbt.co.za (tourism board) and Quicket's Gqeberha listing. Instagram and the
-Facebook group event tabs returned login shells. See "Still needs a browser".
+- [ ] **German Club / Oktoberfest**: yes or no to the R1,500 Top Highlight
+      (follow-up sent Mon 12 Oct, deadline Tue 13 Oct morning). Yes: sponsored
+      Highlight directly under the Editor's Pick, labelled "Friendly Highlight
+      &middot; Sponsored", CTA to Quicket. No: nothing in #028; plain Save The Date
+      in #029 (second and final free appearance).
+- [ ] **Gail Rieder / Algoa Cup**: a link, and yes or no to the R500 Sunday
+      Highlight (asked Mon 12 Oct). No link by Wednesday: use the Fairview
+      Racecourse or 4Racing Facebook page.
 
-## Found on the public web
+## Confirmed (organiser's own post or page, this week)
 
-Quicket publishes times in UTC in its structured data; everything below is already
-converted to SAST (+2). Quicket's listing JSON shows every price as `0.0`, which
-means *not populated*, not free: check the event page before printing a price.
+### Friday 16 October
 
-### Thursday 8 October
+- **Food & Craft Night Market, Fairview** (What's Good In The Hood PE). 5PM to 9PM,
+  60 Willow Road, Fairview. Food, local makers, live music. Ran as a Save The Date
+  in #027, so this is its second and final appearance.
+  Source: https://www.instagram.com/whatsgoodinthehood_pe/p/DeHCAhDszEF/
+- **ARD Matthews live at The Music Kitchen.** 6PM to 11PM, 69 Mangold Street,
+  Newton Park. Ticketed (link on the event page). Live music: quick list at most,
+  the playbook says gigs take 0 to 1 clicks.
+  Source: https://www.facebook.com/events/2136341723986882/
 
-- **Something Good: Music Bingo.** 6:30PM SAST. Something Good Roadhouse, 25 Marine
-  Drive, Summerstrand. Price not shown.
-  `CLAUDE.md`: Music Bingo took **0 clicks** last time. Skip, or tail at most.
-  https://www.quicket.co.za/events/400260-something-good-music-bingo-8-october/
+### Saturday 17 October
 
-### Friday 9 October
+- **Framesby Market at Smeeton Park.** 9AM to 2PM, Smeeton Road, Framesby. Local
+  vendors, food, crafts. Stall fees fund CCTV for the suburb. 110 responded on
+  Facebook. Free to walk in (community market, no entry fee stated; confirm on the
+  day or phrase as "bring cash").
+  Source: https://www.facebook.com/events/1382697057326915/
 
-- **Fittest in PE 2026.** From 7AM SAST. Lions Bay CrossFit, 208 Willow Road.
-  CrossFit competition; whether spectators are welcome is not stated. Participation
-  sport, narrow. Tail at most.
-  https://www.quicket.co.za/events/384362-fittest-in-pe-2026/
-- **Sacred Heart Catholic Church Golf Day.** Tourism board listing, details not
-  fetched. A golf day is a fundraiser for players; not a reader event.
-  https://www.nmbt.co.za/events/sacred_heart_catholic_church_golf_day.html
+### Sunday 18 October
 
-### Saturday 10 October
+- **The Algoa Cup: Festival of Racing.** Fairview Racecourse, Draaifontein Road,
+  Greenbushes. Gates 11:30AM. Free entry. Market, beer tent, kids' play area, tote
+  on course, Sunday best. Bold Silvano room package (buffet, welcome drink, betting
+  voucher) books via gailr@4racing.com or 083 390 0968. Friday 16 Oct is a
+  racing-only day (NMB Racing Poly Challenge leg 3). Source: Gail Rieder's email
+  to hello@ on 5 Oct, poster attached. **No public link yet.**
+- **Crossways Village Market.** 9AM to 2PM, Crossways Farm Village, exit 707 off
+  the N2 after the Van Stadens bridge. Free entry, food trucks, lifestyle stalls,
+  pony rides, live music (Claire North and Russel Sneyd). Postponed from 4 Oct.
+  Weather permitting. Second and final appearance (Save The Date in #027).
+  Source: https://www.instagram.com/crosswaysvillagemarket/p/DeMv36igg3B/
 
-- **Joseph & the Amazing Technicolor Dreamcoat, closing day.** Impact Community
-  Theatre. The Savoy Theatre, 100 Diaz Road, Perridgevale. Shows at **2PM and 7PM**.
-  **R130 to R200**, Webtickets. Group bookings: Rose Cowpar, 072 906 1977.
-  Run is 30 Sept to 10 Oct, so Saturday is the last chance. Theatre is fine in the
-  quick list per the playbook; it does not carry a card.
-  Tickets: https://www.webtickets.co.za/v2/event.aspx?itemid=1600831085
-  Source: https://www.nmbt.co.za/events/joseph__the_amazing_technicolor_dreamcoat.html
-- **Conservation Breakfast with Anne Laing.** 8:30AM SAST. St John's Anglican
-  Church, 40 8th Avenue, Walmer. Talk plus breakfast; price not shown. Niche, but it
-  has food attached and a Walmer address. Quick-list candidate.
-  https://www.quicket.co.za/events/368704-conservation-breakfast-with-anne-laing/
+## Unverified, chase on Wednesday
 
-### Sunday 11 October
+- **Hey Hey Divorcé, Schalk Bezuidenhout.** The 8 Oct public-web pass listed it for
+  16 to 18 Oct at the Savoy, with 18 Oct at Centrestage@Baywest. No primary source
+  found on 12 Oct: not on Quicket search, not on the Savoy's public pages. Comedy
+  is a quick-list item only. Check Centrestage's Facebook page or drop it.
+- **Filthys Sunday lunch.** 11 Oct was the first one, with a guest chef, R250pp,
+  WhatsApp 060 863 5882. Not confirmed as weekly yet. If Filthys posts a 18 Oct
+  lunch by Wednesday it is a restaurant-event card; it ran as the Highlight in
+  #027, so it would be a plain card this time.
+- **The Soirée, Garden Edition.** Sat 17 Oct 11AM to 5PM at Die Grand, a barn venue
+  7km outside Patensie, 85km from PE. 23 interested. Too far and too thin for a
+  card; skip unless the week is empty.
+- **Uitenhage Rising Community Superhero Gala**, Sat 17 Oct, VW Auto Pavilion.
+  Discover listed it; not opened. Likely narrow. Check if a Kariega item is wanted.
 
-- Nothing found on the public web. **This is the gap, not the weekend.** Sunday is
-  market day and markets post on Instagram, which this pass could not read.
+## Where To Eat: still open
+
+Nothing verifiable this pass. Flavors of Gqeberha's recent reviews are a Jeffreys
+Bay restaurant (Devi's Wijf) and a chain café (Vida e Caffè summer menu). The
+Village on Circular Drive says PRÍMA Burger is "officially joining" with no opening
+date (https://www.instagram.com/thevillage_oncircular/p/DeZuENgjRxI/). Candidates:
+PRÍMA if a date lands by Wednesday, otherwise Travis to name a place.
+
+## Save The Date candidates for #028
+
+- **What's Good In The Hood: Summerstrand Saturday Market.** Sat 24 Oct, 9AM to
+  2PM, Hearts FC, corner Nobbs and 7th Avenue, Summerstrand. Food, coffee,
+  inflatables, face painting. Organiser's post, 12 Oct. First appearance.
+  Source: https://www.instagram.com/whatsgoodinthehood_pe/p/DeZ8790MhP9/
+- **Algoa FM Big Walk for Cancer**, Sat 31 Oct, 8AM, Pollok Beach, R80. Ran in
+  #027 as a first appearance; #030 (29 Oct) is the natural second. Skip in #028.
+- **Market Day at Maritime Motors / Jetour NMB**, Sat 31 Oct, 9AM to 1PM, corner
+  William Moffett and Circular Drive. Two listings, same venue, same time: a
+  dealership market. Park for #029 or #030.
+- **Marktfees** (26 to 29 Nov, Old Tramways) is still on nobody's ticketing site.
+  Facebook listing only, 983 interested. Needs the organiser's page before it
+  prints.
 
 ## Gaps against the playbook
 
-`CLAUDE.md`'s winning mix (#023, 37 clicks): **four markets, one food spotlight,
-one novel experience, one weak-category card.** This pass found:
+Target mix: 1 novel experience + 2 to 3 markets + 1 food spotlight.
 
-| Category | Found | Needed |
-|---|---|---|
-| Markets | **0** | 2 to 4 |
-| Restaurant hosting an event | **0** | 1 |
-| Where to Eat | **0** | 1 |
-| Novel experience / festival | **0** | 1 |
-| Motorsport | 0 | 1 if on |
-| Weak-category items | 5 | 0 to 1 |
+| Slot | Status |
+|---|---|
+| Editor's Pick | **The Algoa Cup is the obvious Pick** if Gail does not buy the Highlight: free, broad, novel venue, market and beer tent attached. If she buys, the Pick needs another candidate and there is not one yet. |
+| Markets | 3 confirmed: Food & Craft (Fri), Framesby (Sat), Crossways (Sun). Good. |
+| Restaurant event | None. Filthys if they post a Sunday lunch. |
+| Where To Eat | Open. |
+| Motorsport | Nothing found. |
+| Tribute shows | None (ARD Matthews is an original act, still a gig). |
 
-Every category that produces clicks is missing, and every item found is in a
-category that does not. That is the signature of a pass without Instagram, not of a
-quiet weekend: in #025 and #026 Instagram supplied the markets that Facebook and the
-public web had no trace of. **Do not build from this list alone.**
+## Subject line notes
 
-## Still needs a browser
+Fresh promise, nothing reused. Avoid "sorted", "plan", "weekend costs", "clear
+your". Horses and milk have both had a turn. Three markets in three days is the
+true, inclusive promise this week; write it as a promise, not a list.
 
-Per `SOURCING.md`, run the three logged-in passes before building. These are the
-whole issue:
+## Build checklist (Wednesday)
 
-- [ ] **Pass 1, Instagram.** `@thefriendlype` home feed, scroll 3 to 4 times, then
-      directly: `@filthys_pe`, `@crosswaysvillagemarket`, `@whatsgoodinthehood_pe`
-      (the Fairview night market, first Fridays), `@flavorsofgqeberha` (Where to
-      Eat). Read the posters, not the captions.
-- [ ] **Pass 2, Facebook group event tabs.** Local is lekker first
-      (`/groups/3240642369348876/events`), then TFCPE, then Summerstrand
-      Connection. Use the console one-liner in `SOURCING.md`.
-- [ ] **Pass 3, Facebook Discover, date-filtered.** Set the range by hand; the
-      "This week" preset drops Sunday:
-      ```
-      https://www.facebook.com/events/?date_filter_option=CUSTOM_DATE&discover_tab=LOCAL
-        &start_date=2026-10-07T22%3A00%3A00.000Z   # Thu 8 Oct 00:00 SAST
-        &end_date=2026-10-11T22%3A00%3A00.000Z     # Sun 11 Oct 23:59 SAST
-      ```
-- [ ] **Markets to check by name:** the Re-Seconds (rotates Walmer Town Hall and
-      Londt Park), the Collective Market, the Antique Collective (first Sundays,
-      Walmer Park: 4 Oct was the first Sunday, so probably not this week), the UP
-      Market at Buffelsfontein, Crossways.
-- [ ] **Aldo Scribante** for anything racing.
-- [ ] **Marktfees** (26 to 29 Nov, Old Tramways): `UPCOMING.md` says early October is
-      the right week for its first Save The Date, and it is on neither the tourism
-      board nor Quicket. Needs the organiser's page.
-- [ ] **Where to Eat** from Travis. Not inventable.
-
-## Save The Date candidates found this pass
-
-All from Quicket's Gqeberha listing. Prices unverified. Parked in `UPCOMING.md`.
-
-- **CONect Geek Convention**, Sat 7 Nov, Fairview Sports Centre, 60 Willow Road.
-  A convention is category 1 stacked on 2 and broadly appealing. The strongest
-  Save The Date here if Marktfees stays unverified.
-- **NMBPride festival 2026**, Sat 14 Nov, Fairview Sports Centre.
-- **Mythopia, aerial arts**, Fri 13 and Sat 14 Nov, Centrestage@Baywest.
-- **Barry Hilton, Audience Unplugged**, Sat 31 Oct, The Capital Boardwalk. Comedy:
-  quick-list category, not a Save The Date card.
-- **Hey Hey Divorcé**, 16 to 18 Oct, Savoy Theatre (and 18 Oct at Centrestage).
-  Theatre. Next week's quick list, not this week's.
-
-## Subject line
-
-Opens are solved: five consecutive fresh constructions in the mid-to-high fifties.
-Spend no time here beyond the constraint: a promise, a shape the list has not seen,
-true for everyone, no "sorted", no checkmark. Write it last, once the mix is known.
+- [ ] Resolve both sponsor answers and place the cards accordingly.
+- [ ] Re-open the three Facebook events and two Instagram posts above and confirm
+      nothing moved. Crossways is weather-dependent: check their Instagram last.
+- [ ] Get a link for the Algoa Cup.
+- [ ] Decide Where To Eat.
+- [ ] `cp template.html issue-028.html`, build, run the pre-send checklist.
