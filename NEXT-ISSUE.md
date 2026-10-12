@@ -12,9 +12,10 @@ Re-check the "unverified" items on Wednesday before building.
       Highlight directly under the Editor's Pick, labelled "Friendly Highlight
       &middot; Sponsored", CTA to Quicket. No: nothing in #028; plain Save The Date
       in #029 (second and final free appearance).
-- [ ] **Gail Rieder / Algoa Cup**: a link, and yes or no to the R500 Sunday
-      Highlight (asked Mon 12 Oct). No link by Wednesday: use the Fairview
-      Racecourse or 4Racing Facebook page.
+- [x] **Gail Rieder / Algoa Cup**: declined the R500 Highlight on 12 Oct (no
+      budget this year). Runs free. Links she gave: https://www.4racing.com,
+      Facebook "4Racing", Instagram @4Racingza. **The Algoa Cup is now free to be
+      the Editor's Pick.**
 
 ## Confirmed (organiser's own post or page, this week)
 
@@ -44,7 +45,9 @@ Re-check the "unverified" items on Wednesday before building.
   on course, Sunday best. Bold Silvano room package (buffet, welcome drink, betting
   voucher) books via gailr@4racing.com or 083 390 0968. Friday 16 Oct is a
   racing-only day (NMB Racing Poly Challenge leg 3). Source: Gail Rieder's email
-  to hello@ on 5 Oct, poster attached. **No public link yet.**
+  to hello@ on 5 Oct, poster attached. Link: https://www.4racing.com (or the
+  4Racing Facebook page, @4Racingza on Instagram). Check 4racing.com for an
+  Algoa Cup page before building; link the deepest page that exists.
 - **Crossways Village Market.** 9AM to 2PM, Crossways Farm Village, exit 707 off
   the N2 after the Van Stadens bridge. Free entry, food trucks, lifestyle stalls,
   pony rides, live music (Claire North and Russel Sneyd). Postponed from 4 Oct.
