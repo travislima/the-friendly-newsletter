@@ -10,6 +10,7 @@ There's a market on every day this weekend. 🏇
 🛍️ Framesby's first market at Smeeton Park, Saturday 9AM to 2PM
 🌳 Crossways Village Market is back under the gums, Sunday 9AM to 2PM
 👕 Filthys Monthly Market with a ThriftGQ rail, Sunday noon to 5PM
+🏃 Plato Walmer's opening run, Saturday 6AM, 5km, free, coffee after
 
 Full issue + links → thefriendly.co.za/latest?utm_source=whatsapp
 
@@ -28,6 +29,8 @@ There's a market on every day this weekend. 🏇
 🌳 Crossways Village Market, Sunday 9AM to 2PM, exit 707 off the N2. Free entry,
    weather permitting.
 👕 Filthys Monthly Market, Sunday 12PM to 5PM, 55 Main Road, Walmer.
+🏃 Plato Walmer Opening Run, Saturday, meet 6AM for a 6:30 start, 59 Main
+   Road Walmer. 5km, walkers welcome, first 100 get a prize wristband.
 
 Free, every Thursday. Link in bio.
 
