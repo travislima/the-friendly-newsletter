@@ -9,37 +9,30 @@ mention trains people to skip the section.
 
 ---
 
-## Cleared in #027 (8 October)
+## Cleared in #028 (15 October)
 
-- **Crossways Village Market** ran as a Save The Date for **Sunday 18 October**
-  (postponed from 4 October for weather). First appearance. One more allowed, in
-  #028 the week before. Source: Instagram `crosswaysvillagemarket/p/DeMv36igg3B`.
-- **Food & Craft Night Market, Fairview** (What's Good In The Hood) ran as a Save
-  The Date for **Friday 16 October, 5PM to 9PM, 60 Willow Road**. First
-  appearance; it is next weekend's Friday card.
-- **Algoa FM Big Walk for Cancer** ran as a Save The Date for **Saturday 31
-  October, 8AM, Pollok Beach, R80**, first 10,000 entries nationally get the pink
-  T-shirt. First appearance (entries open). Second and final allowed in #030.
-- Dropped from the candidates table: Community Market (2 Oct) and River Clean Up
-  (3 Oct) have passed.
+- **Food & Craft Night Market, Fairview** ran as the Friday card: second and final
+  appearance (Save The Date in #027). Delete.
+- **Crossways Village Market** ran as a Sunday card: second and final appearance.
+  Delete. Next Crossways needs a fresh organiser post before it prints again.
+- **The Algoa Cup** ran as the Editor's Pick, unpaid (Gail declined the Highlight).
+- **Filthys Monthly Market** (Sunday 18 Oct) ran as a Sunday card, from the
+  organiser's 14 Oct post. "Monthly": expect one in mid-November.
+- **Summerstrand Saturday Market** (Sat 24 Oct, Hearts FC) ran as the Save The
+  Date. First appearance. One more allowed in #029, which is the week of.
 
-## Booked for #028 (15 October)
+## Parked for #029 (22 October)
 
-- **The Algoa Cup: Festival of Racing**, Sunday 18 October, Fairview Racecourse,
-  Draaifontein Road, Greenbushes. Gates 11:30AM, free entry, market, beer tent,
-  kids' play area, tote on course. Friday 16 Oct is the NMB Racing Poly Challenge
-  (leg 3), a racing-only day. Bold Silvano room package (buffet, welcome drink,
-  betting voucher) books via gailr@4racing.com or 083 390 0968. Runs as a **free
-  Sunday card**. Gail Rieder (4Racing) sent it to hello@ on 5 Oct and accepted the
-  free listing on 9 Oct; she did not respond to the R500 Highlight offer. **She has
-  not sent a link yet**: use 4Racing's or the Fairview Racecourse Facebook event if
-  nothing arrives by Tuesday. Mock-up of the Highlight version is at
-  `previews/algoa-cup-sunday-highlight.html`.
-- **Oktoberfest PE at the German Club** (31 Oct and 1 Nov): sponsored Top Highlight
-  under the Editor's Pick in #028, #029 and #030 **if the German Club says yes** by
-  Monday 12 Oct (R1,500 for three, refund below 15 clicks). Mock-up at
-  `previews/oktoberfest-top-highlight.html`. If no reply, run it as a plain Save The
-  Date card in #029 (second and final appearance).
+- **Oktoberfest PE at the German Club**, Sat 31 Oct and Sun 1 Nov. Second and
+  final free appearance as a Save The Date (first was #027). No reply to the paid
+  pitch. Mock-up pages in `previews/` can be deleted after #030.
+- **Algoa FM Big Walk for Cancer**, Sat 31 Oct, Pollok Beach, R80. Second and
+  final appearance belongs in #030 (29 Oct), the week of. Not #029.
+- **Market Day at Maritime Motors / Jetour**, Sat 31 Oct, 9AM to 1PM, corner
+  William Moffett and Circular Drive. Dealership market, two Facebook listings,
+  same venue. Quick list in #030 if space.
+- **Filthys Halloween Party**, Sat 31 Oct, DJ Marcel, 55 Main Road Walmer
+  (organiser post 14 Oct). Party, weak category. Quick list in #030 at most.
 
 ## Candidates spotted, not yet verified
 
