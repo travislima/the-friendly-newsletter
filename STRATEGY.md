@@ -325,8 +325,8 @@ feel.
 
 | Date | Business | Ask | Answer | Notes |
 |---|---|---|---|---|
-| 9 Oct 2026 | German Club PE / Oktoberfest (germanbeerfest.pe@gmail.com) | R1,500 for a Top Highlight in #028 to #030, refund under 15 clicks | pending, deadline Mon 12 Oct | Ran free in #027 Save The Date first. Mock-up sent. |
+| 9 Oct 2026 | German Club PE / Oktoberfest (germanbeerfest.pe@gmail.com) | R1,500 for a Top Highlight in #028 to #030, refund under 15 clicks | **No reply** by the Wed 14 Oct build, after a follow-up on Mon 12 Oct | Ran free in #027 Save The Date first. Mock-up sent. A club Gmail inbox nobody owns: next time phone 041 367 2791 first and pitch the brewery's marketing team (Newlands Spring presents it). Oktoberfest gets its second and final free appearance as a Save The Date in #029. |
 | 9 Oct 2026 | 4Racing / Algoa Cup (Gail Rieder, inbound) | R500 Sunday Highlight in #028 | **no reply to the paid line**, took the free card ("Perfect, thank you") | Inbound free-listing request. Upsell was a footnote in a reply that said yes to free first, so a non-answer is the expected outcome, not a rejection. Next time: lead with the paid option or ask a direct question. |
 | 12 Oct 2026 | 4Racing / Algoa Cup (Gail Rieder), asked directly | R500 Sunday Highlight in #028 | **No.** "My budget this year was very limited. I had to take advantage of as many free avenues as I could." Sent links: 4racing.com, Facebook 4Racing, Instagram @4Racingza. | A real no with a real reason: no budget, not no value. 4Racing is a corporate, so the budget sits with marketing, not the events contact. Worth a second ask in the new budget year (Jan/Feb 2027) for the next Festival of Racing. |
 
-Tally: 0 yes, 1 no (budget), 1 pending. Five asks needed before reading it.
+Tally: 0 yes, 1 no (budget), 1 no reply. Five asks needed before reading it.
