@@ -43,7 +43,10 @@ Re-check the "unverified" items on Wednesday before building.
 - **The Algoa Cup: Festival of Racing.** Fairview Racecourse, Draaifontein Road,
   Greenbushes. Gates 11:30AM. Free entry. Market, beer tent, kids' play area, tote
   on course, Sunday best. Bold Silvano room package (buffet, welcome drink, betting
-  voucher) books via gailr@4racing.com or 083 390 0968. Friday 16 Oct is a
+  voucher) books via gailr@4racing.com or 083 390 0968. **Rain or shine: the
+  market is under the grandstand and the track is all-weather** (Gail, 14 Oct).
+  Use that line in the card: it is the one thing the other two markets cannot
+  promise. Friday 16 Oct is a
   racing-only day (NMB Racing Poly Challenge leg 3). Source: Gail Rieder's email
   to hello@ on 5 Oct, poster attached. Link: https://www.4racing.com (or the
   4Racing Facebook page, @4Racingza on Instagram). Check 4racing.com for an
